@@ -1,0 +1,32 @@
+[
+    {
+    "imageURL":"https://s3-alpha-sig.figma.com/img/9965/8991/dde13c18fe9e484cb8700b8c2fb05a9e?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AJnMRG0lFk3thH9XlcVXf2vYEWantQY5reXEYbtgGzkatrmNQms4nm2UO4~XgSz~i4v4nHV2qQ7G4BeuuqB77ddFEeF1kUNJgu5GyUucO1iuMV2kHinEHZ2O36KuuL4Ralg2EtTabLT2pOKKg3oKHtn-1KgD9Dgxva7HqJcjTb01UVRdLWt4eh6RdhJPLhKokpVzSmzspMKI3AgMuQtBtdth5PWyOwgszgU0RIYzR4SJ81epmP6L1ZU-MEDDkmspoMsO~DymHmQmv~cowQgUhnLSzn2WOj0zrLoME6XarWh~UaDrVwXujiljFE78~SQ6x96fECu13MJPnrZJulSTEQ__",
+    "name":"STANLEY 1913",
+    "desc":"THE QUENCHER -TUMBLER 1,2 L",
+    "price":"140.00 ₾",
+     "link":"#"
+    },
+    {
+        "imageURL":"https://s3-alpha-sig.figma.com/img/436d/1b10/a21671311dfe1459b45032744d004189?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gVs1xFIDzTrECE2fPVSamdnaP0pYdBSG4Y8G5STtIGa9ebR-w6jP3DPW2y4yuAbNwt~QngdnDiprI0Qk6y1oaZkgSnn0yK3utppZz2UWvmksKEXi8nWZDv7KxJ1gr8yDm3KkYrprk4ajJ1vMha3hV23BVT-A4gl9fsUtSI8Mde9mePiJwWAfHSTjHICbE-DO7qiHqTLJJX4fqmGi~HRa9PEDptYi1XT5BzR5MEtBgDzHdYbmLGZjnkkIG1R3y6gx3Z3TrdvcrgFZekxn6PQkRqC529Z6fWE~igFAsrzf35GN42QSqmnabc4DCwSX4Eh5yH6pCNv2hrh-qj95n9oigg__",    
+        "name":"Fridababy თერმომეტრი",
+        "desc":"3-in-1 Ear, Forehead + Touchless",
+        "price":"120.00 ₾",
+        "link":"#"
+    },
+    {
+        "imageURL":"https://s3-alpha-sig.figma.com/img/ed16/fe48/fa7579dd0b6cbedf04834b611f1b758c?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pydW4DcUrEdh8FB5CpjAiu8WREgCLIIV4PgqVSSu4O-AXLnE-ZmdV~pOtX1cz1xjxdc6mcO2ZybCtNv6Afgh2fbNBZITwKwcZx0AkuQqgNStS1E0Ac6bFYPNDtJcqprGtn3vZY5Fq0KMoAha4TNoc6eoPb5qP7wr79m2Feerv-JlPt5WVImpbXfxCZ0mnda2NCRWvsDslBfgo5w~qrZV~vhkcti9SI5l7wbNCLSy9gdv1YkFbvRQXROZ9sLYFHxkJK8wcUUq5VBRH02raloNovj4wp2WCUKlXuWGa6GLvO8q6ru0hXtk1kzOS4PzStV7ywzKCM6LpTCica0CeT7c6Q__",
+        "name":"Kindle Paperwhite",
+        "desc":"ქინდლი",
+        "price":"450.00 ₾",
+        "link":"#"
+    },
+    {
+        "imageURL":"https://s3-alpha-sig.figma.com/img/4133/914e/561e84be987d41679dedb266d9740655?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RuWsTts4Fv2ykyoCtETgyO697iRSQw~NrhdwTBIeTl6PiTUTTgrHOAe31TFZX3Y0X5lceixh-DSmMnlkX2ldq~ELxwdqhikBuihx-g99C56a4h9tncN1OGZ6yBkw87g5vWlsef1tOstEH9atEeEzVRz6pvQFzv3PChoWhurmXZFTFXggCAZQL4OGJZy6u-yFgP3Q6zt1yXqNp1OM2dhfUsYA9loZAYqUUpwUP0v9cf2mlfiKvDp04ruYLTL8cAzSdfDqLe8~XJvt-Zo~agzRRXfofL-jXE-xprglo0wtj-EzSq9W4M33T9AzuH94Po2W2SWAWLSDsYPTBKX4xUDpmA__",
+        "name":"Ninja CREAMi",
+        "desc":"Ninja NC301 CREAMi Ice Cream Maker",
+        "price":"600.00 ₾",
+        "link":"#"
+    }
+   
+]
+ 
