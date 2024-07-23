@@ -28,14 +28,14 @@ function generateCards2HTML(data) {
         html += `
             <div class="card2">
                 <img src="assets/img/Icon Button.png" alt="arrowOne" class="arrowOne" id="arrowOne">
-                <img src="${item.imageURL}" alt="${item.name}">
+                <img src="${item.imageURL}" alt="${item.name}" >
                 <img src="assets/img/Frame 92.png" alt="arrowW" class="arrowW" id="arrowW">
                 <div class="card2-content">
-                    <h4>${item.name}</h4>
+                    <h4 class="allHomeName">${item.name}</h4>
                     <p class="titleDesk">${item.desc}</p>
                     <span class="priceText">${item.price}</span>
                     <span>₾</span><br/>
-                    <button type="button">კალათაში დამატება</button">
+                    <button type="button"  class="cartButton">კალათაში დამატება</button">
                
                 </div>
             </div>

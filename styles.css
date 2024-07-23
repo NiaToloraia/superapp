@@ -803,24 +803,33 @@ ul li a {
   display: block;
   float: right;
 }
-/*.card .arrow1 {
-    width: 16px;
-    height: 13px; 
-    padding-left: 85px;
-     display: flex;
-    align-items: center; 
-    width: 20px;
-} */
 
 .textFully {
   text-decoration: underline;
 }
+
+.titleDesk{
+    color: #717D96;
+    padding: 15px 0;
 .titleDesk {
   color: #717d96;
+
 }
 .priceText {
   font-weight: bold;
 }
+.cartButton{
+    background-color: #008BFF;
+    border-radius: 4px;
+    border: 2px solid #008BFF;
+    padding: 10px 35px;
+    color: white;
+    margin: 10px 0 ;
+}
+.allHomeName{
+    padding: 20px 0;
+}
+
 
 /* საზაფხულო წვეულება */
 
