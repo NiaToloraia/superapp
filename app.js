@@ -168,3 +168,8 @@ function showSlides(n) {
 function autoSlides() {
   plusSlides(1);
 }
+
+  
+
+
+
