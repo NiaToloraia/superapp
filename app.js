@@ -87,9 +87,3 @@ function autoSlides() {
   
 
 
-
-
-
-
-
-
