@@ -9,11 +9,11 @@ main {
 }
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -131,6 +131,7 @@ li {
   display: flex;
   align-items: center;
   gap: 5px;
+  width: 15%;
 }
 .burger-menu {
   border: none;
@@ -169,12 +170,10 @@ li {
 }
 
 .slider-nav.left {
-  left: 10px; /* Adjust as needed */
+  left: 200px;
   background-color: var(--grey-color);
   border-radius: 50%;
-
-  display: none;
-  justify-content: center;
+  display: block;
 }
 
 .slider-nav.right {
@@ -184,6 +183,7 @@ li {
 
 ul li a {
   font-size: 16px;
+  font-weight: 100;
 }
 .categories-container {
   overflow: hidden;
@@ -762,50 +762,46 @@ ul li a {
   color: #363939;
 }
 
-
-
-
-
 /* ყველაფერი შენი სახლისთვის */
 
-.fullyBox{
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
+.fullyBox {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
 }
-.lastCard{
-    display: flex;
-    justify-content: space-between;
+.lastCard {
+  display: flex;
+  justify-content: space-between;
 }
 .card2Section {
-    background-color: var(--card-container-background-color);
-    height: auto;
-    width: 90%;
-    /* padding: 0 8%; */
-    margin: 60px 0; 
-    /* margin: 0 auto; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  background-color: var(--card-container-background-color);
+  height: auto;
+  width: 90%;
+  /* padding: 0 8%; */
+  margin: 60px 0;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #cards2-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card2 {
-    width: 200px;
-    height: 414px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: 2px var(--card_border-color) solid;
-    border-radius: 4px;
+  width: 200px;
+  height: 414px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px var(--card_border-color) solid;
+  border-radius: 4px;
 }
 
-#arrowOne{
-    display: block;
-    float: right;
+#arrowOne {
+  display: block;
+  float: right;
 }
 /*.card .arrow1 {
     width: 16px;
@@ -816,67 +812,64 @@ ul li a {
     width: 20px;
 } */
 
-.textFully{
-    text-decoration: underline;
+.textFully {
+  text-decoration: underline;
 }
-.titleDesk{
-    color: #717D96;
+.titleDesk {
+  color: #717d96;
 }
-.priceText{
-    font-weight: bold;
+.priceText {
+  font-weight: bold;
 }
 
+/* საზაფხულო წვეულება */
 
- /* საზაფხულო წვეულება */
-
- .partyOffers{
-    position: relative;
-    margin: 50px auto;
+.partyOffers {
+  position: relative;
+  margin: 50px auto;
 }
-.partyOffers .mainImg{
-    opacity: 70%;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    /* width: 100%; */
+.partyOffers .mainImg {
+  opacity: 70%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /* width: 100%; */
 }
-.partyOffersText{
-    position: absolute;
-    width: 400px;
-    left: 120px;
-    top: 72px;
-    /* background-color: aqua; */
-
+.partyOffersText {
+  position: absolute;
+  width: 400px;
+  left: 120px;
+  top: 72px;
+  /* background-color: aqua; */
 }
-.partyOffersText p{
-    padding: 30px 0;
-    font-weight: bold;
+.partyOffersText p {
+  padding: 30px 0;
+  font-weight: bold;
 }
-.partyOffersText button{
-    display: flex;
-    background-color: white;
-    border-radius: 4px;
-    border: 2px solid white;
-    font-weight: bold;
-    font-size: 17px;
-    /* vertical-align: middle;
+.partyOffersText button {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 17px;
+  /* vertical-align: middle;
     text-align: center; */
-    padding: 20px;
+  padding: 20px;
 }
 
 /* footer */
 
-footer{
-    display: flex;
-    justify-content: space-around;
-    /* background-color: #00ffff ; */
-    /* margin: 0 auto; */
-    /* padding: 0 10%; */
+footer {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #00ffff ; */
+  /* margin: 0 auto; */
+  /* padding: 0 10%; */
 }
-footer li{
-    padding: 8px 0;
+footer li {
+  padding: 8px 0;
 }
-li:first-child{
-    font-weight: bold;
+li:first-child {
+  font-weight: bold;
 }
-
