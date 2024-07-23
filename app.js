@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((cardData) => {
-      const slider = document.getElementById("slider");
+      // const slider = document.getElementById("slider");
 
-      slider.innerHTML = "";
+      // slider.innerHTML = "";
 
       cardData.forEach((card) => {
         const cardElement = document.createElement("div");
@@ -168,8 +168,3 @@ function showSlides(n) {
 function autoSlides() {
   plusSlides(1);
 }
-
-  
-
-
-
