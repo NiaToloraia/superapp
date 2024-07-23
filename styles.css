@@ -8,6 +8,14 @@
 main {
     margin: 0 5rem;
 }
+ul,
+ol {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 
 /* side-scroll  */
 .side-scroll {
@@ -437,3 +445,19 @@ color: #363939;
 
 }
  
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #00ffff ; */
+    /* margin: 0 auto; */
+    /* padding: 0 10%; */
+}
+footer li{
+    padding: 8px 0;
+}
+li:first-child{
+    font-weight: bold;
+}
