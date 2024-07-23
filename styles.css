@@ -444,7 +444,42 @@ line-height: 31.2px;
 color: #363939;
 
 }
- 
+ /* საზაფხულო წვეულება */
+
+ .partyOffers{
+    position: relative;
+    margin: 50px auto;
+}
+.partyOffers .mainImg{
+    opacity: 70%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    /* width: 100%; */
+}
+.partyOffersText{
+    position: absolute;
+    width: 400px;
+    left: 120px;
+    top: 72px;
+    /* background-color: aqua; */
+
+}
+.partyOffersText p{
+    padding: 30px 0;
+    font-weight: bold;
+}
+.partyOffersText button{
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 17px;
+    /* vertical-align: middle;
+    text-align: center; */
+    padding: 20px;
+}
 
 /* footer */
 
