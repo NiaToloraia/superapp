@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -12,50 +13,120 @@ main {
 /* side-scroll  */
 .side-scroll {
     display: flex;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+  justify-content: center;
+
+}
+
+
+.mySlides {
+    width: 100%;
+    height: 376px;
+    border-radius: 10px;
+    
+}
+
+
+
+
+.firstscroll {
+    display: flex;
+    background-color:#E6F3FF;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 376px;
+    border-radius: 10px;
+
+}
+
+.firstscroll-info {
+    padding: 20px 2rem;
+    display: flex;
     flex-direction: column;
-    height: 390px;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.firstscroll-img {
+    width: 50%;
+}
+
+.firstscroll-img img {
+border-radius: 10px;
+object-fit:cover;
+width: 100%;
+height: 376px;
+
+
+
+}
+
+.firstscroll h1 {
+    font-family: FiraGO;
+font-size: 20px;
+font-weight: 500;
+line-height: 33.6px;
+width: 31rem;
+}
+
+.firstscroll i {
+    font-family: FiraGO;
+font-size: 16px;
+font-weight: 500;
+line-height: 22.4px;
+width: 28rem;
+
+
+
+}
+
+.firstscroll a {
+    display: flex;
+    text-decoration: none;
+    height: 45px;
+    width: 14rem;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #008BFF;
+    border-radius: 5px ;
+    cursor: pointer;
+
+}
+
+.firstscroll a h3 {
+    font-family: FiraGO;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    color:#008BFF;
+  
+    
+}
+.firstscroll a img {
+    fill:#008BFF;
+}
+
+
+.middlescroll {
     background-image: url("https://s3-alpha-sig.figma.com/img/1449/fc27/157377cdc5c19d0a8b16619829204f3d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ClGqitvG~K9-3RS4sR-L9HDXTPTWXhH8BtQbpZmX-crzEPuOeHaObtlB5MIJobpEy0AZ26vYH~2EidCkfXWmbdrN-U7-pWZykT8JT~IsL--IdZRzXJlwGfSEKdUepauNtRjtKKNYeEPDvZkbfYPGv~QvZ7cooJiHtdGq4bSnK1ebPGnqLxNNarjjJcg7lFy36GSP5PadbBpqiBANyiRHkrDifXUAarZb8evJbd7iGLxHMvN-TSlKXEk7Td~RTBzMGcn334tw5ekE5AWMRQA8QGN2oRQv-0NfA0Sgb2jRvEbeLJOjS3pf20EemAmb6ChgMKDfY~c0SrMC8p1QJhSWfw__"); 
     background-position: center 57.5%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
-    position: relative;
-}
-
-.mySlides {
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 2rem;
     color:#FFFFFF;
-    /* display: flex;
-    flex-direction: column; */
-    margin: 0 2rem;
-    margin-top: 200px ;
-    width: 75%;
-    /* gap:50px; */
-    height: auto;
-    
-}
-
-.mySlides h1 {
-    font-family: FiraGO;
-font-size: 32px;
-font-weight: 600;
-line-height: 40px;
-width: 40rem;
-margin-bottom: 20px ;
+    height: 376px;
 
 }
 
-.mySlides i {
-    font-family: FiraGO;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-width: 350px;
 
-
-
-}
-
-.mySlides a {
+.middlescroll a {
     width: 216px;
     height: 40px;
 border-radius: 6px;
@@ -70,7 +141,7 @@ margin-top: 25px ;
 
 }
     
-.mySlides a h3 {
+.middlescroll  a h3 {
     font-family: FiraGO;
 font-size: 14px;
 font-weight: 500;
@@ -79,6 +150,54 @@ text-align: center;
 
 
 }
+
+.lastscroll {
+    background-image: url("https://s3-alpha-sig.figma.com/img/e814/1208/4ee9398db5b22641d6ed137a235ef6c4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IhsnfvCPqeCVhPtbHwcQbmUeXka50ucU0ID4CgV5nmltk3aE70bYdY0~-aUx2BxYVZAxW5kdNRsw1LyZsYNf09lcls85iXPIbxJOqwgX6G66fXNXGd6-Q7I85fJCEG3WTn0ZK3zk3OgdlBtwSedYXp4tQqWSguWBzg~Bt4ekJx1K~HEFBEUWg98BiW5T-GR4aOECZTXCqCat~HKx1qvc-x-lD9OdemIUQuVwq4KEWmM2AwSsXGI8tP0q1nVEq~QqJ1lbF6Pb0AMqGWGk1f~FSb4lATaq19vBf6VFE3tnZmx-AiH0oRY54ia7fIUZF3hCDDc7~9G6E8zkyZ5Ks7-RKw__"); 
+    background-position: center 17.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 390px;
+    width: 100%;
+    padding-top: 270px;
+    padding-left: 2rem;
+    color:#FFFFFF;
+    height: 376px;
+
+}
+.middlescroll,
+.lastscroll {
+  
+}
+
+.middlescroll  h1,
+.lastscroll i {
+    font-family: FiraGO;
+font-size: 32px;
+font-weight: 600;
+line-height: 40px;
+width: 40rem;
+margin-bottom: 20px ;
+
+}
+
+.lastscroll h1 {
+    padding-bottom: 20px;
+}
+
+.middlescroll  i ,
+.lastscroll i{
+    font-family: FiraGO;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+width: 350px;
+
+
+
+}
+
+
+
 /* Next & previous buttons */
 
 
@@ -114,6 +233,12 @@ text-align: center;
 
 
 /* The dots/bullets/indicators */
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
 .dot {
     cursor: pointer;
     height: 16px;
@@ -121,11 +246,59 @@ text-align: center;
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
+
 }
 .dot:hover,
 .dot.active {
     background-color: #2C8BDB ;
 }
+
+
+@media (max-width: 780px) {
+    .side-scroll {
+        height: 200px;
+
+        
+    }
+
+
+.prev,
+.next {display: none;}
+
+
+.mySlides {
+    margin:0 0.5rem;
+   margin-top: 10px;
+   width: 100%;
+   
+
+}
+
+.mySlides h1 {
+    font-size: 14px;
+    width: auto;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+.mySlides i {
+    font-size: 12px;
+}
+
+.mySlides a {
+    margin-top: 70px;
+    width: 8rem;
+}
+
+.mySlides a  h3 {
+    font-size: 14px;
+}
+.dot {
+    display: none;
+}
+}
+
+/* side-scroller end */
 
 
 
@@ -215,12 +388,15 @@ color: #000000;
     top:10px;
     right: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
 .card button img {
-    width: 30px;
-    height: 30px;
+    width: 14px;
+    height: 12px;
 }
 .point {
     position: absolute;
@@ -329,6 +505,90 @@ cursor: pointer;
 
 }
 
+@media (max-width: 780px) {
+
+    main {
+        margin:0 2rem;
+    }
+    .cardSection{
+
+    }
+
+    .cards-head h1 {
+        font-size: 16px;
+
+    }
+
+    .allCards-button {
+        font-size: 8px;
+
+    }
+
+    .prev-nextFully {
+        display: none;
+    }
+
+
+    .card {
+        width: 160px;
+        height: 279px;
+    }
+
+    .card-img {
+        width: 160px;
+        height: 139.5px;
+    }
+
+    .card-content {
+        width: 85%;
+        height: 139.5px;
+        gap:0px;
+    }
+
+    .card-content h2 {
+        font-size: 14px;
+        line-height: 14px;
+        height: 30px;
+        /* margin-top: 15px; */
+
+    }
+
+    .card-content p {
+        font-size: 10px;
+        height: 35px;
+
+
+    }
+
+    .point {
+        position: absolute;
+        top: 115px;
+        width: 2rem;
+        
+    }
+    .point i {
+        font-size: 12px;
+    }
+
+    .card-content button {
+        width: 100%;
+        font-size: 12px;
+        height: 32px;
+    }
+
+    .card .heart {
+        height: 24px;
+        width: 24px;
+    }
+    .card .heart img {
+        width: 14px;
+        height: 12px;
+    }
+
+
+}
+
+
 
 
 
@@ -414,8 +674,10 @@ cursor: pointer;
 height: 36px;
 /* padding: 0px 17px 0px 17px; */
 /* gap: 47px; */
+border: none;
 border-radius: 6px;
 cursor: pointer;
+
 
 }
 
@@ -434,6 +696,67 @@ font-size: 24px;
 font-weight: 500;
 line-height: 31.2px;
 color: #363939;
+
+}
+
+
+@media (max-width: 780px) {
+    .popularBrands{
+        height: 229px;
+
+    }
+
+    .popularBrands h1 {
+        font-size: 16px;
+    }
+    .similarPopular {
+        gap:10px;
+    }
+
+    .Brand-info i {
+        font-size: 16px;
+    }
+
+    .Brand-arrow { 
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .Brand-arrow img {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .Hape {
+        padding-top: 40px ;
+        height: 270px;
+    }
+
+
+    .Hape-img img {
+        height: 152px;
+
+    }
+
+    .Dyson {
+        height: 135px;
+        padding-top: 15px;
+    }
+
+
+    .Dyson-img img {
+        height: 64px;
+    }
+
+    .GreenPan {
+        height: 125px;
+        padding-top: 15px;
+    }
+    .GreenPan-img img {
+        height: 70px;
+    }
 
 }
  
