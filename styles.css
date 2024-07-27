@@ -1,6 +1,4 @@
 
-
-
 @font-face {
   font-family: 'Firago';
   src: url(fonts/FiraGO-Regular.ttf);
@@ -892,6 +890,8 @@ font-weight: 500;
 line-height: 31.2px;
 color: #363939;
 
+}
+
 
 
 /* ყველაფერი შენი სახლისთვის */
@@ -1030,8 +1030,6 @@ color: #363939;
   margin: 40px 0 15px;
 }
 
->>>>>>> 2711be57ea32301b567608e06b04bc4fc338ecfe
-
     .popularBrands h1 {
         font-size: 16px;
     }
@@ -1098,4 +1096,4 @@ li:first-child {
   font-weight: bold;
 
 }
- 
+}
