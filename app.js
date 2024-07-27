@@ -69,9 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     sectionContainer.innerHTML = html;
   }
 
-
-  
-
   // Slider functionality
   let slideIndex = 1;
   showSlides(slideIndex);
@@ -112,7 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //     plusSlides(1);
   //   }
   // }, 5000); // Change image every 5 seconds
-
 
   //swiper
   // Attach functions to window object for accessibility
