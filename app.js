@@ -1,4 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //header slider
+
+  const leftArrow = document.getElementById("left-arrow");
+  const rightArrow = document.getElementById("right-arrow");
+  const categoriesList = document.getElementById("categories-list");
+  const categoriesContainer = document.getElementById("categories-container");
+  const itemWidth = categoriesList.children[0].offsetWidth; // Assuming all items have the same width
+  let scrollAmount = 0;
+
+  function showSlides(n) {
+    const maxScrollLeft =
+      categoriesList.scrollWidth - categoriesContainer.clientWidth;
+    if (n > maxScrollLeft) {
+      scrollAmount = 0;
+    } else if (n < 0) {
+      scrollAmount = maxScrollLeft;
+    } else {
+      scrollAmount = n;
+    }
+    categoriesList.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+
+  function plusSlides(n) {
+    showSlides(scrollAmount + n * itemWidth);
+  }
+
+  leftArrow.addEventListener("click", () => {
+    plusSlides(-1);
+  });
+
+  rightArrow.addEventListener("click", () => {
+    plusSlides(1);
+  });
+
+  // Optional: Auto-slide functionality
+  setInterval(() => {
+    plusSlides(1);
+  }, 5000); // Slide every 5 seconds
+
+  //info fetching from json nia
+
   fetch("cards.json")
     .then((response) => {
       if (!response.ok) {
