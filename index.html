@@ -2,112 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
-  <title>Super App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Super App</title>
 </head>
 
 <body>
-  <main>
-    <div class="slider-wrapper">
-      <div class="side-scroll" id="slider-container">
-        <div class="mySlides fade numbertext ">
-          <div class="firstscroll">
-            <div class="firstscroll-info">
-              <h1>დაზოგე 50%-მდე საზაფხულო ასორტიმენტზე</h1>
-              <i>შეიძინე ყველაფერი შენი სახლისთვის,საუკეთესო ფასად</i>
-              <a href="#">
-                <h3>სრულად სანახავად</h3>
-                <img src="assets/blue Arrow.svg" />
-              </a>
+    <main>
+        <div class="slider-wrapper">
+            <div class="side-scroll" id="slider-container">
+                <div class="mySlides fade numbertext ">
+                    <div class="firstscroll">
+                    <div class="firstscroll-info">
+                     <h1>დაზოგე 50%-მდე საზაფხულო ასორტიმენტზე</h1>
+                     <i>შეიძინე ყველაფერი შენი სახლისთვის,საუკეთესო ფასად</i>
+                     <a href="#">
+                    <h3>სრულად სანახავად</h3>
+                    <img src="assets/blue Arrow.svg"/>
+                      </a>
+                 </div>
+                 <div class="firstscroll-img"></div>
+                </div>
+
             </div>
-            <div class="firstscroll-img"></div>
-          </div>
+                <div class="mySlides fade numbertext middlescroll">
+                    <h1>შექმენი უნიკალური ნამუშევრები</h1>
+                    <i>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</i>
+                    <a href="#">
+                        <h3>დაიწყე შოპინგი</h3>
+                    </a>
+                </div>
+                <div class="mySlides fade numbertext lastscroll">
+                    <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
+                    <i>იზრუნეთ მათზე სიყვარულით</i>
+                </div>
+                <!-- The dots/circles -->
+                <ol style="text-align:center" class="dots">
+                    <li class="dot" onclick="currentSlide(1)"></li>
+                    <li class="dot" onclick="currentSlide(2)"></li>
+                    <li class="dot" onclick="currentSlide(3)"></li>
+                </ol>
 
-        </div>
-        <div class="mySlides fade numbertext middlescroll">
-          <h1>შექმენი უნიკალური ნამუშევრები</h1>
-          <i>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</i>
-          <a href="#">
-            <h3>დაიწყე შოპინგი</h3>
-          </a>
-        </div>
-        <div class="mySlides fade numbertext lastscroll">
-          <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
-          <i>იზრუნეთ მათზე სიყვარულით</i>
-        </div>
-        <!-- The dots/circles -->
-        <ol style="text-align:center" class="dots">
-          <li class="dot" onclick="currentSlide(1)"></li>
-          <li class="dot" onclick="currentSlide(2)"></li>
-          <li class="dot" onclick="currentSlide(3)"></li>
-        </ol>
-
-      </div>
-
-    </div>
-
-    <!-- Next and previous buttons -->
-    <div class="prev-nextContainer">
-      <a class="prev" onclick="plusSlides(-1)"><img src="assets/sliderLeft.svg" /></a>
-      <a class="next" onclick="plusSlides(+1)"><img src="assets/sliderRight.svg" /></a>
-    </div>
-    <div class="cardSection">
-      <div class="cards-head">
-        <h1>მხოლოდ ჩვენთან </h1>
-        <div class="allCards-button">
-          <button><i>სრულად</i></button>
-          <!-- Next and previous buttons -->
-          <div class="prev-nextFully">
-            <a class="fully-prev" onclick=""><img src="assets/chevron-left.svg" /></a>
-            <a class="fully-next" onclick=""><img src="assets/chevron-right.svg" /></a>
-          </div>
-
-        </div>
-      </div>
-      <div id="cards-container"></div>
-    </div>
-
-    <div class="popularBrands">
-      <h1>პოპულარული ბრენდები</h1>
-      <div class="Brands">
-        <div class="Hape">
-          <div class="Hape-img"><img
-              src="https://s3-alpha-sig.figma.com/img/83e5/f1c5/51076453c1d7314785c220f75880ba38?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Lxv2MfXsEkqql87ninzoQYRsuKQA17fkNkFPCaPWoEPqEswLZmwI3rvu0Oa966LOAFHTc81yCbPCw7WeOBvpoedcS~IyURQv-Rwr~e6Kxsmfyh~qSkM~6cQrBosPLz9jeKMcvhgt65ADrcD0sJgncWTw-bbd0~MgD8dVDkI14QkY2jvQ4cM5cXjb8J0uZyz~08wn1K~IHo8woCM5LEv2R7jfPlWgcPjdWk4JzJfij7W2fzDuF4SOMbUHhN1a9f2C6tyub5T524FmzEJwwoHs8LlXToWBSHTy9nAsx8JfPjP7W~i~RVRFo4DhZ-37x1kN~IYSZ6srpuIeR03XOXAPfg__" />
-          </div>
-          <div class="Brand-info">
-            <i>Hape</i>
-            <button class="Brand-arrow"><img src="assets/arrow.svg" /> </button>
-          </div>
-        </div>
-        <div class="similarPopular">
-          <div class="Dyson ">
-            <div class="Dyson-img"><img
-                src="https://s3-alpha-sig.figma.com/img/f566/4fc6/9e1a6ee46eadc0955ff3e6f59f463629?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p4Wmujwgsc4CcVYijqef6Srxsrj5tegX6~-GLhU4Gs7p-kE6bhqnX3Cts3kwVGTWdyOk9Q3-wL~44meVwxd4DdWCWxbkN9pirkdSih5OZpbg6V7mG6SYSmlLnFycvV464UmtdHKfEbqSEBmUE54PDAO4ScJru1VHXKBqp~Qs3sXM6kRwz0d0XLFYxlZLIzy-GLCclv8Yh1B2e7z5-SqjTY4GUY-rKRicW81yEU3YGSB15CMjWvLh7Xv5g~gmaz~dIfyJYGDcPjlrfJ2x37qMVu-wOp1iRSreMWts7SiP2~Q8sGD3nGCE8PqCKu4av1dGCX-Azrx4g5B39pOGeMraxw__" />
             </div>
-            <div class="Brand-info">
-              <i>Dyson</i>
-              <button class="Brand-arrow"><img src="assets/arrow.svg" /> </button>
-            </div>
-          </div>
-          <div class="GreenPan">
-            <div class="GreenPan-img"><img
-                src="https://s3-alpha-sig.figma.com/img/42d6/7a72/78d46210f59d52ae7a9025b5c53c5c4d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NHvynL5rtKa2mPG~vAwXGAOo6uvK5zC4qzUtqRhs~IZlRhr2zMNhoZ7pzgi6GyPFYbmPfv1wrdE~iBSqvD4elgO6joKOPD06Z~njsZActAZeP44XIJijyAdKzsQ~95Ime~JzhM0oIrTg~DwXUTRLKiSRtlKYhRwYyR2xWuRNiAhmeoac2ubfTMnJxfgMeUmiJnNwZUQsQkppTHU7JDMxIYwq5ayU3GRY0Md2zzTspn9q-PHChsMkbKUI11yD81wWqnKdgcIwraFxlP2LiscggFWMIFhrvMZ8rLTgHPzoaHeRvowp8vo8pSOJwyCGPHYal-y3PLsvXHPZ59czQlKKoA__" />
-            </div>
-            <div class="Brand-info">
-              <i>GreenPan</i>
-              <button class="Brand-arrow"><img src="assets/arrow.svg" /></button>
-            </div>
-          </div>
+
         </div>
-      </div>
 
-    </div>
+        <!-- Next and previous buttons -->
+        <div class="prev-nextContainer">
+            <a class="prev" onclick="plusSlides(-1)"><img src="assets/sliderLeft.svg" /></a>
+            <a class="next" onclick="plusSlides(+1)"><img src="assets/sliderRight.svg" /></a>
+        </div>
+        <div class="cardSection">
+            <div class="cards-head">
+                <h1>მხოლოდ ჩვენთან </h1>
+                <div class="allCards-button">
+                    <button><i>სრულად</i></button>
+                            <!-- Next and previous buttons -->
+                    <div class="prev-nextFully">
+                        <a class="fully-prev" onclick=""><img src="assets/chevron-left.svg" /></a>
+                        <a class="fully-next" onclick=""><img src="assets/chevron-right.svg" /></a>
+                    </div>
 
-  </main>
+                </div>
+            </div>
+            <div id="cards-container"></div>
+        </div>
 
+        <div class="popularBrands">
+            <h1>პოპულარული ბრენდები</h1>
+            <div class="Brands">
+                <div class="Hape">
+                    <div class="Hape-img"><img
+                            src="https://s3-alpha-sig.figma.com/img/83e5/f1c5/51076453c1d7314785c220f75880ba38?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k~5fxyHgBpoVja9ggX8vqOAYRif-F1ZOEmCRSsvXJ0KDV2b7Vi9XseHpBwKDIWWu58LIbQSe0S7KSc8WwoaoZ77pMMr7k9HUESsjCACrc3GwKrjO58B2HzflyrmqYOzRkVJ8gmjs7sLJu4x8R29rNR2c~obytL-vYlqKui~i38pfTyXjdJmNJh17K35LH51njhCK9CVp3nWRRCz2B20YypA3lP4pmc82xdi7RMhGpzRVdLuZt40fN9f8J~TmGqzmrvlmMjF9kWItHp1ZHoBKbgOLYjIqfRi5zgUawjFYIR-9vJ2vfGaqh~qJGhdM-2MZILdj2DXgyfk4gZHDv5PGiw__" />
+                    </div>
+                    <div class="Brand-info">
+                        <i>Hape</i>
+                        <button class="Brand-arrow"><img src="assets/arrow.svg" /> </button>
+                    </div>
+                </div>
+                <div class="similarPopular">
+                    <div class="Dyson ">
+                        <div class="Dyson-img"><img
+                                src="https://s3-alpha-sig.figma.com/img/f566/4fc6/9e1a6ee46eadc0955ff3e6f59f463629?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Da2TS6MpXz0CuxK0PQ5hko8~TZkbmBVedXU6WuiLEZdmCr0BNwG62~mdKoE6b-M05NgfBUX7Wloj4lg1u3xFadJiqfZuvor3ybZpo3h25-YuuLudjLtqLt59nZW4jzOnR5erXHSsBhoc3K8vlAxd91C9YPF9sUuW7BMY1S0SIHraV7hbpsGR9jMpWTlLbYdMZ-~5FUNRRFQXgb66Y2srENZVobfIQjdO-efsuBe~kjD8YPIVT~NJgpK3rmAYQ1TkYv0i4ducCT61xFJq03O4KdNZrz7fpS~VTRz7h7nIF-1Noqw2f9FRPJk1OZXNmgb237RRhe0mVfru3SIEheJRMg__" />
+                        </div>
+                        <div class="Brand-info">
+                            <i>Dyson</i>
+                            <button class="Brand-arrow"><img src="assets/arrow.svg" /> </button>
+                        </div>
+                    </div>
+                    <div class="GreenPan">
+                        <div class="GreenPan-img"><img
+                                src="https://s3-alpha-sig.figma.com/img/42d6/7a72/78d46210f59d52ae7a9025b5c53c5c4d?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qNCpXnB2iKXyJdAeJ0o8IXVM7~nvhwxDoGk-CMUXSo0qSjFraBqZEHoVTwBg6WvKxt2tMJOShoLXZYv-~VPqd1SDy24irqh8cSMe5ahSKHcun7Z8waMLvlj1s5g0NEMGDIukRNNZn1hQV6qsEd61CPt69jWCq~uTsjjqZMf6O2MiO68e0CDvIS8qolezesaBZY-SMEAxM1tREP7zBDPndeyTInoyUoTzIqtJ6a~H9xUk0AElCUhsK3Upiv6K74tdukzZzkHWMONVhnd7WlJOw8AG8BZtBwwD50Z-XACPpDT9FP-Cozc0z~FP5VAZsbtsyWXnAon5Olsjil52P0AI2w__" />
+                        </div>
+                        <div class="Brand-info">
+                            <i>GreenPan</i>
+                            <button class="Brand-arrow"><img src="assets/arrow.svg" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
 </body>
 
 </html>
