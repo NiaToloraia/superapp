@@ -780,6 +780,7 @@ ul li a {
   justify-content: space-between;
 }
 .card2Section {
+  background-color: var(--card-container-background-color);
   height: auto;
   /* width: 100%; */
   /* width: 1240px; */
@@ -787,7 +788,8 @@ ul li a {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+  justify-content: space-around;
+
 }
 #cards2-container {
   display: flex;
@@ -803,12 +805,14 @@ ul li a {
   box-sizing: border-box;
   border-radius: 4px;
   width: 263px;
-  height: 385px;
+  height: 395px;
   border-radius: 8px;
   border: 1.5px solid #EFEFEF;
   display: block;
   position: relative;
+  
 }
+
 .cardIMg{
   width: 255px;
 }
@@ -827,28 +831,30 @@ ul li a {
 .textFully {
   text-decoration: underline;
 }
-.card2-content{
-  padding: 30px 0 12px 12px;
-}
+
 .titleDesk{
   color: #717D96;
-  padding: 12px 0 18px 0;
+  padding: 0 0 22px 12px;
 }
 
 .priceText {
   font-weight: bold;
+  padding: 0 0 12px 12px;
 }
 .cartButton{
-  background: #008BFF;
+  background-color: #008BFF;
   border-radius: 5px;
   border: 2px solid #008BFF;
   padding: 10px 35px;
   color: white;
-  margin: 12px 0;
-  width: 95%;
+  margin: 12px 0 12px 12px ;
+  width: 90%;
   height: 40px;
   font-size: 12px;
   font-weight: 700;
+}
+.allHomeName{
+  padding: 35px 0 15px 12px;
 }
 .allHomeStartPr{
   font-size: 13px;
@@ -860,7 +866,9 @@ ul li a {
   border-radius: 30px;
   padding: 6px;
   background:#FF3333;
-
+}
+.mobButton{
+  display: none;
 }
 
 /* საზაფხულო წვეულება */
@@ -873,6 +881,9 @@ ul li a {
   width: 100%;
   display: block;
   margin: 0 auto;
+}
+.partyOffers .mainImgMobile{
+  display: none;
 }
 .partyOffersText {
   position: absolute;
@@ -911,4 +922,224 @@ footer li {
 }
 li:first-child {
   font-weight: bold;
+
+}
+.footerIconMob{
+  display: none;
+}
+.lineMobile{
+  display: none;
+}
+.mobileIcon{
+  display: none;
+}
+
+
+
+
+
+/* responsive */
+  
+  
+@media (max-width: 780px) {
+  main {
+    margin:0 1.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .card2Section{
+    
+    flex-direction: column;
+    display: flex;
+    overflow-x: scroll; /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Optional for snapping effect */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    /* width: 100%; */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+
+  #cards2-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* Ensure cards stay in one line */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    /* Disable vertical scrolling */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+  }
+  .card2 {
+    width: 160px;
+    /* height: 279px; */
+    height: auto;
+    margin-right: 12px;
+  }
+  
+  .cardIMg{
+    width: 160px;
+    /* height: 139.5px; */
+  }
+  .allHomeName{
+    font-size: 12px;
+    line-height: 14px;
+    height: 30px;
+    color: #2D3648;
+  }
+  .card2WrapperTitle{
+    font-size: 13px;
+  }
+  .textFully{
+    font-size: 12px;
+    color: #606060;
+    font-weight: bold;
+  }
+  .fullyBox img{
+    display: none;
+  }
+  .priceText{
+    font-size: 12px;
+    color: #2D3648;
+  }
+  .allHomeStartPr{
+    font-size: 9.5px;
+  }
+  .allHomeDisc {
+    font-size: 8.5px;
+    color: white;
+    border-radius: 15px;
+    padding: 4px 2px;
+    background: #FF3333;
+}
+  .titleDesk{
+    font-size: 10px;
+    height: 35px;
+    padding-top: 20px;
+
+  }
+  .arrowOne{
+    height: 24px;
+    width: 24px;
+  }
+  .arrowW{
+    position: absolute;
+    top: 115px;
+    width: 2rem;
+  }
+  .cartButton{
+    display: none;
+  }
+  .mobButton{
+    display: inline;
+    width: 82%;
+    font-size: 12px;
+    height: 32px; 
+    background-color: #008BFF;
+    border-radius: 5px;
+    border: 2px solid #008BFF;
+    /* padding: 10px 35px; */
+    color: white;
+    margin: 12px 0 12px 12px ;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+  /* საზაფხულო წვეულება */
+  .partyOffers .mainImg {
+    display: none;
+  }
+  .partyOffers .mainImgMobile{
+    display: inline;
+    opacity: 80%;
+    width: 100%;
+  }
+  .partyOffersText {
+    width: 250px;
+    left: 24px;
+    top: 30px;
+  }
+  .partyOffersText h3{
+    font-size: 12px;
+  }
+  .partyOffersText p {
+    padding: 32px 0;
+    font-weight: bold;
+    font-size: 10px;
+    }
+  .partyOffersText button {
+    height: 32px;
+    font-size: 10px;
+    margin-top: 12px;
+    align-items: center;    
+  }
+  .arrow3{
+    width: 20px;
+  }
+  .line{
+    margin: 10px 1.5rem 3px;
+    border-top: 1px solid #CBD2E0;
+
+  }
+  /* footer */
+  footer{
+    padding:0 1.5rem;
+    flex-direction: column;
+  }
+  footer ul li{
+    display: none;
+  }
+  footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul li:first-child{
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  footer ul li:last-child{
+    display: inline;
+  }
+ 
+  .footerIconMob{
+    width: 24px;
+    display: inline;
+    }
+  .lineMobile{
+    display: inline;
+    border-top: 1px solid #CBD2E0;
+    /* margin:10px 2rem; */
+    width: 100%;
+  }
+  .socialMedia{
+    display: inline;
+  }
+  .mobileIcon{
+    display: inline;
+    margin-top: 8px;
+  }  
+  .appGoogleImg {
+    flex-direction: column;
+    padding-top: 2px;
+  }
+  .appGoogleImg img{
+    width: 131px;
+  }
+  footer .appGoogleImg li:nth-child(2){
+    padding-top: 0;
+  }
+  .mobiletest{
+    display: flex;
+    justify-content: space-between;
+  }
 }

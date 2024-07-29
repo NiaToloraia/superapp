@@ -31,9 +31,9 @@ function generateCards2HTML(data) {
                 <img src="${item.imageURL}" alt="${item.name}" class="cardIMg">
                 <img src="assets/img/Frame 92.svg" alt="arrowW" class="arrowW" id="arrowW">
                 <div class="card2-content">
-                    <h4>${item.name}</h4>
+                    <h4 class="allHomeName">${item.name}</h4>
                     <p class="titleDesk">${item.desc}</p>
-                    <span class="priceText">${item.price}</span>
+                    <span class="priceText">${item.price}</span>&nbsp;
                     <span class="allHomeStartPr">${item.startPrice}</span>&nbsp;
                    ${
                     item.discount
@@ -42,7 +42,7 @@ function generateCards2HTML(data) {
                   }
                     <br/>
                     <button type="button"  class="cartButton">კალათაში დამატება</button">
-               
+                    <button type="button"  class="mobButton"><img src="assets/img/Icon Left Wrapper.svg" alt="butt">&nbsp;&nbsp;&nbsp;დამატება</button">
                 </div>
             </div>
         `;
