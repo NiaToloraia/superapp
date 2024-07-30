@@ -42,8 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h2>${item.name}</h2>
                         <p>${item.desc}</p>
                         <h2>${item.price}</h2>
-                        <button class="content-link" onclick="window.open('${item.link}', '_blank')">
+                        <button class="content-link  addIn" onclick="window.open('${item.link}', '_blank')">
                             კალათში დამატება
+                        </button>
+                        <button class="content-link iconLogoIn" onclick="window.open('${item.link}', '_blank')">
+                            <img src="assets/IconAdd.svg">
+                            <h3>დამატება</h3>
                         </button>
                     </div>
                 </div>
