@@ -1346,6 +1346,7 @@ ul li a {
 @media (max-width: 780px) {
   .popularBrands {
       height: 229px;
+      margin-bottom: 120px;
 
   }
 
@@ -1356,10 +1357,10 @@ ul li a {
   .similarPopular {
       gap: 10px;
   }
-
-  .Brand-info i {
-      font-size: 16px;
+  .Brands {
+    margin-bottom: 10px;
   }
+
 
   .Brand-arrow {
       width: 30px;
