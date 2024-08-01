@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button class="heart"> <img src="./assets/icons/heart.svg" alt="Favorite"  /></button>
                <div class="point">  
                   <img src="${card.stars}" />
-                  <p>${card.starNumber}</p>
+                  <p> ${card.starNumber}</p>
                 </div>
                 </div>
              

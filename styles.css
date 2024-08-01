@@ -464,7 +464,7 @@ ul li a {
   width: 31rem;
 }
 
-.firstscroll i {
+.firstscroll p {
   font-family: FiraGO;
   font-size: 16px;
   font-weight: 500;
@@ -566,7 +566,7 @@ ul li a {
 
 
 .middlescroll h1,
-.lastscroll i {
+.lastscroll p {
   font-family: FiraGO;
   font-size: 32px;
   font-weight: 600;
@@ -580,8 +580,8 @@ ul li a {
   padding-bottom: 20px;
 }
 
-.middlescroll i,
-.lastscroll i {
+.middlescroll p,
+.lastscroll p {
   font-family: FiraGO;
   font-size: 16px;
   font-weight: 400;
@@ -695,7 +695,7 @@ ul li a {
   }
 
 
-  .firstscroll-info i {
+  .firstscroll-info p {
       line-height: 14px;
   }
 
@@ -711,7 +711,7 @@ ul li a {
 
   }
 
-  .mySlides i {
+  .mySlides p {
       font-size: 12px;
       width: 100%;
   }
@@ -733,7 +733,7 @@ ul li a {
 
   }
 
-  .middlescroll i {
+  .middlescroll p {
       font-size: 14px;
       line-height: 20px;
 
@@ -755,7 +755,7 @@ ul li a {
       font-size: 24px;
   }
 
-  .lastscroll i {
+  .lastscroll p {
       font-size: 16px;
   }
 
@@ -825,7 +825,7 @@ ul li a {
 
   }
 
-  .firstscroll-info i {
+  .firstscroll-info p {
       font-size: 8px;
       width: 100%;
       line-height: 10px;
@@ -847,7 +847,7 @@ ul li a {
 
   }
 
-  .middlescroll i {
+  .middlescroll p {
       font-size: 10px;
 
   }
@@ -868,7 +868,7 @@ ul li a {
       padding-bottom: 0px;
   }
 
-  .lastscroll i {
+  .lastscroll p {
       font-size: 12px;
   }
 
@@ -926,7 +926,7 @@ ul li a {
 
 }
 
-.allCards-button button i {
+.allCards-button button p {
   font-family: FiraGO;
   font-size: 12px;
   font-weight: 400;
@@ -971,6 +971,7 @@ ul li a {
   position: relative;
   flex-wrap: wrap;
   flex-shrink: 0;
+  margin: 0;
   /* Ensure cards don't shrink */
 }
 
@@ -1009,9 +1010,9 @@ ul li a {
 .point {
   position: absolute;
   display: flex;
-  top: 185px;
+  top: 200px;
   align-items: center;
-  left: 0.5rem;
+  left: 1.1rem;
 }
 
 .point img {
@@ -1020,7 +1021,7 @@ ul li a {
 
 }
 
-.point i {
+.point p {
   font-family: FiraGO;
   font-size: 16px;
   font-weight: 700;
@@ -1143,11 +1144,12 @@ ul li a {
   .card {
       width: 160px;
       height: 279px;
+      margin: 0;
   }
 
   .card-img {
-      width: 160px;
-      height: 139.5px;
+      width: 140px;
+      height: 119.5px;
   }
 
   .card-content {
@@ -1160,7 +1162,7 @@ ul li a {
       font-size: 14px;
       /* margin-top: 15px; */
       line-height: 14px;
-      padding-top: 10px;
+      padding-top: 16px;
 
   }
 
@@ -1168,26 +1170,31 @@ ul li a {
       font-size: 9px;
       height: 30px;
       line-height: 10px;
-      padding-top: 16px;
+      padding-top: 18px;
 
 
   }
 
   .point {
       position: absolute;
-      top: 115px;
-      width: 2rem;
+      top: 119px;
+      width: 33px;
+      height: 17px;
 
   }
 
-  .point i {
-      font-size: 12px;
+  .point p {
+font-size: 12px;
+font-weight: 700;
+line-height: 16.8px;
+
   }
 
   .card-content button {
       width: 100%;
       font-size: 12px;
       height: 30px;
+      margin-top: 10px ;
   }
 
   .card .heart {
@@ -1241,6 +1248,16 @@ ul li a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.popularBrands h1 {
+  width: 297px;
+  height: 34px;
+  font-family: FiraGO;
+font-size: 24px;
+font-weight: 500;
+line-height: 33.6px;
+
 }
 
 .Brands {
@@ -1333,7 +1350,7 @@ ul li a {
 
 }
 
-.Brand-info i {
+.Brand-info p {
   font-family: FiraGO;
   font-size: 24px;
   font-weight: 500;
@@ -1351,7 +1368,7 @@ ul li a {
   }
 
   .popularBrands h1 {
-      font-size: 16px;
+      font-size: 12px;
   }
 
   .similarPopular {
@@ -1359,6 +1376,21 @@ ul li a {
   }
   .Brands {
     margin-bottom: 10px;
+  }
+
+  .Brand-info {
+    height: auto;
+  }
+
+  .Brand-info p {
+    font-family: FiraGO;
+font-size: 12px;
+font-weight: 500;
+line-height: 15.6px;
+width: 29px;
+height: 16px;
+
+
   }
 
 
