@@ -442,6 +442,7 @@ ul li a {
   flex-direction: column;
   justify-content: space-around;
   width: 50%;
+  color:#002A4C;
 }
 
 .firstscroll-img {
@@ -462,6 +463,7 @@ ul li a {
   font-weight: 500;
   line-height: 33.6px;
   width: 31rem;
+  color:#002A4C;
 }
 
 .firstscroll p {
@@ -470,7 +472,7 @@ ul li a {
   font-weight: 500;
   line-height: 22.4px;
   width: 28rem;
-
+  color:#002A4C;
 
 
 }
@@ -957,8 +959,6 @@ ul li a {
   scrollbar-width: none;
   /* Hide scrollbar for Firefox */
 }
-
-
 
 
 

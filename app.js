@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <button class="heart" onclick=""><img src="assets/Shape.svg"/></button>
                     <div class="point"> 
                             <img src="assets/Star 2.svg">
-                            <i>5.0</i>
+                            <p>5.0</p>
                     </div>
                     </div>
                     <div class="card-content">
