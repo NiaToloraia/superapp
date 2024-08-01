@@ -1,46 +1,123 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //header slider
+  fetch("cards.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((jsonData) => {
+      generateCardsHTML(jsonData);
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
 
-  const leftArrow = document.getElementById("left-arrow");
-  const rightArrow = document.getElementById("right-arrow");
-  const categoriesList = document.getElementById("categories-list");
-  const categoriesContainer = document.getElementById("categories-container");
-  const itemWidth = categoriesList.children[0].offsetWidth; // Assuming all items have the same width
-  let scrollAmount = 0;
+  fetch("./assets/data.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((cardData) => {
+      // const slider = document.getElementById("slider");
 
-  function showSlides(n) {
-    const maxScrollLeft =
-      categoriesList.scrollWidth - categoriesContainer.clientWidth;
-    if (n > maxScrollLeft) {
-      scrollAmount = 0;
-    } else if (n < 0) {
-      scrollAmount = maxScrollLeft;
-    } else {
-      scrollAmount = n;
-    }
-    categoriesList.style.transform = `translateX(-${scrollAmount}px)`;
+      // slider.innerHTML = "";
+
+      cardData.forEach((card) => {
+        const cardElement = document.createElement("div");
+        cardElement.className = "card";
+        cardElement.innerHTML = `
+             
+              <div>
+                <img src="${card.photo}" alt="${card.name}" class="card-img" />
+                <button class="heart"> <img src="./assets/icons/heart.svg" alt="Favorite"  /></button>
+               <div class="point">  
+                  <img src="${card.stars}" />
+                  <p> ${card.starNumber}</p>
+                </div>
+                </div>
+             
+                <div class="card-content">
+                <h2>${card.name}</h2>
+                <p>${card.category}</p>
+                <div class="card-prices">
+                  <h2 class="end-price">${card.endPrice}</h2>
+                  ${
+                    card.startPrice
+                      ? `<span class="start-price">${card.startPrice}</span>`
+                      : ""
+                  }
+                  ${
+                    card.discount
+                      ? `<span class="discount">${card.discount}</span>`
+                      : ""
+                  }
+                </div>
+                <button class="card-link" >კალათაში დამატება</button>
+                </div>
+            
+            `;
+        slider.appendChild(cardElement);
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading JSON data:", error);
+    });
+
+  function updateButtonContent() {
+    const buttons = document.querySelectorAll(".card-link");
+
+    buttons.forEach((button) => {
+      if (window.innerWidth <= 780) {
+        button.innerHTML = `<div class="button-content">
+          <img src="./assets/whiteShoppingchart.svg" alt="bag" />
+          <span>დამატება</span>
+        </div>`;
+      } else {
+        button.innerHTML = "კალათაში დამატება";
+      }
+    });
   }
 
-  function plusSlides(n) {
-    showSlides(scrollAmount + n * itemWidth);
-  }
+  // Event listener for window resize
+  window.addEventListener("resize", updateButtonContent);
 
-  leftArrow.addEventListener("click", () => {
-    plusSlides(-1);
-  });
+  fetch("./assets/sectionData.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((cardData) => {
+      const sectionContainer = document.getElementById("sectionContainer");
 
-  rightArrow.addEventListener("click", () => {
-    plusSlides(1);
-  });
+      sectionContainer.innerHTML = "";
 
-  // Optional: Auto-slide functionality
-  setInterval(() => {
-    plusSlides(1);
-  }, 5000); // Slide every 5 seconds
-
-  //info fetching from json nia
-
-
+      cardData.forEach((card) => {
+        const cardElement = document.createElement("div");
+        cardElement.className = "featured-card";
+        cardElement.innerHTML = `
+              <div class="card-photo-container">
+                <img src="${card.photo}" alt="${card.name}" style="background-color: ${card.backgroundColor}" class="card-photo" />
+              </div>
+              <div class="card-body" style="background-color: ${card.backgroundColor}" >
+                <h3>${card.name}</h3>
+                <button class="card-icon">  
+                <img src="${card.icon}" alt="Icon"  />
+      </button>
+              </div>
+            `;
+        sectionContainer.appendChild(cardElement);
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading JSON data:", error);
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
   // Fetch and display product cards
 
   fetch("cards.json")
@@ -201,4 +278,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".slider-wrapper");
   slider.addEventListener("touchstart", handleTouchStart, false);
   slider.addEventListener("touchmove", handleTouchMove, false);
+});
+
+//burger menu popup
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenuBtn = document.getElementById("burgerMenuBtn");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeBtn");
+
+  burgerMenuBtn.addEventListener("click", function () {
+    overlay.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    overlay.classList.remove("active");
+  });
+
+  // Close the overlay when clicking outside of the overlay content
+  overlay.addEventListener("click", function (event) {
+    if (event.target === overlay) {
+      overlay.classList.remove("active");
+    }
+  });
 });
