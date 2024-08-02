@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href=".././styles.css" />
+    <link rel="stylesheet" href="products.css" />
+    <script src="./pruducts.js" defer></script>
+  </head>
+  <body></body>
+</html>
+<header>
+  <div class="header-top">
+    <a href=".././index.html" class="header-logo">ShopEasy</a>
+    <div class="search-container">
+      <input type="text" placeholder="ძიება" />
+      <img
+        src=".././assets/icons/searchIcon.svg"
+        alt="Search Icon"
+        class="search-icon"
+      />
+    </div>
+    <div class="bag-container">
+      <img src=".././assets/icons/icon-shopping-cart.svg" alt="Shopping Bag" />
+      <div class="notification-badge">5</div>
+    </div>
+    <div class="favorites-container">
+      <a href="#">
+        <img src=".././assets/icons/favourites.svg" alt="Favorites" />
+      </a>
+    </div>
+    <button class="button auth-button">შესვლა</button>
+  </div>
+  <div class="categories-section">
+    <div class="burger-menu-container">
+      <button class="burger-menu" id="burgerMenuBtn">
+        <img src=".././assets/icons/burgerIcon.svg" alt="burger menu" />
+      </button>
+      <span class="all-categories-text">ყველა კატეგორია</span>
+    </div>
+    <button class="slider-nav left" id="left-arrow">
+      <img src=".././assets/icons/leftVector.svg" alt="left arrow" />
+    </button>
+    <div class="categories-slider" id="categories-slider">
+      <div class="categories-container">
+        <ul class="categories-list">
+          <li class="category-item"><a href="#">ფასდაკლება</a></li>
+          <li class="category-item"><a href="#">ტექნიკა</a></li>
+          <li class="category-item"><a href="#">ბავშვის მოვლა</a></li>
+          <li class="category-item"><a href="#">სახლი & მოვლა</a></li>
+          <li class="category-item"><a href="#">თავის მოვლა</a></li>
+          <li class="category-item"><a href="#">სათამაშოები</a></li>
+          <li class="category-item"><a href="#">ფიტნესი</a></li>
+        </ul>
+      </div>
+      <button class="slider-nav right" id="right-arrow">
+        <img src="./assets/Button (2).svg" alt="right arrow" />
+      </button>
+    </div>
+  </div>
+</header>
+
+<hr class="line" />
+<main>
+  <div class="allcategories">
+    <p>ყველა კატეგორია</p>
+    >
+    <p>ბავშვის მოვლა</p>
+  </div>
+
+  <section class="categoryCards">
+    <div class="categoryList">
+      <h2>ბავშვის მოვლა</h2>
+      <ul>
+        <li><a href="">ბავშვის კვება </a></li>
+        <li><a href="">საბავშვო ინვენტარი </a></li>
+        <li><a href="">ბავშვის ტანსაცმელი</a></li>
+        <li><a href="">აქსესუარები</a></li>
+        <li><a href="">ბავშვის ჰიგიენა </a></li>
+        <li><a href="">ფასდაკლება </a></li>
+      </ul>
+    </div>
+    <div class="card-container" id="card-container"></div>
+  </section>
+</main>
+<footer>
+  <ul>
+    <li class="test">დახმარება</li>
+    <li><a href="">მესიჯის მიწერა</a></li>
+    <li><a href="">შეფასება</a></li>
+    <li><a href="">ხშირად დასმული კითხვები</a></li>
+    <li><a href="">განვადებით შეძენა</a></li>
+    <li><a href="">მისამართები</a></li>
+    <li>
+      <img
+        src=".././assets/img/icon-chevron-down.svg"
+        alt="icon-chevron-down"
+        class="footerIconMob"
+      />
+    </li>
+  </ul>
+
+  <hr class="lineMobile" />
+  <ul>
+    <li>წესები & პირობები</li>
+    <li><a href="">ვერიფიკაცია</a></li>
+    <li><a href="">კონფიდენციალურობა</a></li>
+    <li><a href="">უსაფრთხოების წესები</a></li>
+    <li><a href="">საიტის წესები</a></li>
+    <li>
+      <img
+        src=".././assets/img/icon-chevron-down.svg"
+        alt="icon-chevron-down"
+        class="footerIconMob"
+      />
+    </li>
+  </ul>
+  <hr class="lineMobile" />
+  <ul>
+    <li>ჩვენს შესახებ</li>
+    <li><a href="">ვინ ვართ ჩვენ</a></li>
+    <li><a href="">ბლოგი</a></li>
+    <li><a href="">გაყიდე ჩვენთან</a></li>
+    <li>
+      <img
+        src=".././assets/img/icon-chevron-down.svg"
+        alt="icon-chevron-down"
+        class="footerIconMob"
+      />
+    </li>
+  </ul>
+  <hr class="lineMobile" />
+  <ul>
+    <li>დაგვიკავშირდი</li>
+    <li>
+      <a href="tel:+406555-0120"
+        ><img src=".././assets/footerIMG/Vector.png" alt="phone" />&nbsp;(406)
+        555-0120</a
+      >
+    </li>
+    <li>
+      <a href="mailto:support@shopeasy.com"
+        ><img
+          src=".././assets/footerIMG/Group.png"
+          alt="mail"
+        />&nbsp;support@shopeasy.com</a
+      >
+    </li>
+    <li>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img src=".././assets/footerIMG/icon-facebook.png" alt="fb" />&nbsp;</a
+      >
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img
+          src=".././assets/footerIMG/icon-instagram.png"
+          alt="insta"
+        />&nbsp;</a
+      ><a href="https://www.linkedin.com/" target="_blank"
+        ><img src=".././assets/footerIMG/icon-linkedin.png" alt="lin"
+      /></a>
+      &nbsp;<a href="https://www.youtube.com/" target="_blank"
+        ><img src=".././assets/footerIMG/icon-youtube.png" alt="you"
+      /></a>
+    </li>
+    <li>
+      <img
+        src=".././assets/img/icon-chevron-down.svg"
+        alt="icon-chevron-down"
+        class="footerIconMob"
+      />
+    </li>
+  </ul>
+  <hr class="lineMobile" />
+  <div class="mobiletest">
+    <div class="mobileIcon">
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img src=".././assets/footerIMG/icon-facebook.png" alt="fb" />&nbsp;</a
+      >
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img
+          src=".././assets/footerIMG/icon-instagram.png"
+          alt="insta"
+        />&nbsp;</a
+      ><a href="https://www.linkedin.com/" target="_blank"
+        ><img src=".././assets/footerIMG/icon-linkedin.png" alt="lin"
+      /></a>
+      &nbsp;<a href="https://www.youtube.com/" target="_blank"
+        ><img src=".././assets/footerIMG/icon-youtube.png" alt="you"
+      /></a>
+    </div>
+    <ul class="appGoogleImg">
+      <li class="socialMedia">
+        <a href="https://www.apple.com/app-store/" target="_blank"
+          ><img src=".././assets/footerIMG/App Store.png" alt="appst"
+        /></a>
+      </li>
+      <li class="socialMedia">
+        <a href="https://play.google.com/store" target="_blank"
+          ><img src=".././assets/footerIMG/Google Play.png" alt="goog"
+        /></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<hr class="headerLine" />
+<div class="footerNavMenu">
+  <a href="index.html" class="home icon"
+    ><img src=".././assets/home (2).svg" alt="home" />
+    <p>მთავარი</p></a
+  >
+  <a href="index.html" class="chart icon"
+    ><img src=".././assets/icon-shopping-cart (2).svg" alt="cahrt" />
+    <p>კალათა</p></a
+  >
+  <a href="index.html" class="favourites icon"
+    ><img src=".././assets/icon-heart.svg" alt="favourite" />
+    <p>ფავორიტები</p></a
+  >
+  <a href="index.html" class="profile icon"
+    ><img src=".././assets/icon-user (1).svg" alt="profile" />
+    <p>პროფილი</p></a
+  >
+</div>
