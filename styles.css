@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Firago';
+  font-family: "Firago";
   src: url(fonts/FiraGO-Regular.ttf);
 }
 
@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'firago';
+  font-family: "firago";
 }
 
 main {
@@ -789,7 +789,6 @@ ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 #cards2-container {
   display: flex;
@@ -807,13 +806,12 @@ ul li a {
   width: 263px;
   height: 395px;
   border-radius: 8px;
-  border: 1.5px solid #EFEFEF;
+  border: 1.5px solid #efefef;
   display: block;
   position: relative;
-  
 }
 
-.cardIMg{
+.cardIMg {
   width: 255px;
 }
 #arrowOne {
@@ -822,7 +820,7 @@ ul li a {
   top: 8px;
   right: 12px;
 }
-.arrowW{
+.arrowW {
   display: inline-block;
   position: absolute;
   top: 161px;
@@ -832,8 +830,8 @@ ul li a {
   text-decoration: underline;
 }
 
-.titleDesk{
-  color: #717D96;
+.titleDesk {
+  color: #717d96;
   padding: 0 0 22px 12px;
 }
 
@@ -841,33 +839,33 @@ ul li a {
   font-weight: bold;
   padding: 0 0 12px 12px;
 }
-.cartButton{
-  background-color: #008BFF;
+.cartButton {
+  background-color: #008bff;
   border-radius: 5px;
-  border: 2px solid #008BFF;
+  border: 2px solid #008bff;
   padding: 10px 35px;
   color: white;
-  margin: 12px 0 12px 12px ;
+  margin: 12px 0 12px 12px;
   width: 90%;
   height: 40px;
   font-size: 12px;
   font-weight: 700;
 }
-.allHomeName{
+.allHomeName {
   padding: 35px 0 15px 12px;
 }
-.allHomeStartPr{
+.allHomeStartPr {
   font-size: 13px;
   color: #616161;
   text-decoration: line-through;
 }
-.allHomeDisc{
+.allHomeDisc {
   color: white;
   border-radius: 30px;
   padding: 6px;
-  background:#FF3333;
+  background: #ff3333;
 }
-.mobButton{
+.mobButton {
   display: none;
 }
 
@@ -882,7 +880,7 @@ ul li a {
   display: block;
   margin: 0 auto;
 }
-.partyOffers .mainImgMobile{
+.partyOffers .mainImgMobile {
   display: none;
 }
 .partyOffersText {
@@ -904,15 +902,14 @@ ul li a {
   font-size: 17px;
   padding: 10px 16px;
 }
-.line{
-  border: 1px solid #CBD2E0;
+.line {
+  border: 1px solid #cbd2e0;
   margin: 40px 0 15px;
 }
 
-
 /* footer */
 
-footer {
+footer .landingfooter {
   display: flex;
   justify-content: space-between;
   padding: 25px 5rem;
@@ -920,36 +917,32 @@ footer {
 footer li {
   padding: 8px 0;
 }
-li:first-child {
+.landingfooter li:first-child {
   font-weight: bold;
-
 }
-.footerIconMob{
+.footerIconMob {
   display: none;
 }
-.lineMobile{
+.lineMobile {
   display: none;
 }
-.mobileIcon{
+.mobileContainer {
   display: none;
 }
-
-
-
-
+.accordion {
+  display: none;
+}
 
 /* responsive */
-  
-  
+
 @media (max-width: 780px) {
   main {
-    margin:0 1.5rem;
+    margin: 0 1.5rem;
     box-sizing: border-box;
     overflow: hidden;
   }
 
-  .card2Section{
-    
+  .card2Section {
     flex-direction: column;
     display: flex;
     overflow-x: scroll; /* Allows horizontal scrolling */
@@ -982,33 +975,34 @@ li:first-child {
     height: auto;
     margin-right: 12px;
   }
-  
-  .cardIMg{
+
+  .cardIMg {
     width: 160px;
+    padding-top: 10px;
     /* height: 139.5px; */
   }
-  .allHomeName{
+  .allHomeName {
     font-size: 12px;
     line-height: 14px;
     height: 30px;
-    color: #2D3648;
+    color: #2d3648;
   }
-  .card2WrapperTitle{
+  .card2WrapperTitle {
     font-size: 13px;
   }
-  .textFully{
+  .textFully {
     font-size: 12px;
     color: #606060;
     font-weight: bold;
   }
-  .fullyBox img{
+  .fullyBox img {
     display: none;
   }
-  .priceText{
+  .priceText {
     font-size: 12px;
-    color: #2D3648;
+    color: #2d3648;
   }
-  .allHomeStartPr{
+  .allHomeStartPr {
     font-size: 9.5px;
   }
   .allHomeDisc {
@@ -1016,48 +1010,48 @@ li:first-child {
     color: white;
     border-radius: 15px;
     padding: 4px 2px;
-    background: #FF3333;
-}
-  .titleDesk{
+    background: #ff3333;
+  }
+  .titleDesk {
     font-size: 10px;
     height: 35px;
     padding-top: 20px;
-
   }
-  .arrowOne{
+  .arrowOne {
     height: 24px;
     width: 24px;
   }
-  .arrowW{
+  .arrowW {
     position: absolute;
-    top: 115px;
+    top: 120px;
+    left: 10px;
     width: 2rem;
   }
-  .cartButton{
+  .cartButton {
     display: none;
   }
-  .mobButton{
+  .mobButton {
     display: inline;
     width: 82%;
     font-size: 12px;
-    height: 32px; 
-    background-color: #008BFF;
+    height: 32px;
+    background-color: #008bff;
     border-radius: 5px;
-    border: 2px solid #008BFF;
+    border: 2px solid #008bff;
     /* padding: 10px 35px; */
     color: white;
-    margin: 12px 0 12px 12px ;
+    margin: 12px 0 12px 12px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+  }
 
   /* საზაფხულო წვეულება */
   .partyOffers .mainImg {
     display: none;
   }
-  .partyOffers .mainImgMobile{
+  .partyOffers .mainImgMobile {
     display: inline;
     opacity: 80%;
     width: 100%;
@@ -1067,79 +1061,74 @@ li:first-child {
     left: 24px;
     top: 30px;
   }
-  .partyOffersText h3{
+  .partyOffersText h3 {
     font-size: 12px;
   }
   .partyOffersText p {
     padding: 32px 0;
     font-weight: bold;
     font-size: 10px;
-    }
+  }
   .partyOffersText button {
     height: 32px;
     font-size: 10px;
     margin-top: 12px;
-    align-items: center;    
-  }
-  .arrow3{
-    width: 20px;
-  }
-  .line{
-    margin: 10px 1.5rem 3px;
-    border-top: 1px solid #CBD2E0;
-
-  }
-  /* footer */
-  footer{
-    padding:0 1.5rem;
-    flex-direction: column;
-  }
-  footer ul li{
-    display: none;
-  }
-  footer ul{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-  footer ul li:first-child{
-    display: inline;
-    font-size: 12px;
-    font-weight: 500;
+  .arrow3 {
+    width: 20px;
   }
-  footer ul li:last-child{
-    display: inline;
+  .line {
+    margin: 10px 1.5rem 3px;
+    border-top: 1px solid #cbd2e0;
   }
- 
-  .footerIconMob{
-    width: 24px;
-    display: inline;
-    }
-  .lineMobile{
-    display: inline;
-    border-top: 1px solid #CBD2E0;
-    /* margin:10px 2rem; */
-    width: 100%;
+  /* footer */
+  footer {
+    padding: 0 1.5rem;
+    flex-direction: column;
   }
-  .socialMedia{
+  footer .landingfooter {
+    display: none;
+  }
+  .accordion {
     display: inline;
   }
-  .mobileIcon{
+  .accordion-title {
+    display: inline;
+    font-size: 14px;
+    line-height: 13.8px;
+    color: #000000;
+  }
+  .accordion-content {
+    display: none;
+    margin: 10px 0;
+  }
+  .accordion-content a {
+    font-size: 13px;
+    line-height: 13.8px;
+    color: #535353;
+  }
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  .lineMobile {
+    display: block;
+    border-top: 1px solid #cbd2e0;
+  }
+  .footerIconMob {
+    display: inline;
+  }
+  footer .mobileIcon {
     display: inline;
     margin-top: 8px;
-  }  
-  .appGoogleImg {
-    flex-direction: column;
-    padding-top: 2px;
   }
-  .appGoogleImg img{
-    width: 131px;
-  }
-  footer .appGoogleImg li:nth-child(2){
-    padding-top: 0;
-  }
-  .mobiletest{
+  .mobileContainer {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 }
