@@ -1,27 +1,8 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   const slider = document.querySelector(".categories-container");
-//   const rightArrow = document.getElementById("right-arrow");
-//   let scrollAmount = 0;
-//   const itemWidth = 160; // Width of each category item
-
-//   rightArrow.addEventListener("click", () => {
-//     const maxScroll = slider.scrollWidth - slider.clientWidth;
-//     scrollAmount += itemWidth;
-//     if (scrollAmount > maxScroll) {
-//       scrollAmount = 0;
-//     }
-//     slider.scrollTo({
-//       left: scrollAmount,
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector(".categories-container");
   const leftArrow = document.getElementById("left-arrow");
   const rightArrow = document.getElementById("right-arrow");
-  const itemWidth = 160; // Width of each category item
+  const itemWidth = 160;
 
   let scrollAmount = 0;
   let isDragging = false;
@@ -127,8 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (scrollAmount < slider.scrollWidth - slider.clientWidth) {
       rightArrow.style.display = "block";
-    } else {
-      rightArrow.style.display = "none";
     }
   }
 

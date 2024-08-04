@@ -140,8 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (scrollAmount < slider.scrollWidth - slider.clientWidth) {
       rightArrow.style.display = "block";
-    } else {
-      rightArrow.style.display = "none";
     }
   }
 
