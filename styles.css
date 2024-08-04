@@ -172,6 +172,10 @@ li {
   display: flex;
   width: 100%;
 }
+.categories-container.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
 
 .slider-nav {
   background: none;
@@ -184,6 +188,7 @@ li {
   width: 30px;
   border-radius: 50%;
   transform: translateY(-50%);
+
   z-index: 10;
 }
 
@@ -206,6 +211,8 @@ ul li a {
 .categories-container {
   overflow: hidden;
   display: flex;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 
   width: 100%;
 }
