@@ -63,40 +63,38 @@
     <main>
       <div class="slider-wrapper">
         <div class="side-scroll" id="slider-container">
-            <div class="mySlides fade numbertext ">
-                <div class="firstscroll">
-                <div class="firstscroll-info">
-                 <h1>დაზოგე 50%-მდე საზაფხულო ასორტიმენტზე</h1>
-                 <p>შეიძინე ყველაფერი შენი სახლისთვის,საუკეთესო ფასად</p>
-                 <a href="#">
-                <h3>სრულად სანახავად</h3>
-                <img src="assets/blue Arrow.svg"/>
-                  </a>
-             </div>
-             <div class="firstscroll-img"></div>
-            </div>
-
-        </div>
-            <div class="mySlides fade numbertext middlescroll">
-                <h1>შექმენი უნიკალური ნამუშევრები</h1>
-                <p>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</p>
+          <div class="mySlides fade numbertext">
+            <div class="firstscroll">
+              <div class="firstscroll-info">
+                <h1>დაზოგე 50%-მდე საზაფხულო ასორტიმენტზე</h1>
+                <p>შეიძინე ყველაფერი შენი სახლისთვის,საუკეთესო ფასად</p>
                 <a href="#">
-                    <h3>დაიწყე შოპინგი</h3>
+                  <h3>სრულად სანახავად</h3>
+                  <img src="assets/blue Arrow.svg" />
                 </a>
+              </div>
+              <div class="firstscroll-img"></div>
             </div>
-            <div class="mySlides fade numbertext lastscroll">
-                <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
-                <p>იზრუნეთ მათზე სიყვარულით</p>
-            </div>
-            <!-- The dots/circles -->
-            <ol style="text-align:center" class="dots">
-                <li class="dot" onclick="currentSlide(1)"></li>
-                <li class="dot" onclick="currentSlide(2)"></li>
-                <li class="dot" onclick="currentSlide(3)"></li>
-            </ol>
+          </div>
+          <div class="mySlides fade numbertext middlescroll">
+            <h1>შექმენი უნიკალური ნამუშევრები</h1>
+            <p>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</p>
+            <a href="#">
+              <h3>დაიწყე შოპინგი</h3>
+            </a>
+          </div>
+          <div class="mySlides fade numbertext lastscroll">
+            <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
+            <p>იზრუნეთ მათზე სიყვარულით</p>
+          </div>
+          <!-- The dots/circles -->
+          <ol style="text-align: center" class="dots">
+            <li class="dot" onclick="currentSlide(1)"></li>
+            <li class="dot" onclick="currentSlide(2)"></li>
+            <li class="dot" onclick="currentSlide(3)"></li>
+          </ol>
         </div>
-    </div>
-
+      </div>
 
       <div class="cardSection">
         <div class="cards-head">
@@ -118,64 +116,79 @@
       <div class="slider-row" id="slider"></div>
       <div id="sectionContainer"></div>
 
-
-              <!-- Next and previous buttons -->
-              <div class="prev-nextContainer">
-                <a class="prev" onclick="plusSlides(-1)"><img src="assets/sliderLeft.svg" /></a>
-                <a class="next" onclick="plusSlides(+1)"><img src="assets/sliderRight.svg" /></a>
+      <!-- Next and previous buttons -->
+      <div class="prev-nextContainer">
+        <a class="prev" onclick="plusSlides(-1)"
+          ><img src="assets/sliderLeft.svg"
+        /></a>
+        <a class="next" onclick="plusSlides(+1)"
+          ><img src="assets/sliderRight.svg"
+        /></a>
+      </div>
+      <div class="cardSection">
+        <div class="cards-head">
+          <h1>მხოლოდ ჩვენთან</h1>
+          <div class="allCards-button">
+            <button><p>სრულად</p></button>
+            <!-- Next and previous buttons -->
+            <div class="prev-nextFully">
+              <a class="fully-prev" onclick=""
+                ><img src="assets/chevron-left.svg"
+              /></a>
+              <a class="fully-next" onclick=""
+                ><img src="assets/chevron-right.svg"
+              /></a>
             </div>
-            <div class="cardSection">
-                <div class="cards-head">
-                    <h1>მხოლოდ ჩვენთან </h1>
-                    <div class="allCards-button">
-                        <button><p>სრულად</p></button>
-                                <!-- Next and previous buttons -->
-                        <div class="prev-nextFully">
-                            <a class="fully-prev" onclick=""><img src="assets/chevron-left.svg" /></a>
-                            <a class="fully-next" onclick=""><img src="assets/chevron-right.svg" /></a>
-                        </div>
-    
-                    </div>
-                </div>
-                <div id="cards-container"></div>
-            </div>
-            <div class="popularBrands">
-              <h1>პოპულარული ბრენდები</h1>
-              <div class="Brands">
-                  <div class="Hape">
-                      <div class="Hape-img"><img
-                              src="https://s3-alpha-sig.figma.com/img/83e5/f1c5/51076453c1d7314785c220f75880ba38?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k~5fxyHgBpoVja9ggX8vqOAYRif-F1ZOEmCRSsvXJ0KDV2b7Vi9XseHpBwKDIWWu58LIbQSe0S7KSc8WwoaoZ77pMMr7k9HUESsjCACrc3GwKrjO58B2HzflyrmqYOzRkVJ8gmjs7sLJu4x8R29rNR2c~obytL-vYlqKui~i38pfTyXjdJmNJh17K35LH51njhCK9CVp3nWRRCz2B20YypA3lP4pmc82xdi7RMhGpzRVdLuZt40fN9f8J~TmGqzmrvlmMjF9kWItHp1ZHoBKbgOLYjIqfRi5zgUawjFYIR-9vJ2vfGaqh~qJGhdM-2MZILdj2DXgyfk4gZHDv5PGiw__" />
-                      </div>
-                      <div class="Brand-info">
-                          <p>Hape</p>
-                          <button class="Brand-arrow"><img src="assets/arrow.svg" /> </button>
-                      </div>
-                  </div>
-                  <div class="similarPopular">
-                      <div class="Dyson ">
-                          <div class="Dyson-img"><img
-                                  src="https://s3-alpha-sig.figma.com/img/f566/4fc6/9e1a6ee46eadc0955ff3e6f59f463629?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Da2TS6MpXz0CuxK0PQ5hko8~TZkbmBVedXU6WuiLEZdmCr0BNwG62~mdKoE6b-M05NgfBUX7Wloj4lg1u3xFadJiqfZuvor3ybZpo3h25-YuuLudjLtqLt59nZW4jzOnR5erXHSsBhoc3K8vlAxd91C9YPF9sUuW7BMY1S0SIHraV7hbpsGR9jMpWTlLbYdMZ-~5FUNRRFQXgb66Y2srENZVobfIQjdO-efsuBe~kjD8YPIVT~NJgpK3rmAYQ1TkYv0i4ducCT61xFJq03O4KdNZrz7fpS~VTRz7h7nIF-1Noqw2f9FRPJk1OZXNmgb237RRhe0mVfru3SIEheJRMg__" />
-                          </div>
-                          <div class="Brand-info">
-                              <p>Dyson</p>
-                              <button class="Brand-arrow"><img src="assets/arrow.svg" /> </button>
-                          </div>
-                      </div>
-                      <div class="GreenPan">
-                          <div class="GreenPan-img"><img
-                                  src="https://s3-alpha-sig.figma.com/img/42d6/7a72/78d46210f59d52ae7a9025b5c53c5c4d?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qNCpXnB2iKXyJdAeJ0o8IXVM7~nvhwxDoGk-CMUXSo0qSjFraBqZEHoVTwBg6WvKxt2tMJOShoLXZYv-~VPqd1SDy24irqh8cSMe5ahSKHcun7Z8waMLvlj1s5g0NEMGDIukRNNZn1hQV6qsEd61CPt69jWCq~uTsjjqZMf6O2MiO68e0CDvIS8qolezesaBZY-SMEAxM1tREP7zBDPndeyTInoyUoTzIqtJ6a~H9xUk0AElCUhsK3Upiv6K74tdukzZzkHWMONVhnd7WlJOw8AG8BZtBwwD50Z-XACPpDT9FP-Cozc0z~FP5VAZsbtsyWXnAon5Olsjil52P0AI2w__" />
-                          </div>
-                          <div class="Brand-info">
-                              <p>GreenPan</p>
-                              <button class="Brand-arrow"><img src="assets/arrow.svg" /></button>
-                          </div>
-                      </div>
-                  </div>
-              </div>  
           </div>
-
-
-         
+        </div>
+        <div id="cards-container"></div>
+      </div>
+      <div class="popularBrands">
+        <h1>პოპულარული ბრენდები</h1>
+        <div class="Brands">
+          <div class="Hape">
+            <div class="Hape-img">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/83e5/f1c5/51076453c1d7314785c220f75880ba38?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k~5fxyHgBpoVja9ggX8vqOAYRif-F1ZOEmCRSsvXJ0KDV2b7Vi9XseHpBwKDIWWu58LIbQSe0S7KSc8WwoaoZ77pMMr7k9HUESsjCACrc3GwKrjO58B2HzflyrmqYOzRkVJ8gmjs7sLJu4x8R29rNR2c~obytL-vYlqKui~i38pfTyXjdJmNJh17K35LH51njhCK9CVp3nWRRCz2B20YypA3lP4pmc82xdi7RMhGpzRVdLuZt40fN9f8J~TmGqzmrvlmMjF9kWItHp1ZHoBKbgOLYjIqfRi5zgUawjFYIR-9vJ2vfGaqh~qJGhdM-2MZILdj2DXgyfk4gZHDv5PGiw__"
+              />
+            </div>
+            <div class="Brand-info">
+              <p>Hape</p>
+              <button class="Brand-arrow">
+                <img src="assets/arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="similarPopular">
+            <div class="Dyson">
+              <div class="Dyson-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/f566/4fc6/9e1a6ee46eadc0955ff3e6f59f463629?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Da2TS6MpXz0CuxK0PQ5hko8~TZkbmBVedXU6WuiLEZdmCr0BNwG62~mdKoE6b-M05NgfBUX7Wloj4lg1u3xFadJiqfZuvor3ybZpo3h25-YuuLudjLtqLt59nZW4jzOnR5erXHSsBhoc3K8vlAxd91C9YPF9sUuW7BMY1S0SIHraV7hbpsGR9jMpWTlLbYdMZ-~5FUNRRFQXgb66Y2srENZVobfIQjdO-efsuBe~kjD8YPIVT~NJgpK3rmAYQ1TkYv0i4ducCT61xFJq03O4KdNZrz7fpS~VTRz7h7nIF-1Noqw2f9FRPJk1OZXNmgb237RRhe0mVfru3SIEheJRMg__"
+                />
+              </div>
+              <div class="Brand-info">
+                <p>Dyson</p>
+                <button class="Brand-arrow">
+                  <img src="assets/arrow.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="GreenPan">
+              <div class="GreenPan-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/42d6/7a72/78d46210f59d52ae7a9025b5c53c5c4d?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qNCpXnB2iKXyJdAeJ0o8IXVM7~nvhwxDoGk-CMUXSo0qSjFraBqZEHoVTwBg6WvKxt2tMJOShoLXZYv-~VPqd1SDy24irqh8cSMe5ahSKHcun7Z8waMLvlj1s5g0NEMGDIukRNNZn1hQV6qsEd61CPt69jWCq~uTsjjqZMf6O2MiO68e0CDvIS8qolezesaBZY-SMEAxM1tREP7zBDPndeyTInoyUoTzIqtJ6a~H9xUk0AElCUhsK3Upiv6K74tdukzZzkHWMONVhnd7WlJOw8AG8BZtBwwD50Z-XACPpDT9FP-Cozc0z~FP5VAZsbtsyWXnAon5Olsjil52P0AI2w__"
+                />
+              </div>
+              <div class="Brand-info">
+                <p>GreenPan</p>
+                <button class="Brand-arrow">
+                  <img src="assets/arrow.svg" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- ყველაფერი შენი სახლისთვის -->
       <section class="card2Section">
@@ -183,8 +196,8 @@
           <h2 class="card2WrapperTitle">ყველაფერი შენი სახლისთვის</h2>
           <div class="fullyBox">
             <span class="textFully">სრულად</span> &nbsp;&nbsp;
-            <img src="assets/img/Button.png" alt="but" style="width: 32px" />
-            <img src="assets/img/Button1.png" alt="butt" style="width: 32px" />
+            <img src="assets/img/Button.png" alt="leftButton" />
+            <img src="assets/img/Button1.png" alt="rightButton" />
           </div>
         </div>
         <div id="cards2-container"></div>
@@ -193,116 +206,216 @@
       <!-- საზაფხულო წვეულება -->
       <div class="partyOffers">
         <img class="mainImg" src="assets/img/unsplash.png" alt="unsplash" />
-        <img class="mainImgMobile" src="assets/img/unsplash2.png" alt="unsplash2" />
+        <img
+          class="mainImgMobile"
+          src="assets/img/unsplash2.png"
+          alt="unsplash2"
+        />
         <div class="partyOffersText">
           <h3>ყველაფერი დაუვიწყარი საზაფხულო წვეულებებისთვის</h3>
           <p>შეიძინე ჩვენთან საუკეთესო ფასად</p>
           <button type="button">
             სრულად სანახავად &nbsp;
-            <img
-              src="assets/img/Icon Right.png"
-              alt="arrow3"
-              class="arrow3"
-              id="arrow3"
-            />
+            <img src="assets/img/Icon Right.png" alt="arrow3" class="arrow3" />
           </button>
         </div>
       </div>
     </main>
-    <hr class="line">
+    <hr class="line" />
     <footer>
-      <ul>
-        <li class="test">დახმარება</li>
-        <li><a href="">მესიჯის მიწერა</a></li>
-        <li><a href="">შეფასება</a></li>
-        <li><a href="">ხშირად დასმული კითხვები</a></li>
-        <li><a href="">განვადებით შეძენა</a></li>
-        <li><a href="">მისამართები</a></li>
-        <li><img src="assets/img/icon-chevron-down.svg" alt="icon-chevron-down" class="footerIconMob"></li>
-      </ul>
-      
-      <hr class="lineMobile">
-      <ul>
-        <li>წესები & პირობები</li>
-        <li><a href="">ვერიფიკაცია</a></li>
-        <li><a href="">კონფიდენციალურობა</a></li>
-        <li><a href="">უსაფრთხოების წესები</a></li>
-        <li><a href="">საიტის წესები</a></li>
-        <li><img src="assets/img/icon-chevron-down.svg" alt="icon-chevron-down" class="footerIconMob"></li>
-      </ul>
-      <hr class="lineMobile">
-      <ul>
-        <li>ჩვენს შესახებ</li>
-        <li><a href="">ვინ ვართ ჩვენ</a></li>
-        <li><a href="">ბლოგი</a></li>
-        <li><a href="">გაყიდე ჩვენთან</a></li>
-        <li><img src="assets/img/icon-chevron-down.svg" alt="icon-chevron-down" class="footerIconMob"></li>
-      </ul>
-      <hr class="lineMobile">
-      <ul>
-        <li>დაგვიკავშირდი</li>
-        <li>
-          <a href="tel:+406555-0120"
-            ><img src="assets/footerIMG/Vector.png" alt="phone" />&nbsp;(406)
-            555-0120</a
-          >
-        </li>
-        <li>
-          <a href="mailto:support@shopeasy.com"
-            ><img
-              src="assets/footerIMG/Group.png"
-              alt="mail"
-            />&nbsp;support@shopeasy.com</a
-          >
-        </li>
-        <li>
-          <a href="https://www.facebook.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-facebook.png" alt="fb" />&nbsp;</a
-          >
-          <a href="https://www.instagram.com/" target="_blank"
-            ><img
-              src="assets/footerIMG/icon-instagram.png"
-              alt="insta"
-            />&nbsp;</a
-          ><a href="https://www.linkedin.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-linkedin.png" alt="lin"
-          /></a>
-          &nbsp;<a href="https://www.youtube.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-youtube.png" alt="you"
-          /></a>
-        </li>
-        <li><img src="assets/img/icon-chevron-down.svg" alt="icon-chevron-down" class="footerIconMob"></li>
-      </ul>
-      <hr class="lineMobile">
-      <div class="mobiletest">
-      <div class="mobileIcon">
-        <a href="https://www.facebook.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-facebook.png" alt="fb" />&nbsp;</a
-          >
-          <a href="https://www.instagram.com/" target="_blank"
-            ><img
-              src="assets/footerIMG/icon-instagram.png"
-              alt="insta"
-            />&nbsp;</a
-          ><a href="https://www.linkedin.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-linkedin.png" alt="lin"
-          /></a>
-          &nbsp;<a href="https://www.youtube.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-youtube.png" alt="you"
-          /></a>
+      <div class="landingfooter">
+        <ul>
+          <li>დახმარება</li>
+          <li><a href="">მესიჯის მიწერა</a></li>
+          <li><a href="">შეფასება</a></li>
+          <li><a href="">ხშირად დასმული კითხვები</a></li>
+          <li><a href="">განვადებით შეძენა</a></li>
+          <li><a href="">მისამართები</a></li>
+        </ul>
+
+        <ul>
+          <li>წესები & პირობები</li>
+          <li><a href="">ვერიფიკაცია</a></li>
+          <li><a href="">კონფიდენციალურობა</a></li>
+          <li><a href="">უსაფრთხოების წესები</a></li>
+          <li><a href="">საიტის წესები</a></li>
+        </ul>
+
+        <ul>
+          <li>ჩვენს შესახებ</li>
+          <li><a href="">ვინ ვართ ჩვენ</a></li>
+          <li><a href="">ბლოგი</a></li>
+          <li><a href="">გაყიდე ჩვენთან</a></li>
+        </ul>
+
+        <ul>
+          <li>დაგვიკავშირდი</li>
+          <li>
+            <a href="tel:+406555-0120"
+              ><img src="assets/footerIMG/Vector.png" alt="phone" />&nbsp;(406)
+              555-0120</a
+            >
+          </li>
+          <li>
+            <a href="mailto:support@shopeasy.com"
+              ><img
+                src="assets/footerIMG/Group.png"
+                alt="mail"
+              />&nbsp;support@shopeasy.com</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                src="assets/footerIMG/icon-facebook.png"
+                alt="fb"
+              />&nbsp;</a
+            >
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="assets/footerIMG/icon-instagram.png"
+                alt="insta"
+              />&nbsp;</a
+            ><a href="https://www.linkedin.com/" target="_blank"
+              ><img src="assets/footerIMG/icon-linkedin.png" alt="lin"
+            /></a>
+            &nbsp;<a href="https://www.youtube.com/" target="_blank"
+              ><img src="assets/footerIMG/icon-youtube.png" alt="you"
+            /></a>
+          </li>
+          <li></li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="https://www.apple.com/app-store/" target="_blank"
+              ><img src="assets/footerIMG/App Store.png" alt="appStore"
+            /></a>
+          </li>
+          <li class="socialMedia">
+            <a href="https://play.google.com/store" target="_blank"
+              ><img src="assets/footerIMG/Google Play.png" alt="googlePlay"
+            /></a>
+          </li>
+        </ul>
       </div>
-      <ul class="appGoogleImg">
-        <li class="socialMedia">
-          <a href="https://www.apple.com/app-store/" target="_blank"
-            ><img src="assets/footerIMG/App Store.png" alt="appst"
+      <div class="accordion">
+        <div class="accordion-header">
+          <span class="accordion-title">დახმარება</span>
+          <img
+            src="assets/img/icon-chevron-down.svg"
+            alt="icon-chevron-down"
+            class="footerIconMob"
+          />
+        </div>
+        <div class="accordion-content">
+          <ul>
+            <li><a href="">მესიჯის მიწერა</a></li>
+            <li><a href="">შეფასება</a></li>
+            <li><a href="">ხშირად დასმული კითხვები</a></li>
+            <li><a href="">განვადებით შეძენა</a></li>
+            <li><a href="">მისამართები</a></li>
+          </ul>
+        </div>
+        <hr class="lineMobile" />
+        <div class="accordion-header">
+          <span class="accordion-title">წესები & პირობები</span>
+          <img
+            src="assets/img/icon-chevron-down.svg"
+            alt="icon-chevron-down"
+            class="footerIconMob"
+          />
+        </div>
+        <div class="accordion-content">
+          <ul>
+            <li><a href="">ვერიფიკაცია</a></li>
+            <li><a href="">კონფიდენციალურობა</a></li>
+            <li><a href="">უსაფრთხოების წესები</a></li>
+            <li><a href="">საიტის წესები</a></li>
+          </ul>
+        </div>
+        <hr class="lineMobile" />
+        <div class="accordion-header">
+          <span class="accordion-title">ჩვენს შესახებ</span>
+          <img
+            src="assets/img/icon-chevron-down.svg"
+            alt="icon-chevron-down"
+            class="footerIconMob"
+          />
+        </div>
+        <div class="accordion-content">
+          <ul>
+            <li><a href="">ვინ ვართ ჩვენ</a></li>
+            <li><a href="">ბლოგი</a></li>
+            <li><a href="">გაყიდე ჩვენთან</a></li>
+          </ul>
+        </div>
+        <hr class="lineMobile" />
+        <div class="accordion-header">
+          <span class="accordion-title">დაგვიკავშირდი</span>
+          <img
+            src="assets/img/icon-chevron-down.svg"
+            alt="icon-chevron-down"
+            class="footerIconMob"
+          />
+        </div>
+        <div class="accordion-content">
+          <ul>
+            <li>
+              <a href="tel:+406555-0120"
+                ><img
+                  src="assets/footerIMG/Vector.png"
+                  alt="phone"
+                />&nbsp;(406) 555-0120</a
+              >
+            </li>
+            <li>
+              <a href="mailto:support@shopeasy.com"
+                ><img
+                  src="assets/footerIMG/Group.png"
+                  alt="mail"
+                />&nbsp;support@shopeasy.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="lineMobile" />
+
+      <div class="mobileContainer">
+        <div class="mobileIcon">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              src="assets/footerIMG/icon-facebook.png"
+              alt="facebook"
+            />&nbsp;</a
+          >
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="assets/footerIMG/icon-instagram.png"
+              alt="instagram"
+            />&nbsp;</a
+          ><a href="https://www.linkedin.com/" target="_blank"
+            ><img src="assets/footerIMG/icon-linkedin.png" alt="linkedin"
           /></a>
-        </li>
-        <li class="socialMedia">
-          <a href="https://play.google.com/store" target="_blank"
-            ><img src="assets/footerIMG/Google Play.png" alt="goog"
+          &nbsp;<a href="https://www.youtube.com/" target="_blank"
+            ><img src="assets/footerIMG/icon-youtube.png" alt="youtube"
           /></a>
-        </li>
-      </ul></div>
+        </div>
+        <ul>
+          <li>
+            <a href="https://www.apple.com/app-store/" target="_blank"
+              ><img src="assets/footerIMG/App Store.png" alt="appStore"
+            /></a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store" target="_blank"
+              ><img src="assets/footerIMG/Google Play.png" alt="googlePlay"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
