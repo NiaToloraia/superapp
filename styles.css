@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Firago';
+  font-family: "Firago";
   src: url(fonts/FiraGO-Regular.ttf);
 }
 
@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'firago';
+  font-family: "firago";
 }
 
 main {
@@ -415,25 +415,19 @@ ul li a {
   height: 376px;
 }
 
-
 .mySlides {
   width: 100%;
   height: 376px;
   border-radius: 10px;
-
 }
-
-
-
 
 .firstscroll {
   display: flex;
-  background-color: #E6F3FF;
+  background-color: #e6f3ff;
   /* justify-content: space-between; */
   width: 100%;
   height: 376px;
   border-radius: 10px;
-
 }
 
 .firstscroll-info {
@@ -442,7 +436,7 @@ ul li a {
   flex-direction: column;
   justify-content: space-around;
   width: 50%;
-  color:#002A4C;
+  color: #002a4c;
 }
 
 .firstscroll-img {
@@ -456,14 +450,13 @@ ul li a {
   border-radius: 10px;
 }
 
-
 .firstscroll h1 {
   font-family: FiraGO;
   font-size: 20px;
   font-weight: 500;
   line-height: 33.6px;
   width: 31rem;
-  color:#002A4C;
+  color: #002a4c;
 }
 
 .firstscroll p {
@@ -472,9 +465,7 @@ ul li a {
   font-weight: 500;
   line-height: 22.4px;
   width: 28rem;
-  color:#002A4C;
-
-
+  color: #002a4c;
 }
 
 .firstscroll a {
@@ -484,10 +475,9 @@ ul li a {
   width: 14rem;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #008BFF;
+  border: 1px solid #008bff;
   border-radius: 5px;
   cursor: pointer;
-
 }
 
 .firstscroll a h3 {
@@ -495,20 +485,16 @@ ul li a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22.4px;
-  color: #008BFF;
-
-
+  color: #008bff;
 }
 
 .firstscroll a img {
-  fill: #008BFF;
-
+  fill: #008bff;
 }
 
 .firstscroll-info a img {
   height: 16px;
 }
-
 
 .middlescroll {
   background-image: url("https://s3-alpha-sig.figma.com/img/1449/fc27/157377cdc5c19d0a8b16619829204f3d?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=foLI7RZr82usciJfSyUuXV7eLKkhlB8qdTaoMhnWt3GosFFMPUyS9tHRRxQKY3vyTVpsPfWHejM~PEsG-RG28i8XlpPDas1NZCQbyskD~PEYJ-maeBKzFqhX6f0uZQcPO5MoR-83GyeCgK2ZS6uoQiIEDVoFlBuzD5U2OFl8wvcMJLi8gCFOIjxOecNjaERyLS8shfn3sw~LARPBWx8b5RDGaxiZQPyvISBrXDp166yuQ5uD9vaKyWZX3UUq8aBKTApBELTLCpPBPoLwS-51WmkIdEre2Jrzc8WHSbimMvok7WKNEvYJoyui3NxACnp~dJczLtDDOfP5-xICSzwtCg__");
@@ -521,25 +507,22 @@ ul li a {
   width: 100%;
   padding-top: 200px;
   padding-left: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 376px;
-
 }
-
 
 .middlescroll a {
   width: 216px;
   height: 40px;
   border-radius: 6px;
-  border: 1px solid #008BFF;
-  color: #008BFF;
-  background-color: #FFFFFF;
+  border: 1px solid #008bff;
+  color: #008bff;
+  background-color: #ffffff;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
-
 }
 
 .middlescroll a h3 {
@@ -548,8 +531,6 @@ ul li a {
   font-weight: 500;
   line-height: 20px;
   text-align: center;
-
-
 }
 
 .lastscroll {
@@ -561,11 +542,9 @@ ul li a {
   width: 100%;
   padding-top: 270px;
   padding-left: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 376px;
-
 }
-
 
 .middlescroll h1,
 .lastscroll p {
@@ -575,7 +554,6 @@ ul li a {
   line-height: 40px;
   width: 40rem;
   margin-bottom: 20px;
-
 }
 
 .lastscroll h1 {
@@ -589,17 +567,9 @@ ul li a {
   font-weight: 400;
   line-height: 21px;
   width: 350px;
-
-
-
 }
 
-
-
-
-
 /* Next & previous buttons */
-
 
 .prev,
 .next {
@@ -609,7 +579,7 @@ ul li a {
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  background-color: #008BFF;
+  background-color: #008bff;
   font-size: 50px;
   font-weight: 600;
   transition: 10s ease;
@@ -617,8 +587,6 @@ ul li a {
   align-items: center;
   justify-content: center;
 }
-
-
 
 /* Position the "next button" to the right */
 .next {
@@ -628,10 +596,6 @@ ul li a {
 .prev {
   left: 4rem;
 }
-
-
-
-
 
 /* The dots/bullets/indicators */
 
@@ -648,263 +612,220 @@ ul li a {
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-
 }
 
 .dot:hover,
 .dot.active {
-  background-color: #2C8BDB;
+  background-color: #2c8bdb;
 }
-
 
 @media (max-width: 1200px) {
   .side-scroll {
-      height: 200px;
+    height: 200px;
   }
 
   .prev,
   .next {
-      display: none;
+    display: none;
   }
 
-
   .mySlides {
-      width: 100%;
-      height: 280px;
-
-
+    width: 100%;
+    height: 280px;
   }
 
   .firstscroll {
-      height: 280px;
+    height: 280px;
   }
 
   .firstscroll-img img {
-      height: 280px;
-
+    height: 280px;
   }
 
   .firstscroll-info {
-      height: 280px;
-      padding: 2rem 2rem;
-
+    height: 280px;
+    padding: 2rem 2rem;
   }
 
   .firstscroll-info a {
-      margin: 10px 0;
-      width: 10rem;
-      height: 28px;
+    margin: 10px 0;
+    width: 10rem;
+    height: 28px;
   }
 
-
   .firstscroll-info p {
-      line-height: 14px;
+    line-height: 14px;
   }
 
   .firstscroll-info a img {
-      height: 14px;
+    height: 14px;
   }
 
-
   .mySlides h1 {
-      font-size: 18px;
-      width: 100%;
-      line-height: 20px;
-
+    font-size: 18px;
+    width: 100%;
+    line-height: 20px;
   }
 
   .mySlides p {
-      font-size: 12px;
-      width: 100%;
+    font-size: 12px;
+    width: 100%;
   }
 
-
   .mySlides a h3 {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .middlescroll {
-      padding: 20px 2rem;
-      height: 200px;
+    padding: 20px 2rem;
+    height: 200px;
   }
 
   .middlescroll h1 {
-      font-size: 20px;
-      margin-bottom: 7px;
-      line-height: 16px;
-
+    font-size: 20px;
+    margin-bottom: 7px;
+    line-height: 16px;
   }
 
   .middlescroll p {
-      font-size: 14px;
-      line-height: 20px;
-
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .middlescroll a {
-      margin-top: 95px;
-      width: 11rem;
-      height: 34px;
+    margin-top: 95px;
+    width: 11rem;
+    height: 34px;
   }
 
-
   .lastscroll {
-      padding-top: 210px;
-
+    padding-top: 210px;
   }
 
   .lastscroll h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .lastscroll p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .dots {
-      top: 250px;
+    top: 250px;
   }
-
-
-
-
-
 }
 
-
 @media (max-width: 780px) {
-
   .side-scroll {
-      height: 200px;
+    height: 200px;
   }
 
   .prev,
   .next {
-      display: none;
+    display: none;
   }
 
-
   .mySlides {
-      width: 100%;
-      height: 200px;
-
-
+    width: 100%;
+    height: 200px;
   }
 
   .firstscroll {
-      height: 200px;
+    height: 200px;
   }
 
   .firstscroll-img img {
-      height: 200px;
-
+    height: 200px;
   }
 
   .firstscroll-info {
-      height: 200px;
-      padding: 0 1rem;
-
+    height: 200px;
+    padding: 0 1rem;
   }
 
   .firstscroll-info a {
-      margin: 10px 0;
-      width: 8rem;
-      height: 28px;
+    margin: 10px 0;
+    width: 8rem;
+    height: 28px;
   }
 
   .firstscroll-info a img {
-      width: 1rem;
-      height: 10px;
+    width: 1rem;
+    height: 10px;
   }
 
-
-
   .firstscroll-info h1 {
-      font-size: 14px;
-      width: 100%;
-      margin-bottom: 0;
-      line-height: 20px;
-
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 20px;
   }
 
   .firstscroll-info p {
-      font-size: 8px;
-      width: 100%;
-      line-height: 10px;
+    font-size: 8px;
+    width: 100%;
+    line-height: 10px;
   }
 
-
   .firstscroll-info a h3 {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .middlescroll {
-      padding: 20px 1rem;
-      height: 200px;
+    padding: 20px 1rem;
+    height: 200px;
   }
 
   .middlescroll h1 {
-      font-size: 14px;
-      margin-bottom: 0;
-
+    font-size: 14px;
+    margin-bottom: 0;
   }
 
   .middlescroll p {
-      font-size: 10px;
-
+    font-size: 10px;
   }
 
   .middlescroll a {
-      margin-top: 95px;
-      width: 8rem;
-      height: 28px;
+    margin-top: 95px;
+    width: 8rem;
+    height: 28px;
   }
 
   .lastscroll {
-      padding-top: 135px;
-      padding-left: 10px;
+    padding-top: 135px;
+    padding-left: 10px;
   }
 
   .lastscroll h1 {
-      font-size: 14px;
-      padding-bottom: 0px;
+    font-size: 14px;
+    padding-bottom: 0px;
   }
 
   .lastscroll p {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .dots {
-      top: 175px;
+    top: 175px;
   }
 
   .dot {
-      width: 10px;
-      height: 10px;
+    width: 10px;
+    height: 10px;
   }
 }
 
-
-
 /* side-scroller end */
-
-
-
-
-
-
-
 
 /* sameCards */
 
 .cardSection {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   /* height: 420px; */
   height: auto;
   display: flex;
   flex-direction: column;
-
 }
 
 .cards-head {
@@ -925,7 +846,6 @@ ul li a {
   cursor: pointer;
   border: none;
   background: none;
-
 }
 
 .allCards-button button p {
@@ -935,10 +855,7 @@ ul li a {
   line-height: 17.5px;
   text-decoration: underline;
   text-underline-offset: 2.5px;
-
 }
-
-
 
 #cards-container {
   /* width: 100%; */
@@ -946,7 +863,6 @@ ul li a {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  ;
   justify-content: space-between;
   flex-wrap: nowrap;
   /* Ensure cards stay in one line */
@@ -960,13 +876,11 @@ ul li a {
   /* Hide scrollbar for Firefox */
 }
 
-
-
 .card {
   width: 298px;
   height: 390px;
   box-sizing: border-box;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   border-radius: 5px;
   position: relative;
   flex-wrap: wrap;
@@ -990,7 +904,7 @@ ul li a {
   background-color: transparent;
   width: 32px;
   border-radius: 50%;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   position: absolute;
   top: 10px;
   right: 5px;
@@ -998,8 +912,6 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .card button img {
@@ -1018,7 +930,6 @@ ul li a {
 .point img {
   width: 11.65px;
   height: 12px;
-
 }
 
 .point p {
@@ -1026,10 +937,8 @@ ul li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 22.4px;
-  color: #717D96;
+  color: #717d96;
 }
-
-
 
 .card-content {
   width: 263px;
@@ -1047,7 +956,7 @@ ul li a {
   font-weight: 700;
   line-height: 28px;
   text-align: left;
-  color: #2D3648;
+  color: #2d3648;
 }
 
 .card-content p {
@@ -1056,12 +965,9 @@ ul li a {
   font-weight: 400;
   line-height: 19.6px;
   text-align: left;
-  color: #717D96;
+  color: #717d96;
   height: 20px;
-
-
 }
-
 
 .card-content button {
   width: 263px;
@@ -1070,8 +976,8 @@ ul li a {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: -0.01em;
-  color: #FFFFFF;
-  background-color: #008BFF;
+  color: #ffffff;
+  background-color: #008bff;
   border: none;
   border-radius: 7px;
   margin: 0 auto;
@@ -1083,31 +989,25 @@ ul li a {
   gap: 0.7rem;
 }
 
-
 .prev-nextFully {
   display: flex;
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
-
 
 .fully-prev,
 .fully-next {
   width: 32px;
   height: 32px;
   border-radius: 100px;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
-
 }
 
-
-
 .fully-next {
-  border-color: #80C5FF;
+  border-color: #80c5ff;
 }
 
 .icon-chevron:hover path {
@@ -1123,122 +1023,108 @@ ul li a {
   display: block;
 }
 
-
 @media (max-width: 780px) {
-
   .cards-head h1 {
-      font-size: 16px;
-
+    font-size: 16px;
   }
 
   .allCards-button {
-      font-size: 8px;
-
+    font-size: 8px;
   }
 
   .prev-nextFully {
-      display: none;
+    display: none;
   }
 
-
   .card {
-      width: 160px;
-      height: 279px;
-      margin: 0;
+    width: 160px;
+    height: 279px;
+    margin: 0;
   }
 
   .card-img {
-      width: 140px;
-      height: 119.5px;
+    width: 140px;
+    height: 119.5px;
   }
 
   .card-content {
-      width: 85%;
-      height: 139.5px;
-      gap: 0px;
+    width: 85%;
+    height: 139.5px;
+    gap: 0px;
   }
 
   .card-content h2 {
-      font-size: 14px;
-      /* margin-top: 15px; */
-      line-height: 14px;
-      padding-top: 16px;
-
+    font-size: 14px;
+    /* margin-top: 15px; */
+    line-height: 14px;
+    padding-top: 16px;
   }
 
   .card-content p {
-      font-size: 9px;
-      height: 30px;
-      line-height: 10px;
-      padding-top: 18px;
-
-
+    font-size: 9px;
+    height: 30px;
+    line-height: 10px;
+    padding-top: 18px;
   }
 
   .point {
-      position: absolute;
-      top: 119px;
-      width: 33px;
-      height: 17px;
-
+    position: absolute;
+    top: 119px;
+    width: 33px;
+    height: 17px;
   }
 
   .point p {
-font-size: 12px;
-font-weight: 700;
-line-height: 16.8px;
-
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.8px;
   }
 
   .card-content button {
-      width: 100%;
-      font-size: 12px;
-      height: 30px;
-      margin-top: 10px ;
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+    margin-top: 10px;
   }
 
   .card .heart {
-      height: 24px;
-      width: 24px;
+    height: 24px;
+    width: 24px;
   }
 
   .card .heart img {
-      width: 14px;
-      height: 12px;
+    width: 14px;
+    height: 12px;
   }
 
   .addIn {
-      display: none;
+    display: none;
   }
 
   .iconLogoIn {
-      display: block;
-      width: 263px;
-      height: 40px;
-      font-size: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
+    display: block;
+    width: 263px;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
   .card button img {
-      width: 16px;
-      height: 18px;
+    width: 16px;
+    height: 18px;
   }
 
   .iconLogoIn h3 {
-      font-family: FiraGO;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 24px;
-      letter-spacing: -0.01em;
+    font-family: FiraGO;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.01em;
   }
-
 }
-
-
-
 
 /* popular-brands */
 .popularBrands {
@@ -1254,10 +1140,9 @@ line-height: 16.8px;
   width: 297px;
   height: 34px;
   font-family: FiraGO;
-font-size: 24px;
-font-weight: 500;
-line-height: 33.6px;
-
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
 }
 
 .Brands {
@@ -1267,29 +1152,22 @@ line-height: 33.6px;
   height: 593px;
   display: grid;
   grid-template-columns: auto auto;
-
-
 }
 
 .Hape {
   height: 583px;
-  background-color: #E7D1EE;
+  background-color: #e7d1ee;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
 }
-
 
 .Hape-img img {
   object-fit: contain;
   height: 479px;
 }
-
-
-
 
 .similarPopular {
   display: flex;
@@ -1299,13 +1177,12 @@ line-height: 33.6px;
 
 .Dyson {
   height: 285px;
-  background-color: #FFE393;
+  background-color: #ffe393;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .Dyson-img img {
@@ -1315,7 +1192,7 @@ line-height: 33.6px;
 
 .GreenPan {
   height: 277px;
-  background-color: #D8E4C2;
+  background-color: #d8e4c2;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -1328,7 +1205,6 @@ line-height: 33.6px;
   height: 189px;
 }
 
-
 .Brand-arrow {
   width: 54px;
   height: 36px;
@@ -1337,8 +1213,6 @@ line-height: 33.6px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-
-
 }
 
 .Brand-info {
@@ -1347,7 +1221,6 @@ line-height: 33.6px;
   justify-content: space-between;
   align-items: center;
   height: 56px;
-
 }
 
 .Brand-info p {
@@ -1356,23 +1229,20 @@ line-height: 33.6px;
   font-weight: 500;
   line-height: 31.2px;
   color: #363939;
-
 }
-
 
 @media (max-width: 780px) {
   .popularBrands {
-      height: 229px;
-      margin-bottom: 120px;
-
+    height: 229px;
+    margin-bottom: 120px;
   }
 
   .popularBrands h1 {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .similarPopular {
-      gap: 10px;
+    gap: 10px;
   }
   .Brands {
     margin-bottom: 10px;
@@ -1384,65 +1254,50 @@ line-height: 33.6px;
 
   .Brand-info p {
     font-family: FiraGO;
-font-size: 12px;
-font-weight: 500;
-line-height: 15.6px;
-width: 29px;
-height: 16px;
-
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.6px;
+    width: 29px;
+    height: 16px;
   }
 
-
-
   .Brand-arrow {
-      width: 40px;
-      height: 26px;
-
-
+    width: 40px;
+    height: 26px;
   }
 
   .Brand-arrow img {
-      width: 15px;
-      height: 15px;
-
+    width: 15px;
+    height: 15px;
   }
 
   .Hape {
-      padding-top: 40px;
-      height: 270px;
+    padding-top: 40px;
+    height: 270px;
   }
 
-
   .Hape-img img {
-      height: 152px;
-
+    height: 152px;
   }
 
   .Dyson {
-      height: 135px;
-      padding-top: 15px;
+    height: 135px;
+    padding-top: 15px;
   }
 
-
   .Dyson-img img {
-      height: 64px;
+    height: 64px;
   }
 
   .GreenPan {
-      height: 125px;
-      padding-top: 15px;
+    height: 125px;
+    padding-top: 15px;
   }
 
   .GreenPan-img img {
-      height: 70px;
+    height: 70px;
   }
-
-
-
 }
-
-
-
 
 /* ყველაფერი შენი სახლისთვის */
 
@@ -1461,11 +1316,10 @@ height: 16px;
   /* width: 100%; */
   /* width: 1240px; */
   /* padding: 0 8%; */
-  margin: 40px 0;
+  margin: 40px 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 #cards2-container {
   display: flex;
@@ -1483,13 +1337,12 @@ height: 16px;
   width: 263px;
   height: 395px;
   border-radius: 8px;
-  border: 1.5px solid #EFEFEF;
+  border: 1.5px solid #efefef;
   display: block;
   position: relative;
-  
 }
 
-.cardIMg{
+.cardIMg {
   width: 255px;
 }
 #arrowOne {
@@ -1498,7 +1351,7 @@ height: 16px;
   top: 8px;
   right: 12px;
 }
-.arrowW{
+.arrowW {
   display: inline-block;
   position: absolute;
   top: 161px;
@@ -1508,8 +1361,8 @@ height: 16px;
   text-decoration: underline;
 }
 
-.titleDesk{
-  color: #717D96;
+.titleDesk {
+  color: #717d96;
   padding: 0 0 22px 12px;
 }
 
@@ -1517,33 +1370,33 @@ height: 16px;
   font-weight: bold;
   padding: 0 0 12px 12px;
 }
-.cartButton{
-  background-color: #008BFF;
+.cartButton {
+  background-color: #008bff;
   border-radius: 5px;
-  border: 2px solid #008BFF;
+  border: 2px solid #008bff;
   padding: 10px 35px;
   color: white;
-  margin: 12px 0 12px 12px ;
+  margin: 12px 0 12px 12px;
   width: 90%;
   height: 40px;
   font-size: 12px;
   font-weight: 700;
 }
-.allHomeName{
+.allHomeName {
   padding: 35px 0 15px 12px;
 }
-.allHomeStartPr{
+.allHomeStartPr {
   font-size: 13px;
   color: #616161;
   text-decoration: line-through;
 }
-.allHomeDisc{
+.allHomeDisc {
   color: white;
   border-radius: 30px;
   padding: 6px;
-  background:#FF3333;
+  background: #ff3333;
 }
-.mobButton{
+.mobButton {
   display: none;
 }
 
@@ -1558,7 +1411,7 @@ height: 16px;
   display: block;
   margin: 0 auto;
 }
-.partyOffers .mainImgMobile{
+.partyOffers .mainImgMobile {
   display: none;
 }
 .partyOffersText {
@@ -1580,15 +1433,14 @@ height: 16px;
   font-size: 17px;
   padding: 10px 16px;
 }
-.line{
-  border: 1px solid #CBD2E0;
+.line {
+  border: 1px solid #cbd2e0;
   margin: 40px 0 15px;
 }
 
-
 /* footer */
 
-footer {
+footer .landingfooter {
   display: flex;
   justify-content: space-between;
   padding: 25px 5rem;
@@ -1596,36 +1448,33 @@ footer {
 footer li {
   padding: 8px 0;
 }
-li:first-child {
+.landingfooter li:first-child {
   font-weight: bold;
-
 }
-.footerIconMob{
+.footerIconMob {
   display: none;
 }
-.lineMobile{
+.lineMobile {
   display: none;
 }
-.mobileIcon{
+.mobileContainer {
   display: none;
 }
-
-
-
-
+.accordion {
+  display: none;
+}
 
 /* responsive */
-  
-  
+
 @media (max-width: 780px) {
   main {
-    margin:0 1.5rem;
+    margin: 0 1.5rem;
     box-sizing: border-box;
     overflow: hidden;
   }
 
-  .card2Section{
-    
+  .card2Section {
+    padding-top: 20px;
     flex-direction: column;
     display: flex;
     overflow-x: scroll; /* Allows horizontal scrolling */
@@ -1658,33 +1507,34 @@ li:first-child {
     height: auto;
     margin-right: 12px;
   }
-  
-  .cardIMg{
+
+  .cardIMg {
     width: 160px;
+    padding-top: 10px;
     /* height: 139.5px; */
   }
-  .allHomeName{
+  .allHomeName {
     font-size: 12px;
     line-height: 14px;
     height: 30px;
-    color: #2D3648;
+    color: #2d3648;
   }
-  .card2WrapperTitle{
+  .card2WrapperTitle {
     font-size: 13px;
   }
-  .textFully{
+  .textFully {
     font-size: 12px;
     color: #606060;
     font-weight: bold;
   }
-  .fullyBox img{
+  .fullyBox img {
     display: none;
   }
-  .priceText{
+  .priceText {
     font-size: 12px;
-    color: #2D3648;
+    color: #2d3648;
   }
-  .allHomeStartPr{
+  .allHomeStartPr {
     font-size: 9.5px;
   }
   .allHomeDisc {
@@ -1692,48 +1542,48 @@ li:first-child {
     color: white;
     border-radius: 15px;
     padding: 4px 2px;
-    background: #FF3333;
-}
-  .titleDesk{
+    background: #ff3333;
+  }
+  .titleDesk {
     font-size: 10px;
     height: 35px;
     padding-top: 20px;
-
   }
-  .arrowOne{
+  .arrowOne {
     height: 24px;
     width: 24px;
   }
-  .arrowW{
+  .arrowW {
     position: absolute;
-    top: 115px;
+    top: 120px;
+    left: 10px;
     width: 2rem;
   }
-  .cartButton{
+  .cartButton {
     display: none;
   }
-  .mobButton{
+  .mobButton {
     display: inline;
     width: 82%;
     font-size: 12px;
-    height: 32px; 
-    background-color: #008BFF;
+    height: 32px;
+    background-color: #008bff;
     border-radius: 5px;
-    border: 2px solid #008BFF;
+    border: 2px solid #008bff;
     /* padding: 10px 35px; */
     color: white;
-    margin: 12px 0 12px 12px ;
+    margin: 12px 0 12px 12px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+  }
 
   /* საზაფხულო წვეულება */
   .partyOffers .mainImg {
     display: none;
   }
-  .partyOffers .mainImgMobile{
+  .partyOffers .mainImgMobile {
     display: inline;
     opacity: 80%;
     width: 100%;
@@ -1743,79 +1593,74 @@ li:first-child {
     left: 24px;
     top: 30px;
   }
-  .partyOffersText h3{
+  .partyOffersText h3 {
     font-size: 12px;
   }
   .partyOffersText p {
     padding: 32px 0;
     font-weight: bold;
     font-size: 10px;
-    }
+  }
   .partyOffersText button {
     height: 32px;
     font-size: 10px;
     margin-top: 12px;
-    align-items: center;    
-  }
-  .arrow3{
-    width: 20px;
-  }
-  .line{
-    margin: 10px 1.5rem 3px;
-    border-top: 1px solid #CBD2E0;
-
-  }
-  /* footer */
-  footer{
-    padding:0 1.5rem;
-    flex-direction: column;
-  }
-  footer ul li{
-    display: none;
-  }
-  footer ul{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-  footer ul li:first-child{
-    display: inline;
-    font-size: 12px;
-    font-weight: 500;
+  .arrow3 {
+    width: 20px;
   }
-  footer ul li:last-child{
-    display: inline;
+  .line {
+    margin: 10px 1.5rem 3px;
+    border-top: 1px solid #cbd2e0;
   }
- 
-  .footerIconMob{
-    width: 24px;
-    display: inline;
-    }
-  .lineMobile{
-    display: inline;
-    border-top: 1px solid #CBD2E0;
-    /* margin:10px 2rem; */
-    width: 100%;
+  /* footer */
+  footer {
+    padding: 0 1.5rem;
+    flex-direction: column;
   }
-  .socialMedia{
+  footer .landingfooter {
+    display: none;
+  }
+  .accordion {
     display: inline;
   }
-  .mobileIcon{
+  .accordion-title {
+    display: inline;
+    font-size: 14px;
+    line-height: 13.8px;
+    color: #000000;
+  }
+  .accordion-content {
+    display: none;
+    margin: 10px 0;
+  }
+  .accordion-content a {
+    font-size: 13px;
+    line-height: 13.8px;
+    color: #535353;
+  }
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  .lineMobile {
+    display: block;
+    border-top: 1px solid #cbd2e0;
+  }
+  .footerIconMob {
+    display: inline;
+  }
+  footer .mobileIcon {
     display: inline;
     margin-top: 8px;
-  }  
-  .appGoogleImg {
-    flex-direction: column;
-    padding-top: 2px;
   }
-  .appGoogleImg img{
-    width: 131px;
-  }
-  footer .appGoogleImg li:nth-child(2){
-    padding-top: 0;
-  }
-  .mobiletest{
+  .mobileContainer {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 }
