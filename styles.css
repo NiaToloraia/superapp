@@ -1265,6 +1265,9 @@ ul li a {
   .cards-head h1 {
     font-size: 13px;
     font-weight: 700;
+=======
+    font-size: 16px;
+>>>>>>> Stashed changes
   }
   header {
     flex-direction: row;
@@ -1676,14 +1679,12 @@ ul li a {
 .allHomeName {
   padding: 35px 0 15px 12px;
 }
-
 .allHomeStartPr,
 .start-price {
   font-size: 13px;
   color: #616161;
   text-decoration: line-through;
 }
-
 .allHomeDisc,
 .discount {
   color: white;
@@ -1738,7 +1739,7 @@ ul li a {
 
 /* footer */
 
-footer .landingfooter {
+footer {
   display: flex;
   justify-content: space-between;
   padding: 25px 5rem;
@@ -1746,7 +1747,7 @@ footer .landingfooter {
 footer li {
   padding: 8px 0;
 }
-.landingfooter li:first-child {
+li:first-child {
   font-weight: bold;
 }
 .footerIconMob {
@@ -1755,6 +1756,7 @@ footer li {
 .lineMobile {
   display: none;
 }
+<<<<<<< Updated upstream
 
 .mobileContainer {
   display: none;
@@ -1813,6 +1815,7 @@ footer li {
 
   .cardIMg {
     width: 160px;
+<<<<<<< Updated upstream
     padding-top: 10px;
 
     /* height: 139.5px; */
@@ -1838,7 +1841,6 @@ footer li {
     font-size: 12px;
     color: #2d3648;
   }
-
   .allHomeStartPr,
   .start-price {
     font-size: 9.5px;
@@ -1889,7 +1891,6 @@ footer li {
     /* padding: 10px 35px; */
     color: white;
     margin: 12px 0 12px 12px;
-
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -1897,7 +1898,6 @@ footer li {
   }
   .button-content {
     margin: 4px 0 12px 12px;
-
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -2019,6 +2019,7 @@ footer li {
     flex-direction: column;
     padding: 0 1.5rem;
   }
+=======
   .footerNavMenu p {
     font-family: FiraGO;
     font-size: 12px;
@@ -2061,6 +2062,24 @@ footer li {
     display: inline;
     margin-top: 8px;
   }
+=======
+  footer ul li {
+    display: none;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul li:first-child {
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  footer ul li:last-child {
+    display: inline;
+  }
+>>>>>>> Stashed changes
 
   .footerIconMob {
     width: 24px;
@@ -2087,7 +2106,6 @@ footer li {
   .mobiletest {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
   }
 
   .overlay-content {
