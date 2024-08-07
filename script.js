@@ -54,3 +54,35 @@ function generateCards2HTML(data) {
 
 
 
+// Footer Accordion for mobile
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll(".accordion-header");
+  
+    accordions.forEach((header) => {
+      header.addEventListener("click", function () {
+        // Get the content of the clicked accordion
+        const content = this.nextElementSibling;
+  
+        // Loop through all accordions to close them
+        accordions.forEach((otherHeader) => {
+          const otherContent = otherHeader.nextElementSibling;
+          if (otherHeader !== this) {
+            otherContent.style.display = "none";
+            // Optionally reset the icon or other styles
+            // otherHeader.querySelector('.footerIconMob').style.transform = 'rotate(0deg)';
+          }
+        });
+  
+        // Toggle the clicked accordion
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          // this.querySelector('.footerIconMob').style.transform = 'rotate(0deg)';
+        } else {
+          content.style.display = "block";
+          // this.querySelector('.footerIconMob').style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  });
+  
