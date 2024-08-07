@@ -613,7 +613,9 @@ ul li a {
   align-items: center;
   justify-content: center;
 }
-
+.footerNavMenu {
+  display: none;
+}
 /* Position the "next button" to the right */
 .next {
   right: 4rem;
@@ -644,52 +646,6 @@ ul li a {
 .dot.active {
   background-color: #2c8bdb;
 }
-
-
-@media (max-width: 1200px) {
-  .side-scroll {
-    height: 200px;
-=======
-.close-btn {
-  background-color: white;
-  border: none;
-  display: flex;
-  color: #008bff;
-  font-size: 24px;
-
-  position: fixed;
-  cursor: pointer;
-  top: 9px;
-  right: 9px;
-}
-
-.close-btn:hover {
-  color: darkblue;
-}
-
-.headerLine {
-  color: #cbd2e0;
-  width: 100%;
-  height: 2px;
-  opacity: 0.3;
-}
-.footerNavMenu {
-  display: none;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  display: none;
-  z-index: 1000;
-  box-sizing: border-box;
-  background-color: white;
-}
-/* popup */
 .popup-overlay {
   display: none;
   position: fixed;
@@ -702,147 +658,189 @@ ul li a {
   align-items: center;
   z-index: 9999;
 }
-/* figmas mixedvit */
-.popup-overlay h2 {
-  font-family: FiraGO;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: #008bff;
-}
-.auth-form p {
-  font-family: FiraGO;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: #535353;
-}
-.popup-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 735px;
-  position: relative;
-  height: 400px;
-}
-.popup-content input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.popup-content button {
-  width: 535px;
-  height: 48px;
-  top: 354px;
-  left: 100px;
-  padding: 16px 24px 16px 24px;
-  gap: 8px;
-  border-radius: 6px;
-  border: none;
-  color: white;
-  background-color: #008bff;
-}
-#auth-btn,
-#reg-btn {
-  background-color: white;
-}
-.popup-content button:hover {
-  background: #218838;
-}
-.close-popup {
-  cursor: pointer;
-  color: red;
-  font-size: 20px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
+@media (max-width: 1200px) {
+  .close-btn {
+    background-color: white;
+    border: none;
+    display: flex;
+    color: #008bff;
+    font-size: 24px;
 
-.or {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.or hr {
-  color: #4f61c1;
-  height: 2px;
-  width: 231px;
-}
-.google,
-.facebook {
-  border-radius: 5px;
-  border: 2px solid #4f61c1;
-  display: flex;
-  flex-direction: row;
-  width: 258px;
-  height: 76px;
-  background: white;
-  gap: 10px;
-  padding: 26px 28px;
-  align-items: center;
-}
-.auth-buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.auth-buttons button {
-  background: #007bff;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-}
-.auth-buttons button:hover {
-  background: #0056b3;
-}
-.social-auth {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-.social-auth button {
-  background: #4267b2; /* Facebook color */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 10px 20px;
-}
-.social-auth button.google {
-  background: #db4437; /* Google color */
-}
-.forgot-password {
-  color: #007bff;
-  cursor: pointer;
-}
-.forgot-password:hover {
-  text-decoration: underline;
-}
-.hidden {
-  display: none;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-.row input {
-  width: calc(50% - 10px);
-}
-.terms {
-  font-size: 0.9em;
-  color: #555;
-  margin: 10px 0;
+    position: fixed;
+    cursor: pointer;
+    top: 9px;
+    right: 9px;
+  }
+
+  .close-btn:hover {
+    color: darkblue;
+  }
+
+  .headerLine,
+  .footerLine {
+    color: #cbd2e0;
+    width: 100%;
+    height: 2px;
+    opacity: 0.3;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  /* popup */
+
+  /* figmas mixedvit */
+  .popup-overlay h2 {
+    font-family: FiraGO;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #008bff;
+  }
+  .auth-form p {
+    font-family: FiraGO;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #535353;
+  }
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 735px;
+    position: relative;
+    height: 400px;
+  }
+  .popup-content input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .popup-content button {
+    width: 535px;
+    height: 48px;
+    top: 354px;
+    left: 100px;
+    padding: 16px 24px 16px 24px;
+    gap: 8px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #008bff;
+  }
+  #auth-btn,
+  #reg-btn {
+    background-color: white;
+  }
+  .popup-content button:hover {
+    background: #218838;
+  }
+  .close-popup {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .or hr {
+    color: #4f61c1;
+    height: 2px;
+    width: 231px;
+  }
+  .google,
+  .facebook {
+    border-radius: 5px;
+    border: 2px solid #4f61c1;
+    display: flex;
+    flex-direction: row;
+    width: 258px;
+    height: 76px;
+    background: white;
+    gap: 10px;
+    padding: 26px 28px;
+    align-items: center;
+  }
+  .auth-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .auth-buttons button {
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+  }
+  .auth-buttons button:hover {
+    background: #0056b3;
+  }
+  .social-auth {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .social-auth button {
+    background: #4267b2; /* Facebook color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  .social-auth button.google {
+    background: #db4437; /* Google color */
+  }
+  .forgot-password {
+    color: #007bff;
+    cursor: pointer;
+  }
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  .hidden {
+    display: none;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .row input {
+    width: calc(50% - 10px);
+  }
+  .terms {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+  }
 }
 @media (max-width: 1200px) {
   .side-scroll {
@@ -858,7 +856,6 @@ ul li a {
   #cards-container,
   #cards2-container {
     gap: 12px;
-
   }
   .prev,
   .next {
@@ -954,11 +951,12 @@ ul li a {
 @media (max-width: 780px) {
   .side-scroll {
     height: 200px;
-
   }
   .overlay.active {
     display: flex;
-
+  }
+  .footerLine {
+    margin-bottom: 69px;
   }
   .prev,
   .next {
@@ -1265,8 +1263,8 @@ ul li a {
 
 @media (max-width: 780px) {
   .cards-head h1 {
-    font-size: 16px;
-
+    font-size: 13px;
+    font-weight: 700;
   }
   header {
     flex-direction: row;
@@ -1314,7 +1312,6 @@ ul li a {
   }
   .card-photo-container {
     width: 165px;
-
   }
   .allCards-button {
     font-size: 8px;
@@ -1527,6 +1524,7 @@ ul li a {
 
   .popularBrands h1 {
     font-size: 12px;
+    font-weight: 700;
   }
 
   .similarPopular {
@@ -1590,13 +1588,18 @@ ul li a {
 /* ყველაფერი შენი სახლისთვის */
 
 .fullyBox {
+  margin: 40px 0 10px;
   display: flex;
-  /* justify-content: space-around; */
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .lastCard {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.lascard img {
+  display: none;
 }
 .card2Section {
   background-color: var(--card-container-background-color);
@@ -1676,7 +1679,6 @@ ul li a {
 
 .allHomeStartPr,
 .start-price {
-
   font-size: 13px;
   color: #616161;
   text-decoration: line-through;
@@ -1684,7 +1686,6 @@ ul li a {
 
 .allHomeDisc,
 .discount {
-
   color: white;
   border-radius: 30px;
   padding: 6px;
@@ -1714,9 +1715,12 @@ ul li a {
   left: 82px;
   top: 72px;
 }
+.overlay-content {
+  display: none;
+}
 .partyOffersText p {
   padding: 50px 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 .partyOffersText button {
   display: flex;
@@ -1756,8 +1760,6 @@ footer li {
   display: none;
 }
 .accordion {
-
-
   display: none;
 }
 
@@ -1774,7 +1776,6 @@ footer li {
   }
 
   .card2Section {
-
     padding-top: 20px;
 
     flex-direction: column;
@@ -1813,6 +1814,7 @@ footer li {
   .cardIMg {
     width: 160px;
     padding-top: 10px;
+
     /* height: 139.5px; */
   }
   .allHomeName {
@@ -1839,7 +1841,6 @@ footer li {
 
   .allHomeStartPr,
   .start-price {
-
     font-size: 9.5px;
   }
   .start-price {
@@ -1922,6 +1923,7 @@ footer li {
   }
   .partyOffersText h3 {
     font-size: 12px;
+    font-weight: 700;
   }
   .partyOffersText p {
     padding: 32px 0;
@@ -1946,7 +1948,6 @@ footer li {
   footer {
     padding: 0 1.5rem;
 
- 
     flex-direction: column;
     padding: 0 1.5rem;
   }
@@ -1955,7 +1956,69 @@ footer li {
     display: none;
   }
   .accordion {
-=======
+    display: inline;
+  }
+  .accordion-title {
+    display: inline;
+    font-size: 14px;
+    line-height: 13.8px;
+    color: #000000;
+  }
+  .accordion-content {
+    display: none;
+    margin: 10px 0;
+  }
+  .accordion-content a {
+    font-size: 13px;
+    line-height: 13.8px;
+    color: #535353;
+  }
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  .lineMobile {
+    display: block;
+    border-top: 1px solid #cbd2e0;
+  }
+  .footerIconMob {
+    display: inline;
+  }
+  footer .mobileIcon {
+    display: inline;
+    margin-top: 8px;
+  }
+  .mobileContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .footerNavMenu {
+    display: flex;
+    width: 100%;
+    height: 69px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #fff;
+    z-index: 1;
+  }
+  .footerNavMenu a {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
   .footerNavMenu p {
     font-family: FiraGO;
     font-size: 12px;
@@ -1969,28 +2032,6 @@ footer li {
   footer {
     padding: 0 1.5rem;
     flex-direction: column;
-  }
-  footer ul li {
-    display: none;
-  }
-  footer ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  footer ul li:first-child {
-
-    display: inline;
-  }
-
-  .accordion-title {
-=======
-  footer ul li:last-child {
-
-    display: inline;
-    font-size: 14px;
-    line-height: 13.8px;
-    color: #000000;
   }
 
   .accordion-content {
@@ -2020,19 +2061,12 @@ footer li {
     display: inline;
     margin-top: 8px;
   }
-  .mobileContainer {
-=======
 
   .footerIconMob {
     width: 24px;
     display: inline;
   }
-  .lineMobile {
-    display: inline;
-    border-top: 1px solid #cbd2e0;
-    /* margin:10px 2rem; */
-    width: 100%;
-  }
+
   .socialMedia {
     display: inline;
   }
@@ -2051,12 +2085,10 @@ footer li {
     padding-top: 0;
   }
   .mobiletest {
-
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
   }
-
 
   .overlay-content {
     width: 100%;
@@ -2107,5 +2139,4 @@ footer li {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 }

@@ -57,7 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
     header.addEventListener("click", function () {
       const content = this.nextElementSibling;
 
-      // Toggle the display of the accordion content
+      // Close any currently open accordion content
+      document
+        .querySelectorAll(".accordion-content")
+        .forEach((accordionContent) => {
+          if (
+            accordionContent !== content &&
+            accordionContent.style.display === "block"
+          ) {
+            accordionContent.style.display = "none";
+            // Optionally reset the icon rotation for other accordions
+            // accordionContent.previousElementSibling.querySelector('.footerIconMob').style.transform = 'rotate(0deg)';
+          }
+        });
+
+      // Toggle the display of the clicked accordion content
       if (content.style.display === "block") {
         content.style.display = "none";
         // this.querySelector('.footerIconMob').style.transform = 'rotate(0deg)';

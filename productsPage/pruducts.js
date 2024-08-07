@@ -146,3 +146,38 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial check for arrow visibility
   updateArrows();
 });
+
+// Footer Accordion for mobile
+
+document.addEventListener("DOMContentLoaded", function () {
+  const accordions = document.querySelectorAll(".accordion-header");
+
+  accordions.forEach((header) => {
+    header.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+
+      // Close any currently open accordion content
+      document
+        .querySelectorAll(".accordion-content")
+        .forEach((accordionContent) => {
+          if (
+            accordionContent !== content &&
+            accordionContent.style.display === "block"
+          ) {
+            accordionContent.style.display = "none";
+            // Optionally reset the icon rotation for other accordions
+            // accordionContent.previousElementSibling.querySelector('.footerIconMob').style.transform = 'rotate(0deg)';
+          }
+        });
+
+      // Toggle the display of the clicked accordion content
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        // this.querySelector('.footerIconMob').style.transform = 'rotate(0deg)';
+      } else {
+        content.style.display = "block";
+        // this.querySelector('.footerIconMob').style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+});
