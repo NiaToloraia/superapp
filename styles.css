@@ -955,6 +955,13 @@ ul li a {
   .overlay.active {
     display: flex;
   }
+  .lastCard{
+    align-items: center;
+  }
+  .lastCard img{
+    display: none;
+  }
+
   .prev,
   .next {
     display: none;
@@ -1260,7 +1267,8 @@ ul li a {
 
 @media (max-width: 780px) {
   .cards-head h1 {
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 700;
   }
   header {
     flex-direction: row;
@@ -1520,6 +1528,7 @@ ul li a {
 
   .popularBrands h1 {
     font-size: 12px;
+    font-weight: 700;
   }
 
   .similarPopular {
@@ -1896,6 +1905,7 @@ footer li {
   }
   .partyOffersText h3 {
     font-size: 12px;
+    font-weight: 700;
   }
   .partyOffersText p {
     padding: 32px 0;
@@ -1950,7 +1960,7 @@ footer li {
     width: 20px;
     height: 20px;
   }
-  footer {
+  footer .landingfooter {
     padding: 0 1.5rem;
     flex-direction: column;
   }
