@@ -30,11 +30,11 @@
             <img src="./assets/icons/favourites.svg" alt="Favorites" />
           </a>
         </div>
-        <button class="button auth-button">შესვლა</button>
+        <button class="button auth-button" id="open-popup-btn">შესვლა</button>
       </div>
       <div class="categories-section">
         <div class="burger-menu-container">
-          <button class="burger-menu">
+          <button class="burger-menu" id="burgerMenuBtn">
             <img src="./assets/icons/burgerIcon.svg" alt="burger menu" />
           </button>
           <span class="all-categories-text">ყველა კატეგორია</span>
@@ -45,13 +45,27 @@
         <div class="categories-slider" id="categories-slider">
           <div class="categories-container">
             <ul class="categories-list">
-              <li class="category-item"><a href="#">ფასდაკლება</a></li>
-              <li class="category-item"><a href="#">ტექნიკა</a></li>
-              <li class="category-item"><a href="#">ბავშვის მოვლა</a></li>
-              <li class="category-item"><a href="#">სახლი & მოვლა</a></li>
-              <li class="category-item"><a href="#">თავის მოვლა</a></li>
-              <li class="category-item"><a href="#">სათამაშოები</a></li>
-              <li class="category-item"><a href="#">ფიტნესი</a></li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ფასდაკლება</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ტექნიკა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ბავშვის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">სახლი & მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">თავის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">სათამაშოები</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ფიტნესი</a>
+              </li>
             </ul>
           </div>
           <button class="slider-nav right" id="right-arrow">
@@ -60,6 +74,52 @@
         </div>
       </div>
     </header>
+    <hr class="headerLine" />
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <nav class="overlay-part1">
+          <div class="category-container" id="category-container"></div>
+        </nav>
+        <nav class="overlay-part2">
+          <ul>
+            <li>
+              <a href="./productsPage/products.html" target="_blank"
+                >ბავშვის მოვლა
+              </a>
+            </li>
+            <li>
+              <a href="./productsPage/products.html" target="_blank"
+                >ბავშვის კვება
+              </a>
+            </li>
+            <li>
+              <a href="./productsPage/products.html" target="_blank"
+                >საბავშვო ინვენტარი
+              </a>
+            </li>
+            <li>
+              <a href="./productsPage/products.html" target="_blank"
+                >ბავშვის ტანსაცმელი
+              </a>
+            </li>
+
+            <li>
+              <a href="./productsPage/products.html" target="_blank"
+                >აქსესუარები</a
+              >
+            </li>
+            <li>
+              <a href="./productsPage/products.html" target="_blank"
+                >ბავშვის ჰიგიენა
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="close-btn" id="closeBtn">
+          <img src="./assets/Buttoncloseblue.svg" alt="blue button" />
+        </button>
+      </div>
+    </div>
     <main>
       <div class="slider-wrapper">
         <div class="side-scroll" id="slider-container">
@@ -223,6 +283,7 @@
     </main>
     <hr class="line" />
     <footer>
+
       <div class="landingfooter">
         <ul>
           <li>დახმარება</li>
@@ -320,11 +381,13 @@
         <hr class="lineMobile" />
         <div class="accordion-header">
           <span class="accordion-title">წესები & პირობები</span>
+
           <img
             src="assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
+
         </div>
         <div class="accordion-content">
           <ul>
@@ -337,11 +400,13 @@
         <hr class="lineMobile" />
         <div class="accordion-header">
           <span class="accordion-title">ჩვენს შესახებ</span>
+
           <img
             src="assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
+
         </div>
         <div class="accordion-content">
           <ul>
@@ -353,11 +418,13 @@
         <hr class="lineMobile" />
         <div class="accordion-header">
           <span class="accordion-title">დაგვიკავშირდი</span>
+
           <img
             src="assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
+
         </div>
         <div class="accordion-content">
           <ul>
@@ -385,6 +452,8 @@
 
       <div class="mobileContainer">
         <div class="mobileIcon">
+
+
           <a href="https://www.facebook.com/" target="_blank"
             ><img
               src="assets/footerIMG/icon-facebook.png"
@@ -403,6 +472,7 @@
             ><img src="assets/footerIMG/icon-youtube.png" alt="youtube"
           /></a>
         </div>
+
         <ul>
           <li>
             <a href="https://www.apple.com/app-store/" target="_blank"
@@ -412,10 +482,80 @@
           <li>
             <a href="https://play.google.com/store" target="_blank"
               ><img src="assets/footerIMG/Google Play.png" alt="googlePlay"
+
             /></a>
           </li>
         </ul>
       </div>
     </footer>
+    <hr class="headerLine" />
+    <div class="footerNavMenu">
+      <a href="index.html" class="home icon"
+        ><img src="./assets/home (2).svg" alt="home" />
+        <p>მთავარი</p></a
+      >
+      <a href="index.html" class="chart icon"
+        ><img src="./assets/icon-shopping-cart (2).svg" alt="cahrt" />
+        <p>კალათა</p></a
+      >
+      <a href="index.html" class="favourites icon"
+        ><img src="./assets/icon-heart.svg" alt="favourite" />
+        <p>ფავორიტები</p></a
+      >
+      <a href="./authPage/auth.html" id="open-popup-link" class="profile icon"
+        ><img src="./assets/icon-user (1).svg" alt="profile" />
+        <p>პროფილი</p></a
+      >
+    </div>
+    <div class="popup-overlay" id="popup-overlay">
+      <div class="popup-content">
+        <h2>გაიარე ავტორიზაცია</h2>
+        <span class="close-popup" id="close-popup"
+          ><img src="./assets/closeBtn.svg" alt="closeBtn"
+        /></span>
+        <div class="auth-buttons">
+          <button id="auth-btn">Authorization</button>
+          <button id="reg-btn">Registration</button>
+        </div>
+        <div id="auth-form">
+          <input type="text" placeholder="მეილი/ტელ.ნომერი" required />
+          <input type="password" placeholder="პაროლი" required />
+          <p class="forgot-password">დაგავიწყდა პაროლი?</p>
+          <button class="login">შესვლა</button>
+          <div class="or">
+            <hr />
+            <p>Or:</p>
+            <hr />
+          </div>
+          <div class="social-auth">
+            <a class="google"
+              ><img src="./assets/image 1 (2).svg" alt="" /><img
+                src="./assets/Facebook -ით შესვლა.svg"
+                alt=""
+            /></a>
+            <a class="facebook"
+              ><img src="./assets/image 2.svg" alt="" /><img
+                src="./assets/Google -ით შესვლა.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div id="reg-form" class="hidden">
+          <div class="row">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <div class="row">
+            <input type="text" placeholder="Phone Number" required />
+            <input type="password" placeholder="Password" required />
+          </div>
+          <p class="terms">
+            By registering, you agree to our
+            <a href="#">Terms and Conditions</a>.
+          </p>
+          <button>Register</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
