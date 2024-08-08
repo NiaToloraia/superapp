@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Firago";
+  src: url(.././fonts/FiraGO-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "firago";
+}
+
+main {
+  margin: 0 5rem;
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.slider-nav {
+  background-color: unset;
+}
+.allcategories p,
+.allcategories {
+  font-family: FiraGO;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.allcategories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 42px;
+}
+.card-container {
+  display: grid;
+  gap: 20px;
+}
+.ProductsCard {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1440px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 1439px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+h2 {
+  font-family: FiraGO;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  width: 190px;
+}
+.ProductsCard {
+  display: flex;
+  width: 295px;
+  border-radius: 10px;
+  height: 149px;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 62px 26px;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+}
+.categoryList {
+  width: 190px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.categoryList ul {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.categoryList ul li a {
+  font-family: FiraGO;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.categoryCards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .categoryList {
+    display: none;
+  }
+  .card-container {
+    justify-content: center;
+    width: 100%;
+  }
+  .ProductsCard {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  main {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .allcategories p,
+  .allcategories {
+    font-family: FiraGO;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .ProductsCard {
+    height: 92px;
+    padding: 3% 2.5%;
+  }
+  .ProductsCard img {
+    width: 30%;
+    height: 100%;
+  }
+  .ProductsCard p {
+    font-family: FiraGO;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+  }
+}
