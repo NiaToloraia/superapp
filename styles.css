@@ -1613,10 +1613,16 @@ ul li a {
   justify-content: space-around;
 }
 #cards2-container {
-  overflow-y: hidden;
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .card2 {
@@ -1631,10 +1637,11 @@ ul li a {
   border: 1.5px solid #efefef;
   display: block;
   position: relative;
+  margin-right: 20px;
 }
 
 .cardIMg {
-  width: 255px;
+  width: 258px;
 }
 #arrowOne {
   display: inline-block;
@@ -1650,6 +1657,7 @@ ul li a {
 }
 .textFully {
   text-decoration: underline;
+  color: #363939;
 }
 
 .titleDesk {
@@ -1744,6 +1752,12 @@ footer li {
 .landingfooter li:first-child {
   font-weight: bold;
 }
+.landingfooter li a {
+  color: #616161;
+}
+.contactIcon a {
+  padding-right: 2px;
+}
 .footerIconMob {
   display: none;
 }
@@ -1816,7 +1830,7 @@ footer li {
   #cards2-container {
     height: auto;
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     justify-content: space-between;
     flex-wrap: nowrap;
     /* Ensure cards stay in one line */
@@ -1837,7 +1851,7 @@ footer li {
   }
 
   .cardIMg {
-    width: 160px;
+    width: 158px;
     padding-top: 10px;
     /* height: 139.5px; */
   }
@@ -2041,7 +2055,7 @@ footer li {
   }
   .accordion-content {
     display: none;
-    margin: 10px 0;
+    margin: 2px 0 10px;
   }
   ul,
   ol {
@@ -2050,6 +2064,9 @@ footer li {
   .lineMobile {
     display: block;
     border-top: 1px solid #cbd2e0;
+  }
+  .contactUsImg a img {
+    width: 15px;
   }
   .footerIconMob {
     display: inline;
@@ -2103,9 +2120,9 @@ footer li {
     flex-direction: column;
   }
 
-  ul li {
+  /* ul li {
     width: 200px;
-  }
+  } */
   .overlay-part2 img {
     width: 20px;
     height: 20px;
