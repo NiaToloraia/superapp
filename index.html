@@ -498,17 +498,20 @@
     </div>
     <div class="popup-overlay" id="popup-overlay">
       <div class="popup-content">
-        <h2>გაიარე ავტორიზაცია</h2>
-        <span class="close-popup" id="close-popup"
-          ><img src="./assets/closeBtn.svg" alt="closeBtn"
-        /></span>
+        <div class="popup-header">
+          <h2>გაიარეთ ავტორიზაცია</h2>
+          <span class="close-popup" id="close-popup"
+            ><img src="./assets/closeBtn.svg" alt="closeBtn"
+          /></span>
+        </div>
         <div class="auth-buttons">
-          <button id="auth-btn">Authorization</button>
-          <button id="reg-btn">Registration</button>
+          <button id="auth-btn">ავტორიზაცია</button>
+          <button id="reg-btn">რეგისტრაცია</button>
         </div>
         <div id="auth-form">
           <input type="text" placeholder="მეილი/ტელ.ნომერი" required />
           <input type="password" placeholder="პაროლი" required />
+          <img src="./assets/icon-eye (1).svg" class="eye" alt="eye" />
           <p class="forgot-password">დაგავიწყდა პაროლი?</p>
           <button class="login">შესვლა</button>
           <div class="or">
@@ -530,19 +533,20 @@
           </div>
         </div>
         <div id="reg-form" class="hidden">
-          <div class="row">
-            <input type="text" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" required />
+          <div class="column">
+            <input type="text" placeholder="სახელი" required />
+            <input type="text" placeholder="გვარი" required />
+            <input type="text" placeholder="მეილი" required />
           </div>
           <div class="row">
-            <input type="text" placeholder="Phone Number" required />
-            <input type="password" placeholder="Password" required />
+            <input type="text" placeholder="პაროლი" required />
+            <input type="password" placeholder="გაიმეორეთ პაროლი" required />
           </div>
           <p class="terms">
-            By registering, you agree to our
-            <a href="#">Terms and Conditions</a>.
+            რეგისტრაციის ღილაკზე დაჭერით ეთანხმებით
+            <a href="#">წესებს და პირობებს</a>.
           </p>
-          <button>Register</button>
+          <button>რეგისტრაცია</button>
         </div>
       </div>
     </div>

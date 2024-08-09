@@ -459,6 +459,7 @@ const authBtn = document.getElementById("auth-btn");
 const regBtn = document.getElementById("reg-btn");
 const authForm = document.getElementById("auth-form");
 const regForm = document.getElementById("reg-form");
+const popupHeader = document.getElementsByClassName(".popup-header");
 
 openPopupBtn.addEventListener("click", () => {
   popupOverlay.style.display = "flex";
@@ -485,15 +486,16 @@ authBtn.addEventListener("click", showAuthForm);
 regBtn.addEventListener("click", showRegForm);
 
 function showAuthForm() {
-  authForm.classList.remove("hidden");
-  regForm.classList.add("hidden");
+  authForm.style.display = "flex";
+  regForm.style.display = "none";
   authBtn.style.color = "black";
   regBtn.style.color = "#9B9393";
 }
 
 function showRegForm() {
-  regForm.classList.remove("hidden");
-  authForm.classList.add("hidden");
+  popupHeader.innerHTML = "გაიარეთ რეგისტრაცია";
+  regForm.style.display = "flex";
+  authForm.style.display = "none";
   regBtn.style.color = "black";
   authBtn.style.color = "#9B9393";
 }

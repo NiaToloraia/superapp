@@ -711,7 +711,8 @@ ul li a {
   text-align: left;
   color: #008bff;
 }
-.auth-form p {
+
+#auth-form p {
   font-family: FiraGO;
   font-size: 12px;
   font-weight: 400;
@@ -719,6 +720,10 @@ ul li a {
   letter-spacing: -0.01em;
   text-align: left;
   color: #535353;
+}
+#auth-form input {
+  width: 534px;
+  height: 48px;
 }
 .popup-content {
   background: white;
@@ -751,24 +756,39 @@ ul li a {
 }
 #auth-btn,
 #reg-btn {
+  font-family: FiraGO;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
   background-color: white;
 }
 .popup-content button:hover {
   background: #218838;
 }
+#reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .close-popup {
   cursor: pointer;
-  color: red;
-  font-size: 20px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
+
+  border: 1px solid #008bff;
+  border-radius: 50%;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
 }
 
 .or {
   display: flex;
   flex-direction: row;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 .or hr {
   color: #4f61c1;
@@ -791,7 +811,7 @@ ul li a {
 .auth-buttons {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-top: 32px;
 }
 .auth-buttons button {
   background: #007bff;
@@ -821,8 +841,24 @@ ul li a {
 .social-auth button.google {
   background: #db4437; /* Google color */
 }
+#auth-form {
+  position: relative;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#auth-form .eye {
+  position: absolute;
+  top: 107px;
+  right: 18px;
+}
 .forgot-password {
-  color: #007bff;
+  font-family: FiraGO;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #535353;
   cursor: pointer;
 }
 .forgot-password:hover {
@@ -2091,4 +2127,16 @@ footer li {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.popup-content {
+  padding: 58px 100px;
+  width: 735px;
+  height: 604px;
+}
+.popup-header {
+  display: flex;
+  padding-left: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
