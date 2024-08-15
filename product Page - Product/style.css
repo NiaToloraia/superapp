@@ -161,9 +161,7 @@ section h3 {
   width: 285px;
   height: 54px;
 }
-.box3cart {
-  display: none;
-}
+
 .box3mobileHidden {
   display: none;
 }
@@ -752,6 +750,9 @@ footer li {
     font-weight: 400;
   }
   .mobileHidden {
+    display: none;
+  }
+  .box3cart {
     display: none;
   }
   .box2 {
