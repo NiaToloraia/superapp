@@ -1,28 +1,28 @@
 [
     {
-    "imageURL":"https://s3-alpha-sig.figma.com/img/a995/6fa8/2432b0011babafd84790e054f8447b23?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MNOQVRQx30rBMpUcyvgY6BInTXsKE4yQm6JznsQO7FOyCluG84-DyE4kH0xRnoJalTc3of0PiMg88iGCO7ffiIBvxtnh859nMtPhy8HQ-ouY9-xyzXAfhyS72udt~uJNE3cvGnBPveBcJdq783hPn5oSbnqkk7yoL6CIOLgqMGUN5byQWjo~768aaeIEdBmENPXhKp3odpwaHKcWbWeJK4CxPQaJTd3lMhvTG8Jy-QuGexskkFaBbf77mZY2EsOMFGMUh0e2V6DMNN~lBvWnfRdNTkDA4vV3OJ8MvAjvLN79ght~Yja~3gJ8i2oAafdl8Vmk4jXBBfMFAUaqp89--w__",
+    "imageURL":"assets/stanly.png",
     "name":"STANLEY 1913",
     "desc":"THE QUENCHER -TUMBLER 1,2 L",
     "price":"140.00 ₾",
     "link":"#"
     },
     {
-        "imageURL":"https://s3-alpha-sig.figma.com/img/436d/1b10/a21671311dfe1459b45032744d004189?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IolRi11tkTdl4a1n4F9cT6SsVo0uX2c4bQKQTOYLhbBfXJbNK~BmamaJ6y3SuNRCyAXt1JMQ~0SDXBh3YXRHKW0XtU6l418maD2~omwSQVPsISWkwWA9EVne0PpS0yj5DnMPL6~GtTSi7SvYfp7P2tzbvGiWS7Oz63HyXX9aW6Lt5DmCmT4U9zeVblDfBNoWJxS~cZMR4T0rtGEZ7l0RgQ9DOBwkAB1PIIZRWImG5voycnOpE8zC9AQYR5JdFpY7yARg7FcpsNB2O72UVcxATdUUnyMRXD229D8O47tsyHEaoncjGmVsY2WsX2p-Ug8WRTmq9XJzYJKl0gHuN8StAA__",    
-        "name":"Fridababy თერმომეტრი",
+        "imageURL":"assets/temp.png",
+       "name":"Fridababy თერმომეტრი",
         "desc":"თერმომეტრი",
         "price":"120.00 ₾",
         "link":"#"
     },
     {
-        "imageURL":"https://s3-alpha-sig.figma.com/img/d856/198d/8e1cef756203aa9705969f68698e9e09?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SQG2Lc4uaKqvrB71MlJYz-MTmCTlQPk4ggKPwTSTY5glLR5e5Nuhpawv2y7ixuP5Ty-HmTWGmRsF1z6n6ZBryGOtTltLZM~pC6DphcXiRE4rSwr~z0h~eYXY4kW5~4TO2NWyQhVZolPgTleE9Z0JN0jrZGmSImbP~eyCya48~wHxCn1vtenU5t9b36gV0lSbkkE4ePx1-7cXPsyGg6me5UT72QNglp2Yn4QhtOPz3Njmcsc~rjhfyY5lbPYO4JmJ~HbTguiXvq7AHCp~jMbArs672Azepd2C3LnoYqp97z9qypeu5wB5h0dsx64gQCcKpHrRzLh2WHmSsV71OMdADg__",
-        "name":"Kindle Paperwhite",
+        "imageURL":"assets/kindle.png",
+       "name":"Kindle Paperwhite",
         "desc":"ქინდლი",
         "price":"450.00 ₾",
         "link":"#"
     },
     {
-        "imageURL":"https://s3-alpha-sig.figma.com/img/d56b/0d68/401100752c652740ff033ca8cd17bdb0?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hJYgLqY3wOOTqMy~8Y4xDnsGcMLkNLIER6bCmmmZLqVBLJLLDsk9mTiiO3CXaFA3pf6tjceyo~SyPZw8v7G-anioBIGsHHwsnWSn7hRiK~~x7jLHC61z1pYY2H00CJw7MqTmMHpZYx7LNsCVlcLrQk1R4AybGs3EaKWjj9~-VG1K5lHDMwy2Zw~igi2gPIsDTFsMeuam-MsUzwdWf2bnJ~KiB39ZUDS9hjqr~OQ0wzETb7aoMn0nAh~vlNcRAYmKjDLtBHaFDCoEWi-YZLfB4N2ur04pOkGGkjTfwZkWboVUbuMpkxYuqU-GQAQh5ycodKjAziswza-dx4vdwRpKzQ__",
-        "name":"Ninja CREAMi",
+        "imageURL":"assets/coffee.png",
+       "name":"Ninja CREAMi",
         "desc":"Ninja NC301 CREAMi Ice Cream Maker",
         "price":"600.00 ₾",
         "link":"#"
