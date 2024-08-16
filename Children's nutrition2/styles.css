@@ -251,20 +251,21 @@ main {
   display: flex;
   margin-top: 40px;
   background-color: #e6f3ff;
-  width: 57.875rem;
+  /* width: 57.875rem; */
+  width: 100%;
   height: 341px;
   border-radius: 10px;
 }
 
 .bike-img {
   width: 50%;
-  background-image: url("https://s3-alpha-sig.figma.com/img/cd1d/cc92/a25cbc9f51d22fa61bc9e2f04a5a2274?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a4lINlaTi3FtBI~5x9fQMgh9RoiFPZTW0PNHNBdFh8KYEMZeftd0GwuMR3pEzWqW0eLwkVHnDI79mvah-OR0HzCuwpmSYxCFcduk0xnG7wDviD-q9bTOinzGezB2YRz4nLY90ImzlfUsc-hneuvWvFBoqNtwyycYk3Z9ldxG7fRRB7m8eTT22E386CVYeL3WI6t1Vxy90NIHPePLlcg5wPh3DqP-9aBJQT5PqhkICbsRdSE5tOjm1D2iIPn4WkZDxYgkh6GrDO2BZNdAPE3XV0XCpGWDYDGOtQXr973xHJ~vr1D9~4K3IgZ14pvwnh~gWbN~gsalm7XeI7jLNMuWvw__");
+  background-image: url("../assets/bike.png");
   background-position: 41.5% 61.5%;
   /* Move the image slightly up and to the left */
   background-repeat: no-repeat;
   background-size: cover;
   width: 390px;
-  height: 278px;
+  height: 290px;
   margin-top: 31px;
   margin-right: 37px;
 }
@@ -310,7 +311,7 @@ main {
 
 @media (max-width: 1200px) {
   .bike {
-    width: 39rem;
+    width: 100%;
   }
 
   .bike-info {
@@ -327,8 +328,8 @@ main {
 
 @media (max-width: 780px) {
   .bike {
-    width: 21.438rem;
-    height: 225px;
+    width: 100%;
+    height: 230px;
     position: relative;
   }
 
@@ -363,14 +364,22 @@ main {
   }
 
   .bike-img {
-    position: absolute;
-    width: 186px;
+
+    width: 210px;
     height: 178px;
     top: 12px;
     left: 158px;
     margin-right: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .bike-img {
+    position: absolute;
+  }
+}
+
+
 
 /* popular brands */
 
