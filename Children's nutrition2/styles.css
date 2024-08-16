@@ -543,7 +543,7 @@ main {
   }
 
   .Suavinex-img img {
-    height: 152px;
+    height: 173px;
   }
 
   .Twistshake {
@@ -553,6 +553,7 @@ main {
 
   .Twistshake-img img {
     height: 64px;
+    width: 132px;
   }
 
   .Parsa {
@@ -562,6 +563,7 @@ main {
 
   .Parsa-img img {
     height: 70px;
+    width: 136px;
   }
 }
 
