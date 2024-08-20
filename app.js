@@ -116,6 +116,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Move the generateCardsHTML function here
+  function generateCardsHTML(data) {
+    let html = "";
+    const container = document.getElementById("cards-container");
+
+    data.forEach((item) => {
+      html += `
+        <div class="card">
+          <div>
+            <img class="card-img" src="${item.imageURL}" alt="${item.name}"/>
+            <button class="heart" onclick=""><img src="assets/Shape.svg"/></button>
+            <div class="point"> 
+              <img src="assets/Star 2.svg">
+              <p>5.0</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>${item.name}</h2>
+            <p>${item.desc}</p>
+            <h2 class="Card-price">${item.price}</h2>
+            <button class="content-link addIn" onclick="window.open('${item.link}', '_blank')">
+              კალათში დამატება
+            </button>
+            <button class="content-link iconLogoIn" onclick="window.open('${item.link}', '_blank')">
+              <img src="assets/IconAdd.svg">
+              <h3>დამატება</h3>
+            </button>
+          </div>
+        </div>`;
+    });
+
+    container.innerHTML = html;
+  }
+
   fetch("cards.json")
     .then((response) => {
       if (!response.ok) {
@@ -129,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
+
   fetch("./assets/data.json")
     .then((response) => {
       if (!response.ok) {
@@ -137,44 +172,36 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((cardData) => {
-      // const slider = document.getElementById("slider");
-
-      // slider.innerHTML = "";
-
       cardData.forEach((card) => {
         const cardElement = document.createElement("div");
         cardElement.className = "card";
         cardElement.innerHTML = `
-             
-              <div>
-                <img src="${card.photo}" alt="${card.name}" class="card-img" />
-                <button class="heart"> <img src="./assets/icons/heart.svg" alt="Favorite"  /></button>
-               <div class="point">  
-                  <img src="${card.stars}" />
-                  <p> ${card.starNumber}</p>
-                </div>
-                </div>
-             
-                <div class="card-content">
-                <h2>${card.name}</h2>
-                <p>${card.category}</p>
-                <div class="card-prices">
-                  <h2 class="end-price">${card.endPrice}</h2>
-                  ${
-                    card.startPrice
-                      ? `<span class="start-price">${card.startPrice}</span>`
-                      : ""
-                  }
-                  ${
-                    card.discount
-                      ? `<span class="discount">${card.discount}</span>`
-                      : ""
-                  }
-                </div>
-                <button class="card-link" >კალათაში დამატება</button>
-                </div>
-            
-            `;
+          <div>
+            <img src="${card.photo}" alt="${card.name}" class="card-img" />
+            <button class="heart"><img src="./assets/icons/heart.svg" alt="Favorite" /></button>
+            <div class="point">  
+              <img src="${card.stars}" />
+              <p> ${card.starNumber}</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>${card.name}</h2>
+            <p>${card.category}</p>
+            <div class="card-prices">
+              <h2 class="end-price">${card.endPrice}</h2>
+              ${
+                card.startPrice
+                  ? `<span class="start-price">${card.startPrice}</span>`
+                  : ""
+              }
+              ${
+                card.discount
+                  ? `<span class="discount">${card.discount}</span>`
+                  : ""
+              }
+            </div>
+            <button class="card-link">კალათაში დამატება</button>
+          </div>`;
         slider.appendChild(cardElement);
       });
     })
@@ -188,11 +215,10 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach((button) => {
       if (window.innerWidth <= 780) {
         button.innerHTML = `
-            <div class="button-content">
-              <img src="./assets/whiteChart.svg" alt="bag" />
-              <span>დამატება</span>
-            </div>
-          `;
+          <div class="button-content">
+            <img src="./assets/whiteChart.svg" alt="bag" />
+            <span>დამატება</span>
+          </div>`;
       } else {
         button.innerHTML = "კალათაში დამატება";
       }
@@ -221,17 +247,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const cardElement = document.createElement("div");
         cardElement.className = "featured-card";
         cardElement.innerHTML = `
-               <div class="card-photo-container" style="background-color: ${card.backgroundColor}" >
-                <img src="${card.photo}" alt="${card.name}" class="card-photo" />
-              
-              <div class="card-body" >
-                <h3>${card.name}</h3>
-                <button class="card-icon">  
-                <img src="${card.icon}" alt="Icon"  />
-      </button>
-              </div>
-              </div>
-            `;
+          <div class="card-photo-container" style="background-color: ${card.backgroundColor}" >
+            <img src="${card.photo}" alt="${card.name}" class="card-photo" />
+            <div class="card-body" >
+              <h3>${card.name}</h3>
+              <button class="card-icon">  
+              <img src="${card.icon}" alt="Icon"  />
+            </button>
+            </div>
+          </div>`;
         sectionContainer.appendChild(cardElement);
       });
     })
@@ -239,6 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading JSON data:", error);
     });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch and display product cards
   fetch("cards.json")
@@ -262,29 +287,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     data.forEach((item) => {
       html += `
-                <div class="card">
-                    <div>
-                    <img class="card-img" src="${item.imageURL}" alt="${item.name}"/>
-                    <button class="heart" onclick=""><img src="assets/Shape.svg"/></button>
-                    <div class="point"> 
-                            <img src="assets/Star 2.svg">
-                            <p>5.0</p>
-                    </div>
-                    </div>
-                    <div class="card-content">
-                        <h2>${item.name}</h2>
-                        <p>${item.desc}</p>
-                        <h2 class="Card-price">${item.price}</h2>
-                        <button class="content-link  addIn" onclick="window.open('${item.link}', '_blank')">
-                            კალათში დამატება
-                        </button>
-                        <button class="content-link iconLogoIn" onclick="window.open('${item.link}', '_blank')">
-                            <img src="assets/IconAdd.svg">
-                            <h3>დამატება</h3>
-                        </button>
-                    </div>
-                </div>
-            `;
+        <div class="card">
+          <div>
+            <img class="card-img" src="${item.imageURL}" alt="${item.name}"/>
+            <button class="heart" onclick=""><img src="assets/Shape.svg"/></button>
+            <div class="point"> 
+              <img src="assets/Star 2.svg">
+              <p>5.0</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>${item.name}</h2>
+            <p>${item.desc}</p>
+            <h2 class="Card-price">${item.price}</h2>
+            <button class="content-link addIn" onclick="window.open('${item.link}', '_blank')">
+              კალათში დამატება
+            </button>
+            <button class="content-link iconLogoIn" onclick="window.open('${item.link}', '_blank')">
+              <img src="assets/IconAdd.svg">
+              <h3>დამატება</h3>
+            </button>
+          </div>
+        </div>`;
     });
 
     container.innerHTML = html;
@@ -296,12 +320,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const sectionContainer = document.getElementById("section-container");
     data.forEach((item) => {
       html += `
-                <div class="section" style="background-color: ${item.backgroundColor};">
-                    <img src="${item.photo}" alt="${item.name}" />
-                    <h2>${item.name}</h2>
-                    <img src="${item.icon}" alt="icon" />
-                </div>
-            `;
+        <div class="section" style="background-color: ${item.backgroundColor};">
+          <img src="${item.photo}" alt="${item.name}" />
+          <h2>${item.name}</h2>
+          <img src="${item.icon}" alt="icon" />
+        </div>`;
     });
     sectionContainer.innerHTML = html;
   }
@@ -439,11 +462,10 @@ function createCards(data) {
 
   data.containers.forEach((container) => {
     const cardHTML = `
-          <div class="categoryIcon">
-              <img src="${container.imageSrc}" alt="${container.imageAlt}">
-              <p>${container.text}</p>
-          </div>
-      `;
+      <div class="categoryIcon">
+        <img src="${container.imageSrc}" alt="${container.imageAlt}">
+        <p>${container.text}</p>
+      </div>`;
     cardContainer.insertAdjacentHTML("beforeend", cardHTML);
   });
 }
@@ -459,7 +481,7 @@ const authBtn = document.getElementById("auth-btn");
 const regBtn = document.getElementById("reg-btn");
 const authForm = document.getElementById("auth-form");
 const regForm = document.getElementById("reg-form");
-const popupHeader = document.getElementsByClassName(".popup-header");
+const popupHeader = document.querySelector(".popup-header");
 
 openPopupBtn.addEventListener("click", () => {
   popupOverlay.style.display = "flex";
