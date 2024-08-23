@@ -1,15 +1,16 @@
 [
     {
-        "title": "Similac",
+        "title": "HIPP - ჰიპი",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
-        "id": 1
+        "id": 1,
+        "age": "0-3 თვე"
     },
     {
-        "title": "Similac",
+        "title": "Humana - ჰუმანა",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
@@ -18,13 +19,14 @@
         "id": 2
     },
     {
-        "title": "Similac",
+        "title": "Heinz - ჰეინცი",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
-        "id": 3
+        "id": 3,
+        "age": "3-6 თვე"
     },
     {
         "title": "Similac",
@@ -33,10 +35,11 @@
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
-        "id": 4
+        "id": 4,
+        "age": "6-9 თვე"
     },
     {
-        "title": "Similac",
+        "title": "Nestle - ნესტლე",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
@@ -45,13 +48,14 @@
         "id": 5
     },
     {
-        "title": "Similac",
+        "title": "BabyBio - ბეიბიბიო",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
-        "id": 6
+        "id": 6,
+        "age": "9-12 თვე"
     },
     {
         "title": "Similac",
@@ -63,7 +67,7 @@
         "id": 7
     },
     {
-        "title": "Similac",
+        "title": "Plasmon - პლასმონი",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
@@ -83,7 +87,8 @@
     {
         "title": "Similac",
         "image": "../assets/nutrition/similac.svg",
-        "description": "სიმილაკი გოლდი 1, 800 გ.",
+        "description": "სიმილაკი გოლდი 15 - 30 მლ.",
+        "volume": "15 - 30 მლ",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
@@ -94,7 +99,7 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 4.0,
         "button_text": "პროდუქტის დამატება",
         "id": 11
     },
@@ -103,14 +108,15 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 4.0,
         "button_text": "პროდუქტის დამატება",
         "id": 12
     },
     {
         "title": "Similac",
         "image": "../assets/nutrition/similac.svg",
-        "description": "სიმილაკი გოლდი 1, 800 გ.",
+        "description": "სიმილაკი გოლდი 75 - 100 მლ",
+        "volume": "75 - 100 მლ",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
@@ -137,11 +143,13 @@
     {
         "title": "Similac",
         "image": "../assets/nutrition/similac.svg",
-        "description": "სიმილაკი გოლდი 1, 800 გ.",
+        "description": "სიმილაკი გოლდი 300 - 500 მლ.",
+        "volume": "300 - 500 მლ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 3.0,
         "button_text": "პროდუქტის დამატება",
-        "id": 16
+        "id": 16,
+        "age": "1-3 წელი"
     },
     {
         "title": "Similac",
@@ -164,18 +172,20 @@
     {
         "title": "Similac",
         "image": "../assets/nutrition/similac.svg",
-        "description": "სიმილაკი გოლდი 1, 800 გ.",
+        "description": "სიმილაკი გოლდი 100 - 300 მლ.",
+        "volume": "100 - 300 მლ.",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
-        "id": 19
+        "id": 19,
+        "age": "3-5 წელი"
     },
     {
         "title": "Similac",
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 3.0,
         "button_text": "პროდუქტის დამატება",
         "id": 20
     },
@@ -191,7 +201,8 @@
     {
         "title": "Similac",
         "image": "../assets/nutrition/similac.svg",
-        "description": "სიმილაკი გოლდი 1, 800 გ.",
+        "description": "სიმილაკი გოლდი 500 - 1000 მლ.",
+        "volume": "500 - 1000 მლ.",
         "price": 72.0,
         "rating": 5.0,
         "button_text": "პროდუქტის დამატება",
@@ -211,7 +222,7 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 2.0,
         "button_text": "პროდუქტის დამატება",
         "id": 24
     },
@@ -229,7 +240,7 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 2.0,
         "button_text": "პროდუქტის დამატება",
         "id": 26
     },
@@ -256,7 +267,7 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 2.0,
         "button_text": "პროდუქტის დამატება",
         "id": 29
     },
@@ -283,7 +294,7 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 1.0,
         "button_text": "პროდუქტის დამატება",
         "id": 32
     },
@@ -310,7 +321,7 @@
         "image": "../assets/nutrition/similac.svg",
         "description": "სიმილაკი გოლდი 1, 800 გ.",
         "price": 72.0,
-        "rating": 5.0,
+        "rating": 1.0,
         "button_text": "პროდუქტის დამატება",
         "id": 35
     },
