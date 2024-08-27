@@ -764,12 +764,43 @@ ul li a {
   background-color: white;
 }
 .popup-content button:hover {
-  background: #218838;
+  cursor: pointer;
 }
 #reg-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: none;
+}
+input.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+.errorMessage {
+  color: #ea2a2a;
+  font-family: FiraGO;
+  display: inline;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+}
+#recaptcha-container {
+  margin: 20px;
 }
 .close-popup {
   cursor: pointer;

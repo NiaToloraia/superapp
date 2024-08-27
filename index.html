@@ -66,6 +66,24 @@
               <li class="category-item">
                 <a href="./productsPage/products.html">ფიტნესი</a>
               </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ტექნიკა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ბავშვის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">სახლი & მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">თავის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">სათამაშოები</a>
+              </li>
+              <li class="category-item">
+                <a href="./productsPage/products.html">ფიტნესი</a>
+              </li>
             </ul>
           </div>
           <button class="slider-nav right" id="right-arrow">
@@ -506,59 +524,140 @@
         <p>პროფილი</p></a
       >
     </div>
-    <div class="popup-overlay" id="popup-overlay">
+    <div class="popup-overlay authReg" id="popup-overlay">
       <div class="popup-content">
         <div class="popup-header">
           <h2>გაიარეთ ავტორიზაცია</h2>
-          <span class="close-popup" id="close-popup"
-            ><img src="./assets/closeBtn.svg" alt="closeBtn"
-          /></span>
+          <span class="close-popup" id="close-popup">
+            <img src="./assets/closeBtn.svg" alt="closeBtn" />
+          </span>
         </div>
         <div class="auth-buttons">
           <button id="auth-btn">ავტორიზაცია</button>
           <button id="reg-btn">რეგისტრაცია</button>
         </div>
-        <div id="auth-form">
-          <input type="text" placeholder="მეილი/ტელ.ნომერი" required />
-          <input type="password" placeholder="პაროლი" required />
+        <div id="auth-form" class="hidden">
+          <input
+            type="text"
+            placeholder="მეილი/ტელ.ნომერი"
+            id="loginInput"
+            required
+          />
+         
+          <div id="errorMessage" style="color: red; display: none">
+            <img class="errorImg" src="./assets/error.svg" alt="" />
+            <p class="errorMessage">მეილი/ ტელ.ნომერი არასწორია</p>
+          </div>
+          <input
+            type="password"
+            placeholder="პაროლი"
+            id="loginPassword"
+            required
+          />
+          <div class="error" id="passwordError">
+            <img class="errorImg" src="./assets/error.svg" alt="" />
+            <p class="errorMessage">პაროლი არასწორია</p>
+          </div>
           <img src="./assets/icon-eye (1).svg" class="eye" alt="eye" />
-          <p class="forgot-password">დაგავიწყდა პაროლი?</p>
-          <button class="login">შესვლა</button>
+          <a class="forgot-password" id="forgot-password">დაგავიწყდა პაროლი?</a>
+          <button class="login" id="submit" type="submit">შესვლა</button>
           <div class="or">
             <hr />
             <p>Or:</p>
             <hr />
           </div>
           <div class="social-auth">
-            <a class="google"
-              ><img src="./assets/image 1 (2).svg" alt="" /><img
-                src="./assets/Facebook -ით შესვლა.svg"
-                alt=""
-            /></a>
-            <a class="facebook"
-              ><img src="./assets/image 2.svg" alt="" /><img
-                src="./assets/Google -ით შესვლა.svg"
-                alt=""
-            /></a>
+            <a class="facebook" id="facebook">
+              <img src="./assets/image 1 (2).svg" alt="" />
+              <img src="./assets/Facebook -ით შესვლა (1).svg" alt="" />
+            </a>
+            <a class="google" id="google">
+              <img src="./assets/image 2.svg" alt="" />
+              <img src="./assets/Google -ით შესვლა.svg" alt="" />
+            </a>
           </div>
         </div>
         <div id="reg-form" class="hidden">
           <div class="column">
-            <input type="text" placeholder="სახელი" required />
-            <input type="text" placeholder="გვარი" required />
-            <input type="text" placeholder="მეილი" required />
+            <input
+              type="text"
+              placeholder="სახელი,გვარი"
+              id="fullName"
+              required
+            />
+            <input type="text" placeholder="მეილი" id="email" required />
+            <input
+              type="text"
+              placeholder="ტელეფონის ნომერი"
+              id="phoneNumber"
+              required
+            />
           </div>
           <div class="row">
-            <input type="text" placeholder="პაროლი" required />
-            <input type="password" placeholder="გაიმეორეთ პაროლი" required />
+            <input type="text" placeholder="პაროლი" id="password" required />
+            <input
+              type="password"
+              placeholder="გაიმეორეთ პაროლი"
+              id="confirmPassword"
+              required
+            />
           </div>
           <p class="terms">
             რეგისტრაციის ღილაკზე დაჭერით ეთანხმებით
             <a href="#">წესებს და პირობებს</a>.
           </p>
-          <button>რეგისტრაცია</button>
+          <button type="submit" id="register">რეგისტრაცია</button>
+          <div id="reg-errorMessage" style="color: red; display: none"></div>
         </div>
       </div>
     </div>
+    <div id="recaptcha-container" class="hidden" ></div>
+    <div  class="popup-overlay Password" id="forgot-password-popup">
+      <div id="password-reset-form" class="popup-content">
+        <a class="go-back"  id="back-to-login"><img src="./assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
+        <h2>Reset Password</h2>
+        <p>Please enter your email or phone number:</p>
+        <input type="text" id="verification-input" placeholder="Email/Phone Number" required>
+        <div id="verification-error" class="error-message" style="display:none;"></div>
+        <button id="verification-submit">Send Verification Code</button>
+      </div>
+    </div>
+  
+    <!-- Popup Overlay for Entering Verification Code -->
+    <div id="verification-popup" class="popup-overlay">
+      <div id="verification-form" class="popup-content">
+        <a class="go-back" id="back-to-forgot"><img src="./assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
+        <h2>Enter Verification Code</h2>
+            <form id="verification-form">
+                <div class="verification-code-container">
+                    <input type="number" maxlength="1" class="verification-code-input" id="input-1">
+                    <input type="number" maxlength="1" class="verification-code-input" id="input-2">
+                    <input type="number" maxlength="1" class="verification-code-input" id="input-3">
+                    <input type="number" maxlength="1" class="verification-code-input" id="input-4">
+                    <input type="number" maxlength="1" class="verification-code-input" id="input-5">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        <div id="verification-error" class="error-message" style="display:none;"></div>
+        <button id="verify-submit">Verify and Reset Password</button>
+      </div>
+    </div>
+  
+    <!-- Popup Overlay for Entering New Password -->
+    <div id="new-password-popup" class="popup-overlay">
+      <div id="new-password-form" class="popup-content">
+        <a class="go-back" id="back-to-verify"><img src="./assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
+        <h2>Enter New Password</h2>
+        <p>Please enter and confirm your new password:</p>
+        <input type="password" id="new-password" placeholder="New Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <div id="new-password-error" class="error-message" style="display:none;"></div>
+        <button id="new-password-submit">Change Password</button>
+      </div>
+    </div>
+  </div>
+  
+    <script type="module" src="login.js"></script>
+    <script type="module" src="register.js"></script>
   </body>
 </html>
