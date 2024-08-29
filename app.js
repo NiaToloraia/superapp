@@ -499,3 +499,22 @@ function showRegForm() {
   regBtn.style.color = "black";
   authBtn.style.color = "#9B9393";
 }
+
+// Get the header text element and the buttons
+const headerText = document.getElementById("popup-header-text");
+const authButton = document.getElementById("auth-btn");
+const regButton = document.getElementById("reg-btn");
+
+// Event listener for the "რეგისტრაცია" button
+regButton.addEventListener("click", () => {
+  headerText.innerHTML = "გაიარეთ რეგისტრაცია"; // Change to "გაიარეთ რეგისტრაცია"
+  document.getElementById("auth-form").classList.add("hidden"); // Hide the auth form
+  document.getElementById("reg-form").classList.remove("hidden"); // Show the reg form
+});
+
+// Event listener for the "ავტორიზაცია" button
+authButton.addEventListener("click", () => {
+  headerText.innerHTML = "გაიარეთ ავტორიზაცია"; // Change back to "გაიარეთ ავტორიზაცია"
+  document.getElementById("reg-form").classList.add("hidden"); // Hide the reg form
+  document.getElementById("auth-form").classList.remove("hidden"); // Show the auth form
+});
