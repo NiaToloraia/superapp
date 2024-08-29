@@ -21,21 +21,29 @@ function generateCardsHTML(data) {
   let html = "";
   const container = document.getElementById("cards-container");
 
-  data.forEach((item) => {
+  data.forEach((item, index) => {
     html += `
-                <div class="card">
-                 
-                   <img src="${item.imageURL}" alt="${item.name}" class="cardIMg"> 
-                    <div class="card-content">
-                        <h4 class="allCardName">${item.title}</h4>
-                        <p class="allCardText">${item.text}</p>
-                      <span class="allCardDate">${item.date}</span>&nbsp;
-                    </div>
-                </div>
-            `;
+      <div class="card" id="card-${index}" >
+        <img src="${item.imageURL}" alt="${item.name}" class="cardIMg" > 
+        <div class="card-content">
+          <h4 class="allCardName">${item.title}</h4>
+          <p class="allCardText">${item.text}</p>
+          <span class="allCardDate">${item.date}</span>&nbsp;
+        </div>
+      </div>
+    `;
   });
 
   container.innerHTML = html;
+
+  // Add event listener for the first card
+  if (data.length > 0) {
+    const firstCard = document.querySelector("#card-0");
+    firstCard.addEventListener("click", () => {
+      // document.querySelector("#card-0").style.cursor = "pointer";
+      window.location.href = "blogSecondPage.html";
+    });
+  }
 }
 
 // Page numeration
@@ -126,3 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial call to populate the pagination
   updatePagination();
 });
+
+// come back indexHtml
+
+document.getElementById("backToIndex").addEventListener("click", function () {
+  window.location.href = "../index.html";
+});
+
+document
+  .getElementById("backToIndexClose")
+  .addEventListener("click", function () {
+    window.location.href = "../index.html";
+  });

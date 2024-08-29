@@ -2,7 +2,6 @@
   font-family: "Firago";
   src: url(../fonts/FiraGO-Regular.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +19,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 /* header */
 
 header {
@@ -191,119 +191,30 @@ li {
   object-fit: cover;
 }
 /* header end */
-/* blog*/
+
 .mobileBox {
   display: none;
 }
-.cardSection {
-  background-color: var(--card-container-background-color);
-  height: auto;
-  margin: 40px 0;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-}
-.cardTitle {
-  font-size: 20px;
-  /* margin: 40px 0; */
-}
-#cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
 
-.card {
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 49.194%;
-  height: 270px;
-  display: flex;
-  /* position: relative; */
-  border: 2px solid #efefef;
-  border-radius: 8px;
-  margin-bottom: 32px;
-}
-.card:first-child:hover {
-  cursor: pointer;
-}
-
-.cardIMg {
-  width: 207px;
-  display: block;
-  border-radius: 8px 0 0 8px;
-  /* height: 218px; */
-}
-
-.card-content {
-  /* background-color: aquamarine; */
-  padding: 44px 27px 44px 16px;
-  /* border: 2px solid #efefef; */
-}
-.allCardName {
+section h2 {
   color: #2d3648;
   font-size: 20px;
   font-weight: 700;
-  line-height: 28px;
+  margin: 40px 0;
 }
-.allCardText {
-  color: #717d96;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 16px 0;
-  line-height: 22.4px;
-}
-.allCardDate {
-  color: #717d96;
-  font-size: 16px;
-  font-weight: 700;
-}
+/* section img {
+    width: 1240px;
+  } */
 
-/* Page numeration */
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
+.textBox {
+  width: 890px;
+  /* height: 1140px; */
+  margin: 32px auto 60px;
+  line-height: 19.36px;
 }
-
-.pagination-button {
-  /* background-color: rebeccapurple; */
-  /* background-color: #f0f0f0; */
-  /* border: 1px solid #ddd; */
-  /* border-radius: 4px; */
-  padding: 8px 12px;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-.pagination-button:disabled {
-  /* background-color: aqua; */
-  /* background-color: #e0e0e0; */
-  cursor: not-allowed;
-}
-
-.pagination-numbers {
-  display: flex;
-}
-
-.pagination-number {
-  /* background-color: #f0f0f0;
-      border: 1px solid #ddd;
-      border-radius: 4px; */
-  color: #444444;
-  padding: 8px 12px;
-  margin: 0 2px;
-  cursor: pointer;
-}
-
-.pagination-number.active {
-  /* font-size: 19px; */
-  background-color: #007bff;
-  border-radius: 10px;
-  color: white;
-  border-color: #007bff;
+.textBox ul {
+  list-style-type: disc;
+  margin-left: 15px;
 }
 
 /* footer */
@@ -342,22 +253,19 @@ footer li {
 }
 
 @media (max-width: 1340px) {
-  .allCardName {
-    font-size: 19px;
-  }
-  .allCardText {
-    font-size: 14px;
+  section img {
+    width: 100%;
   }
 }
+
 /* Responsive Tablets and mobile */
 
 @media (max-width: 780px) {
   main {
-    margin: 0;
+    margin: 0 16px;
+    width: 91.46%;
   }
-
   header,
-  .cardSection h2,
   .headerLine {
     display: none;
   }
@@ -371,44 +279,28 @@ footer li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 33px 1rem 11px;
+    margin: 33px 0 11px;
   }
   .mobileBoxLine {
     color: #cbd2e0;
   }
-  #cards-container {
-    flex-direction: column;
-    margin-top: 0;
-  }
-  .cardSection {
-    margin: 16px 1rem;
-  }
-  .card {
-    width: 100%;
-    height: 208px;
-    margin-bottom: 16px;
-    border: none;
-  }
-  .cardIMg {
-    width: 131px;
-    height: 208px;
-  }
-  .card-content {
-    padding: 15.5px 16px;
-    border: 1px solid #efefef;
-  }
-  .allCardName {
+
+  section h2 {
     font-size: 12px;
-    line-height: 16.8px;
+    font-weight: 800;
+    margin: 16px 0;
   }
-  .allCardText,
-  .allCardDate {
-    font-size: 10px;
-    line-height: 14px;
+  section img {
+    width: 100%;
   }
-  .pagination-container {
-    margin: 0;
+  .textBox {
+    width: 88.25%;
+    margin: 16px auto 45px;
+    font-size: 12px;
+    line-height: 14.52px;
   }
+  /* footer */
+
   footer,
   .landingfooter {
     display: none;

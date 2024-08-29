@@ -107,3 +107,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial call to populate the pagination
   updatePagination();
 });
+
+// come back indexHtml
+
+document.getElementById("backToIndex").addEventListener("click", function () {
+  window.location.href = "../index.html";
+});
+
+document
+  .getElementById("backToIndexClose")
+  .addEventListener("click", function () {
+    window.location.href = "../index.html";
+  });
