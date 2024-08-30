@@ -781,6 +781,42 @@ ul li a {
 input.error {
   border: 1px solid red;
 }
+.go-back {
+  display: flex;
+  flex-direction: row;
+  color: #008bff;
+  width: 84px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+#password-reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+#password-reset-form p {
+  align-items: flex-start;
+  width: 100%;
+  font-family: FiraGO;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+#password-reset-form input {
+  width: 100%;
+}
+#password-reset-form h2 {
+  color: black;
+  font-family: FiraGO;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
 
 .error-message {
   display: flex;

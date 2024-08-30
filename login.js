@@ -1,4 +1,3 @@
-// Import necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import {
   getAuth,
@@ -10,9 +9,12 @@ import {
   GoogleAuthProvider,
   signInWithPhoneNumber,
   RecaptchaVerifier,
+  signOut,
+  confirmPasswordReset,
+  onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCk-ILy4a3B6f0bVpMGUDT-Ad4bK7RDcXQ",
   authDomain: "login-c102a.firebaseapp.com",
@@ -26,13 +28,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-const submit = document.getElementById("submit");
-
-submit.addEventListener("click", function (event) {
+// Function to handle login
+function handleLogin(event) {
   event.preventDefault();
   const loginInput = document.getElementById("loginInput").value;
   const password = document.getElementById("loginPassword").value;
-
   const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(loginInput);
   const isPhoneNumber = /^\+?[0-9]{10,14}$/.test(loginInput);
 
@@ -42,10 +42,20 @@ submit.addEventListener("click", function (event) {
       .then((userCredential) => {
         const user = userCredential.user;
 
-        // Check if email is verified
         if (user.emailVerified) {
-          alert("Login successful!");
-          // Redirect or perform other actions
+          // Close the login popup
+          document.getElementById("popup-overlay").style.display = "none";
+
+          // Change the button text to "ჩემი პროფილი"
+          const openPopupBtn = document.getElementById("open-popup-btn");
+          openPopupBtn.innerText = "ჩემი პროფილი";
+
+          // Add event listener to redirect to "myprofile" page
+          openPopupBtn.addEventListener("click", function () {
+            if (openPopupBtn.innerText === "ჩემი პროფილი") {
+              window.location.href = "./myProfilePage/index.html";
+            }
+          });
         } else {
           alert("Please verify your email before logging in.");
           sendEmailVerification(user)
@@ -64,12 +74,10 @@ submit.addEventListener("click", function (event) {
         document.getElementById("passwordInput").style.border = "2px solid red";
       });
   } else if (isPhoneNumber) {
-    // Prepend the country code if not included
-    if (!loginInput.startsWith("+")) {
-      loginInput = `+995${loginInput}`;
-    }
-
     // Phone number login
+    const formattedPhoneNumber = loginInput.startsWith("+")
+      ? loginInput
+      : `+995${loginInput}`;
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
       {},
@@ -77,22 +85,23 @@ submit.addEventListener("click", function (event) {
     );
     const appVerifier = window.recaptchaVerifier;
 
-    signInWithPhoneNumber(auth, loginInput, appVerifier)
+    signInWithPhoneNumber(auth, formattedPhoneNumber, appVerifier)
       .then((confirmationResult) => {
-        // SMS sent
-        window.confirmationResult = confirmationResult;
-        alert("Verification code sent!");
-
-        // Prompt for verification code
         const verificationCode = prompt(
           "შეიყვანეთ კოდი, რომელიც თქვენ მიიღეთ SMS-ით:"
         );
         return confirmationResult.confirm(verificationCode);
       })
       .then((result) => {
-        // User signed in successfully
-        alert("Phone number verified and login successful!");
-        // Redirect or perform other actions
+        // Phone number verified and login successful
+        document.getElementById("forgot-password-popup").style.display = "none";
+        const openPopupBtn = document.getElementById("open-popup-btn");
+        openPopupBtn.innerText = "ჩემი პროფილი";
+        openPopupBtn.addEventListener("click", function () {
+          if (openPopupBtn.innerText === "ჩემი პროფილი") {
+            window.location.href = "./myProfilePage/index.html";
+          }
+        });
       })
       .catch((error) => {
         document.getElementById("errorMessage").style.display = "block";
@@ -103,7 +112,10 @@ submit.addEventListener("click", function (event) {
     document.getElementById("errorMessage").textContent =
       "გთხოვთ, შეიყვანეთ ვალიდური მეილი ან ტელეფონის ნომერი.";
   }
-});
+}
+
+// Attach the login handler to the submit button
+document.getElementById("submit").addEventListener("click", handleLogin);
 
 const facebookButton = document.getElementById("facebook");
 
@@ -123,7 +135,18 @@ facebookButton.addEventListener("click", function (event) {
       console.log("User signed in:", user);
       console.log("Facebook Access Token:", accessToken);
 
-      alert("Successfully signed in with Facebook!");
+      document.getElementById("popup-overlay").style.display = "none";
+
+      // Change the button text to "ჩემი პროფილი"
+      const openPopupBtn = document.getElementById("open-popup-btn");
+      openPopupBtn.innerText = "ჩემი პროფილი";
+
+      // Add event listener to redirect to "myprofile" page
+      openPopupBtn.addEventListener("click", function () {
+        if (openPopupBtn.innerText === "ჩემი პროფილი") {
+          window.location.href = "./myProfilePage/index.html";
+        }
+      });
       window.location.href = "signIn.html";
     })
     .catch((error) => {
@@ -146,10 +169,18 @@ googleButton.addEventListener("click", function (event) {
     .then((result) => {
       // The signed-in user info.
       const user = result.user;
+      document.getElementById("popup-overlay").style.display = "none";
 
-      alert(`Welcome, ${user.displayName}!`);
-      // Redirect to a new page or perform any desired action
-      window.location.href = "dashboard.html";
+      // Change the button text to "ჩემი პროფილი"
+      const openPopupBtn = document.getElementById("open-popup-btn");
+      openPopupBtn.innerText = "ჩემი პროფილი";
+
+      // Add event listener to redirect to "myprofile" page
+      openPopupBtn.addEventListener("click", function () {
+        if (openPopupBtn.innerText === "ჩემი პროფილი") {
+          window.location.href = "./myProfilePage/index.html";
+        }
+      });
     })
     .catch((error) => {
       // Handle errors here.
@@ -159,6 +190,7 @@ googleButton.addEventListener("click", function (event) {
     });
 });
 
+// Handle 'Forgot Password' button click// Handle 'Forgot Password' button click
 document
   .getElementById("forgot-password")
   .addEventListener("click", function (e) {
@@ -167,53 +199,101 @@ document
     document.getElementById("forgot-password-popup").style.display = "flex";
   });
 
-// Event listener for submitting the email for password reset
+// Handle 'Submit' button click for email verification
 document
   .getElementById("verification-submit")
-  .addEventListener("click", function (e) {
+  .addEventListener("click", async function (e) {
     e.preventDefault();
 
     const emailInput = document
       .getElementById("verification-input")
       .value.trim();
-    const auth = getAuth(); // Ensure `getAuth` is called correctly
+    const errorMessageElement = document.getElementById("verification-error");
 
-    fetchSignInMethodsForEmail(auth, emailInput)
-      .then((signInMethods) => {
-        if (signInMethods.length === 0) {
-          throw new Error("Email not registered.");
-        }
+    try {
+      // Check if the email exists in Firebase
+      const auth = getAuth();
+      const signInMethods = await fetchSignInMethodsForEmail(auth, emailInput);
 
-        // Fetch user by email logic here
-        // Example: Get user from your database or authentication system
-        // For Firebase, this might involve a custom solution if not using Firebase auth directly
-        return auth.currentUser; // Placeholder for actual user fetching logic
-      })
-      .then((user) => {
-        return sendEmailVerification(user);
-      })
-      .then(() => {
-        document.getElementById("errorMessage").style.display = "none";
-        document.getElementById("errorMessage").textContent = "";
-        alert("Verification email sent!");
-      })
-      .catch((error) => {
-        console.error("Error sending verification email:", error.message);
-
-        const errorMessageElement = document.getElementById("errorMessage");
-        let message;
-
-        if (error.message === "Email not registered.") {
-          message = "Email not registered. Please check the email address.";
-        } else if (error.message.includes("Invalid email")) {
-          message = "Invalid email address. Please enter a valid email.";
-        } else {
-          message = "An error occurred. Please try again.";
-        }
-
+      if (signInMethods.length === 0) {
+        // Display an error message if the email is not found
         errorMessageElement.style.display = "block";
-        errorMessageElement.textContent = message;
-      });
+        errorMessageElement.textContent = "Email not found in the system.";
+        return; // Exit the function early
+      }
+
+      // Generate a 5-digit verification code
+      const verificationCode = Math.floor(
+        10000 + Math.random() * 90000
+      ).toString();
+
+      // In a real application, send the verification code to the user's email
+      console.log(`Verification code for ${emailInput}: ${verificationCode}`);
+
+      // Store the email and verification code (in a real app, store these securely)
+      window.resetEmail = emailInput;
+      window.resetCode = verificationCode;
+
+      // Automatically close the email input popup and open the verification code popup
+      document.getElementById("forgot-password-popup").style.display = "none";
+      document.getElementById("verification-code-popup").style.display = "flex";
+
+      // Focus on the verification code input field
+      document.getElementById("verification-code-input").focus();
+
+      // Optionally, display a message to the user
+      alert(
+        "A verification code has been sent to your email. Please check and enter it below."
+      );
+    } catch (error) {
+      errorMessageElement.style.display = "block";
+      errorMessageElement.textContent = error.message;
+    }
+  });
+
+// Handle 'Submit' button click for verifying the code
+document
+  .getElementById("verify-submit")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const codeInput = document
+      .getElementById("verification-code-input")
+      .value.trim();
+
+    if (codeInput === window.resetCode) {
+      // Code is correct, show the password reset form
+      document.getElementById("verification-code-popup").style.display = "none";
+      document.getElementById("new-password-popup").style.display = "flex";
+    } else {
+      alert("Incorrect verification code. Please try again.");
+    }
+  });
+
+// Handle 'Submit' button click for resetting the password
+document
+  .getElementById("new-password-submit")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    const newPassword = document.getElementById("new-password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+
+    if (newPassword === confirmPassword) {
+      // In a real application, reset the password in the database or with Firebase Auth
+      console.log(`Password reset for ${window.resetEmail}`);
+
+      alert("Password has been reset successfully!");
+      document.getElementById("new-password-popup").style.display = "none";
+
+      // Clear stored data
+      window.resetEmail = null;
+      window.resetCode = null;
+    } else {
+      const newPasswordErrorElement =
+        document.getElementById("new-password-error");
+      newPasswordErrorElement.style.display = "block";
+      newPasswordErrorElement.textContent = "Passwords do not match.";
+    }
   });
 
 // Check if the email is registered
@@ -309,29 +389,94 @@ document
 //       });
 //   });
 
-// Handle new password submission
-document
-  .getElementById("new-password-submit")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    const newPassword = document.getElementById("new-password").value;
-    const confirmPassword = document.getElementById("confirm-password").value;
+// Get the elements
+const backToLoginLink = document.getElementById("back-to-login");
+const forgotPasswordPopup = document.getElementById("forgot-password-popup");
+const popupOverlay = document.getElementById("popup-content");
+const authForm = document.getElementById("auth-form");
+const regForm = document.getElementById("reg-form");
+const popupHeader = document.querySelector(".popup-header h2");
 
-    if (newPassword === confirmPassword) {
-      // Assume `resetCode` is available from previous steps
-      confirmPasswordReset(auth, window.resetCode, newPassword)
-        .then(() => {
-          alert("Password has been changed successfully!");
-          document.getElementById("new-password-popup").style.display = "none";
-        })
-        .catch((error) => {
-          document.getElementById("new-password-error").style.display = "block";
-          document.getElementById("new-password-error").textContent =
-            error.message;
-        });
-    } else {
-      document.getElementById("new-password-error").style.display = "block";
-      document.getElementById("new-password-error").textContent =
-        "Passwords do not match.";
-    }
-  });
+// Event listener for the "უკან" (Back) link
+backToLoginLink.addEventListener("click", () => {
+  // Hide the password reset popup
+  forgotPasswordPopup.style.display = "none";
+
+  // Show the main popup overlay (authorization view)
+  popupOverlay.style.display = "block";
+  ს;
+
+  // Reset to the initial authorization form state
+  authForm.classList.remove("hidden");
+  regForm.classList.add("hidden");
+
+  // Update the header text back to "გაიარეთ ავტორიზაცია"
+  popupHeader.innerHTML = "გაიარეთ ავტორიზაცია";
+});
+
+const openPopupBtn = document.getElementById("open-popup-btn");
+
+// Function to handle the authentication state
+function handleAuthState(user) {
+  if (user) {
+    // User is signed in, change the button text to "ჩემი პროფილი"
+    openPopupBtn.innerText = "ჩემი პროფილი";
+
+    // Redirect to the profile page when the button is clicked
+    openPopupBtn.addEventListener("click", function () {
+      window.location.href = "./myProfilePage/index.html";
+    });
+  } else {
+    // User is not signed in, keep the button as "შესვლა"
+    openPopupBtn.innerText = "შესვლა";
+
+    // Redirect to the login page or show login popup
+    openPopupBtn.addEventListener("click", function () {
+      // Show login popup or redirect to login page
+    });
+  }
+}
+
+// Check the user's authentication state when the page loads
+onAuthStateChanged(auth, (user) => {
+  handleAuthState(user);
+});
+function checkHeaderText() {
+  fetch("http://127.0.0.1:5501/index.html")
+    .then((response) => response.text())
+    .then((data) => {
+      // Create a DOM parser to parse the index.html content
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, "text/html");
+
+      // Check if the header contains "ჩემი პროფილი"
+      const header = doc.querySelector("header");
+      if (header && header.textContent.includes("ჩემი პროფილი")) {
+        // Update headers on other pages
+        updateHeaders("ჩემი პროფილი");
+      }
+    })
+    .catch((error) => console.error("Error fetching index.html:", error));
+}
+
+checkHeaderText();
+function handleLogout() {
+  const auth = getAuth();
+  signOut(auth)
+    .then(() => {
+      // Sign-out successful.
+      console.log("User logged out successfully");
+      // Redirect to index.html
+      window.location.href = "../index.html";
+    })
+    .catch((error) => {
+      // An error happened.
+      console.error("Error logging out:", error.message);
+      alert("Error logging out: " + error.message);
+    });
+}
+
+// Attach the logout handler to the logout button
+document
+  .getElementById("logout-button")
+  .addEventListener("click", handleLogout);

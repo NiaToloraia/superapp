@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../styles.css" />
+   
+    <!-- <script src="app.js" defer></script> -->
+    <script src="profile.js" defer></script>
     <title>Super App</title>
   </head>
 
@@ -16,31 +17,31 @@
         <div class="search-container">
           <input type="text" placeholder="ძიება" />
           <img
-            src="./assets/icons/searchIcon.svg"
+            src=".././assets/icons/searchIcon.svg"
             alt="Search Icon"
             class="search-icon"
           />
         </div>
         <div class="bag-container">
-          <img src="./assets/icons/icon-shopping-cart.svg" alt="Shopping Bag" />
+          <img src=".././assets/icons/icon-shopping-cart.svg" alt="Shopping Bag" />
           <div class="notification-badge">5</div>
         </div>
         <div class="favorites-container">
           <a href="#">
-            <img src="./assets/icons/favourites.svg" alt="Favorites" />
+            <img src=".././assets/icons/favourites.svg" alt="Favorites" />
           </a>
         </div>
-        <button class="button auth-button" id="open-popup-btn">შესვლა</button>
+        <button class="button auth-button" id="open-popup-btn">ჩემი პროფილი</button>
       </div>
       <div class="categories-section">
         <div class="burger-menu-container">
           <button class="burger-menu" id="burgerMenuBtn">
-            <img src="./assets/icons/burgerIcon.svg" alt="burger menu" />
+            <img src=".././assets/icons/burgerIcon.svg" alt="burger menu" />
           </button>
           <span class="all-categories-text">ყველა კატეგორია</span>
         </div>
         <button class="slider-nav left" id="left-arrow">
-          <img src="./assets/icons/leftVector.svg" alt="left arrow" />
+          <img src=".././assets/icons/leftVector.svg" alt="left arrow" />
         </button>
         <div class="categories-slider" id="categories-slider">
           <div class="categories-container">
@@ -87,7 +88,7 @@
             </ul>
           </div>
           <button class="slider-nav right" id="right-arrow">
-            <img src="./assets/icons/rightVector.svg" alt="right arrow" />
+            <img src=".././assets/icons/rightVector.svg" alt="right arrow" />
           </button>
         </div>
       </div>
@@ -134,178 +135,39 @@
           </ul>
         </nav>
         <button class="close-btn" id="closeBtn">
-          <img src="./assets/Buttoncloseblue.svg" alt="blue button" />
+          <img src=".././assets/Buttoncloseblue.svg" alt="blue button" />
         </button>
       </div>
     </div>
     <main>
-      <div class="slider-wrapper">
-        <div class="side-scroll" id="slider-container">
-          <div class="mySlides fade numbertext">
-            <div class="firstscroll">
-              <div class="firstscroll-info">
-                <h1>დაზოგე 50%-მდე საზაფხულო ასორტიმენტზე</h1>
-                <p>შეიძინე ყველაფერი შენი სახლისთვის,საუკეთესო ფასად</p>
-                <a href="#">
-                  <h3>სრულად სანახავად</h3>
-                  <img src="assets/blue Arrow.svg" />
-                </a>
-              </div>
-              <div class="firstscroll-img"></div>
-            </div>
-          </div>
-          <div class="mySlides fade numbertext middlescroll">
-            <h1>შექმენი უნიკალური ნამუშევრები</h1>
-            <p>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</p>
-            <a href="#">
-              <h3>დაიწყე შოპინგი</h3>
-            </a>
-          </div>
-          <div class="mySlides fade numbertext lastscroll">
-            <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
-            <p>იზრუნეთ მათზე სიყვარულით</p>
-          </div>
-          <!-- The dots/circles -->
-          <ol style="text-align: center" class="dots">
-            <li class="dot" onclick="currentSlide(1)"></li>
-            <li class="dot" onclick="currentSlide(2)"></li>
-            <li class="dot" onclick="currentSlide(3)"></li>
-          </ol>
-        </div>
-      </div>
+        <aside>
+            <div class="profile-list">
+                <div class="profile-item">
+                    <div class="column">
+                        <img src="" alt="Profile Photo" id="profile-photo">
+                        <span class="greeting">გამარჯობა</span>
+                        <span class="username" id="username"></span>
+                       
+                    </div>
+                    <div class="column">
+                        <!-- Icons can be added here -->
+                        <i class="icon-class"></i>
+                    </div>
+                    <div class="column">
+                        <!-- Additional text can be added here -->
+                        <span>Some text here</span>
+                    </div>
+                    <!-- Repeat for more columns as needed -->
+                    <div class="column logout-column">
+                        <img src="" alt="" class="logoutIcon">
+                        <button id="logout-button">Logout</button>
 
-      <div class="cardSection">
-        <div class="cards-head">
-          <h1>ყველაზე მოთხოვნადი პროდუქცია</h1>
-          <div class="allCards-button">
-            <button><p>სრულად</p></button>
-            <!-- Next and previous buttons -->
-            <div class="prev-nextFully">
-              <a class="fully-prev" onclick=""
-                ><img src="assets/chevron-left.svg"
-              /></a>
-              <a class="fully-next" onclick=""
-                ><img src="assets/chevron-right.svg"
-              /></a>
+                    </div>
+                </div>
+                <!-- Repeat .profile-item for more rows if needed -->
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-row" id="slider"></div>
-      <div id="sectionContainer"></div>
-
-      <!-- Next and previous buttons -->
-      <div class="prev-nextContainer">
-        <a class="prev" onclick="plusSlides(-1)"
-          ><img src="assets/sliderLeft.svg"
-        /></a>
-        <a class="next" onclick="plusSlides(+1)"
-          ><img src="assets/sliderRight.svg"
-        /></a>
-      </div>
-      <div class="cardSection">
-        <div class="cards-head">
-          <h1>მხოლოდ ჩვენთან</h1>
-          <div class="allCards-button">
-            <button><p>სრულად</p></button>
-            <!-- Next and previous buttons -->
-            <div class="prev-nextFully">
-              <a class="fully-prev" onclick=""
-                ><img src="assets/chevron-left.svg"
-              /></a>
-              <a class="fully-next" onclick=""
-                ><img src="assets/chevron-right.svg"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div id="cards-container"></div>
-      </div>
-      <div class="popularBrands">
-        <h1>პოპულარული ბრენდები</h1>
-        <div class="Brands">
-          <div class="Hape">
-            <div class="Hape-img">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/83e5/f1c5/51076453c1d7314785c220f75880ba38?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k~5fxyHgBpoVja9ggX8vqOAYRif-F1ZOEmCRSsvXJ0KDV2b7Vi9XseHpBwKDIWWu58LIbQSe0S7KSc8WwoaoZ77pMMr7k9HUESsjCACrc3GwKrjO58B2HzflyrmqYOzRkVJ8gmjs7sLJu4x8R29rNR2c~obytL-vYlqKui~i38pfTyXjdJmNJh17K35LH51njhCK9CVp3nWRRCz2B20YypA3lP4pmc82xdi7RMhGpzRVdLuZt40fN9f8J~TmGqzmrvlmMjF9kWItHp1ZHoBKbgOLYjIqfRi5zgUawjFYIR-9vJ2vfGaqh~qJGhdM-2MZILdj2DXgyfk4gZHDv5PGiw__"
-              />
-            </div>
-            <div class="Brand-info">
-              <p>Hape</p>
-              <button class="Brand-arrow">
-                <img src="assets/arrow.svg" />
-              </button>
-            </div>
-          </div>
-          <div class="similarPopular">
-            <div class="Dyson">
-              <div class="Dyson-img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/f566/4fc6/9e1a6ee46eadc0955ff3e6f59f463629?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Da2TS6MpXz0CuxK0PQ5hko8~TZkbmBVedXU6WuiLEZdmCr0BNwG62~mdKoE6b-M05NgfBUX7Wloj4lg1u3xFadJiqfZuvor3ybZpo3h25-YuuLudjLtqLt59nZW4jzOnR5erXHSsBhoc3K8vlAxd91C9YPF9sUuW7BMY1S0SIHraV7hbpsGR9jMpWTlLbYdMZ-~5FUNRRFQXgb66Y2srENZVobfIQjdO-efsuBe~kjD8YPIVT~NJgpK3rmAYQ1TkYv0i4ducCT61xFJq03O4KdNZrz7fpS~VTRz7h7nIF-1Noqw2f9FRPJk1OZXNmgb237RRhe0mVfru3SIEheJRMg__"
-                />
-              </div>
-              <div class="Brand-info">
-                <p>Dyson</p>
-                <button class="Brand-arrow">
-                  <img src="assets/arrow.svg" />
-                </button>
-              </div>
-            </div>
-            <div class="GreenPan">
-              <div class="GreenPan-img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/42d6/7a72/78d46210f59d52ae7a9025b5c53c5c4d?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qNCpXnB2iKXyJdAeJ0o8IXVM7~nvhwxDoGk-CMUXSo0qSjFraBqZEHoVTwBg6WvKxt2tMJOShoLXZYv-~VPqd1SDy24irqh8cSMe5ahSKHcun7Z8waMLvlj1s5g0NEMGDIukRNNZn1hQV6qsEd61CPt69jWCq~uTsjjqZMf6O2MiO68e0CDvIS8qolezesaBZY-SMEAxM1tREP7zBDPndeyTInoyUoTzIqtJ6a~H9xUk0AElCUhsK3Upiv6K74tdukzZzkHWMONVhnd7WlJOw8AG8BZtBwwD50Z-XACPpDT9FP-Cozc0z~FP5VAZsbtsyWXnAon5Olsjil52P0AI2w__"
-                />
-              </div>
-              <div class="Brand-info">
-                <p>GreenPan</p>
-                <button class="Brand-arrow">
-                  <img src="assets/arrow.svg" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ყველაფერი შენი სახლისთვის -->
-      <section class="card2Section">
-        <div class="lastCard">
-          <h2 class="card2WrapperTitle">ყველაფერი შენი სახლისთვის</h2>
-          <div class="fullyBox">
-            <span class="textFully">სრულად</span> &nbsp;&nbsp;
-            <img
-              src="assets/img/Buttongrey.svg"
-              alt="leftButton"
-              id="leftButton"
-            />
-            <img
-              src="assets/img/Buttongrey2.svg"
-              alt="rightButton"
-              id="rightButton"
-            />
-          </div>
-        </div>
-        <div id="cards2-container"></div>
-      </section>
-
-      <!-- საზაფხულო წვეულება -->
-      <div class="partyOffers">
-        <img class="mainImg" src="assets/img/unsplash.png" alt="unsplash" />
-        <img
-          class="mainImgMobile"
-          src="assets/img/unsplash2.png"
-          alt="unsplash2"
-        />
-        <div class="partyOffersText">
-          <h3>ყველაფერი დაუვიწყარი საზაფხულო წვეულებებისთვის</h3>
-          <p>შეიძინე ჩვენთან საუკეთესო ფასად</p>
-          <button type="button">
-            სრულად სანახავად &nbsp;
-            <img src="assets/img/Icon Right.png" alt="arrow3" class="arrow3" />
-          </button>
-        </div>
-      </div>
+        
+        </aside>
     </main>
     <hr class="line" />
     <footer>
@@ -339,7 +201,7 @@
           <li>
             <a href="tel:+406555-0120"
               ><img
-                src="assets/footerIMG/Vector.svg"
+                src=".././assets/footerIMG/Vector.svg"
                 alt="phone"
               />&nbsp;&nbsp;(406) 555-0120</a
             >
@@ -347,7 +209,7 @@
           <li>
             <a href="mailto:support@shopeasy.com"
               ><img
-                src="assets/footerIMG/Group.svg"
+                src=".././assets/footerIMG/Group.svg"
                 alt="mail"
               />&nbsp;&nbsp;support@shopeasy.com</a
             >
@@ -355,20 +217,20 @@
           <li class="contactIcon">
             <a href="https://www.facebook.com/" target="_blank"
               ><img
-                src="assets/footerIMG/icon-facebook.svg"
+                src=".././assets/footerIMG/icon-facebook.svg"
                 alt="fb"
               />&nbsp;</a
             >
             <a href="https://www.instagram.com/" target="_blank"
               ><img
-                src="assets/footerIMG/icon-instagram.svg"
+                src=".././assets/footerIMG/icon-instagram.svg"
                 alt="insta"
               />&nbsp;</a
             ><a href="https://www.linkedin.com/" target="_blank"
-              ><img src="assets/footerIMG/icon-linkedin.svg" alt="lin"
+              ><img src=".././assets/footerIMG/icon-linkedin.svg" alt="lin"
             /></a>
             &nbsp;<a href="https://www.youtube.com/" target="_blank"
-              ><img src="assets/footerIMG/icon-youtube.svg" alt="you"
+              ><img src=".././assets/footerIMG/icon-youtube.svg" alt="you"
             /></a>
           </li>
           <li></li>
@@ -377,12 +239,12 @@
         <ul>
           <li>
             <a href="https://www.apple.com/app-store/" target="_blank"
-              ><img src="assets/footerIMG/App Store.svg" alt="appStore"
+              ><img src=".././assets/footerIMG/App Store.svg" alt="appStore"
             /></a>
           </li>
           <li class="socialMedia">
             <a href="https://play.google.com/store" target="_blank"
-              ><img src="assets/footerIMG/Google Play.svg" alt="googlePlay"
+              ><img src=".././assets/footerIMG/Google Play.svg" alt="googlePlay"
             /></a>
           </li>
         </ul>
@@ -391,7 +253,7 @@
         <div class="accordion-header">
           <span class="accordion-title">დახმარება</span>
           <img
-            src="assets/img/icon-chevron-down.svg"
+            src=".././assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
@@ -409,7 +271,7 @@
         <div class="accordion-header">
           <span class="accordion-title">წესები & პირობები</span>
           <img
-            src="assets/img/icon-chevron-down.svg"
+            src=".././assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
@@ -426,7 +288,7 @@
         <div class="accordion-header">
           <span class="accordion-title">ჩვენს შესახებ</span>
           <img
-            src="assets/img/icon-chevron-down.svg"
+            src=".././assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
@@ -442,7 +304,7 @@
         <div class="accordion-header">
           <span class="accordion-title">დაგვიკავშირდი</span>
           <img
-            src="assets/img/icon-chevron-down.svg"
+            src=".././assets/img/icon-chevron-down.svg"
             alt="icon-chevron-down"
             class="footerIconMob"
           />
@@ -452,7 +314,7 @@
             <li>
               <a href="tel:+406555-0120"
                 ><img
-                  src="assets/footerIMG/Vector.svg"
+                  src=".././assets/footerIMG/Vector.svg"
                   alt="phone"
                 />&nbsp;(406) 555-0120</a
               >
@@ -460,7 +322,7 @@
             <li>
               <a href="mailto:support@shopeasy.com"
                 ><img
-                  src="assets/footerIMG/Group.svg"
+                  src=".././assets/footerIMG/Group.svg"
                   alt="mail"
                 />&nbsp;support@shopeasy.com</a
               >
@@ -475,31 +337,31 @@
         <div class="mobileIcon contactIcon">
           <a href="https://www.facebook.com/" target="_blank"
             ><img
-              src="assets/footerIMG/icon-facebook.svg"
+              src=".././assets/footerIMG/icon-facebook.svg"
               alt="facebook"
             />&nbsp;</a
           >
           <a href="https://www.instagram.com/" target="_blank"
             ><img
-              src="assets/footerIMG/icon-instagram.svg"
+              src=".././assets/footerIMG/icon-instagram.svg"
               alt="instagram"
             />&nbsp;</a
           ><a href="https://www.linkedin.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-linkedin.svg" alt="linkedin"
+            ><img src=".././assets/footerIMG/icon-linkedin.svg" alt="linkedin"
           /></a>
           &nbsp;<a href="https://www.youtube.com/" target="_blank"
-            ><img src="assets/footerIMG/icon-youtube.svg" alt="youtube"
+            ><img src=".././assets/footerIMG/icon-youtube.svg" alt="youtube"
           /></a>
         </div>
         <ul>
           <li>
             <a href="https://www.apple.com/app-store/" target="_blank"
-              ><img src="assets/footerIMG/App Store.svg" alt="appStore"
+              ><img src=".././assets/footerIMG/App Store.svg" alt="appStore"
             /></a>
           </li>
           <li>
             <a href="https://play.google.com/store" target="_blank"
-              ><img src="assets/footerIMG/Google Play.svg" alt="googlePlay"
+              ><img src=".././assets/footerIMG/Google Play.svg" alt="googlePlay"
             /></a>
           </li>
         </ul>
@@ -508,19 +370,19 @@
     <hr class="footerLine" />
     <div class="footerNavMenu">
       <a href="index.html" class="home icon"
-        ><img src="./assets/home (2).svg" alt="home" />
+        ><img src=".././assets/home (2).svg" alt="home" />
         <p>მთავარი</p></a
       >
       <a href="index.html" class="chart icon"
-        ><img src="./assets/icon-shopping-cart (2).svg" alt="cahrt" />
+        ><img src=".././assets/icon-shopping-cart (2).svg" alt="cahrt" />
         <p>კალათა</p></a
       >
       <a href="index.html" class="favourites icon"
-        ><img src="./assets/icon-heart.svg" alt="favourite" />
+        ><img src=".././assets/icon-heart.svg" alt="favourite" />
         <p>ფავორიტები</p></a
       >
       <a href="./authPage/auth.html" id="open-popup-link" class="profile icon"
-        ><img src="./assets/icon-user (1).svg" alt="profile" />
+        ><img src=".././assets/icon-user (1).svg" alt="profile" />
         <p>პროფილი</p></a
       >
     </div>
@@ -529,7 +391,7 @@
         <div class="popup-header">
           <h2  id="popup-header-text">გაიარეთ ავტორიზაცია</h2>
           <span class="close-popup" id="close-popup">
-            <img src="./assets/closeBtn.svg" alt="closeBtn" />
+            <img src=".././assets/closeBtn.svg" alt="closeBtn" />
           </span>
         </div>
         <div class="auth-buttons">
@@ -545,7 +407,7 @@
           />
          
           <div id="errorMessage" style="color: red; display: none">
-            <img class="errorImg" src="./assets/error.svg" alt="" />
+            <img class="errorImg" src="../assets/" alt="" />
             <p class="errorMessage">მეილი/ ტელ.ნომერი არასწორია</p>
           </div>
           <input
@@ -555,12 +417,12 @@
             required
           />
           <div class="error" id="passwordError">
-            <img class="errorImg" src="./assets/error.svg" alt="" />
+            <img class="errorImg" src=".././assets/error.svg" alt="" />
             <p class="errorMessage">პაროლი არასწორია</p>
           </div>
-          <img src="./assets/icon-eye (1).svg" class="eye" alt="eye" />
+          <img src=".././assets/icon-eye (1).svg" class="eye" alt="eye" />
           <a class="forgot-password" id="forgot-password">დაგავიწყდა პაროლი?</a>
-          <button class="login" id="submit" type="submit">შესვლა</button>
+          <button class="login" id="submit" type="submit">ჩემი პროფილი</button>
           <div class="or">
             <hr />
             <p>Or:</p>
@@ -568,12 +430,12 @@
           </div>
           <div class="social-auth">
             <a class="facebook" id="facebook">
-              <img src="./assets/image 1 (2).svg" alt="" />
-              <img src="./assets/Facebook -ით შესვლა (1).svg" alt="" />
+              <img src=".././assets/image 1 (2).svg" alt="" />
+              <img src=".././assets/Facebook -ით შესვლა (1).svg" alt="" />
             </a>
             <a class="google" id="google">
-              <img src="./assets/image 2.svg" alt="" />
-              <img src="./assets/Google -ით შესვლა.svg" alt="" />
+              <img src=".././assets/image 2.svg" alt="" />
+              <img src=".././assets/Google -ით შესვლა.svg" alt="" />
             </a>
           </div>
         </div>
@@ -614,7 +476,7 @@
     <div id="recaptcha-container" class="hidden" ></div>
     <div  class="popup-overlay Password" id="forgot-password-popup">
       <div id="password-reset-form" class="popup-content">
-        <a class="go-back"  id="back-to-login"><img src="./assets/chevron-leftblue.svg" alt=""><p class="back">უკან</p></a>
+        <a class="go-back"  id="back-to-login"><img src=".././assets/chevron-leftblue.svg" alt=""><p class="back">უკან</p></a>
         <h2>პაროლის აღდგენა
         </h2>
         <p>პაროლის აღსადგენად, გთხოვთ შეიყვანოთ რეგისტრირებული მეილი</p>
@@ -627,7 +489,7 @@
     <!-- Popup Overlay for Entering Verification Code -->
     <div id="verification-popup" class="popup-overlay">
       <div id="verification-form" class="popup-content">
-        <a class="go-back" id="back-to-forgot"><img src="./assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
+        <a class="go-back" id="back-to-forgot"><img src=".././assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
         <h2>Enter Verification Code</h2>
             <form id="verification-form">
                 <div class="verification-code-container">
@@ -647,7 +509,7 @@
     <!-- Popup Overlay for Entering New Password -->
     <div id="new-password-popup" class="popup-overlay">
       <div id="new-password-form" class="popup-content">
-        <a class="go-back" id="back-to-verify"><img src="./assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
+        <a class="go-back" id="back-to-verify"><img src=".././assets/chevron-left.svg" alt=""><a class="back">უკან</a></a>
         <h2>Enter New Password</h2>
         <p>Please enter and confirm your new password:</p>
         <input type="password" id="new-password" placeholder="New Password" required>
@@ -658,7 +520,7 @@
     </div>
   </div>
   
-    <script type="module" src="login.js"></script>
-    <script type="module" src="register.js"></script>
+    <script type="module" src="../login.js"></script>
+    <script type="module" src="../register.js"></script>
   </body>
 </html>
