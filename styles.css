@@ -772,6 +772,10 @@ ul li a {
   gap: 16px;
 }
 
+#reg-errorMessage {
+  color: red;
+  display: none; /* Initially hidden */
+}
 .error {
   color: red;
   font-size: 0.9em;
@@ -818,6 +822,9 @@ input.error {
   text-align: left;
 }
 
+.error-border {
+  border: 2px solid red;
+}
 .error-message {
   display: flex;
   align-items: center;
@@ -974,7 +981,6 @@ input.error {
   .firstscroll {
     height: 280px;
   }
-
 
   .firstscroll-img img {
     height: 280px;
@@ -1605,7 +1611,7 @@ input.error {
   }
   .Brands {
     margin-bottom: 10px;
-    gap:0.1rem;
+    gap: 0.1rem;
     grid-template-columns: 50% 50%;
   }
 
