@@ -515,7 +515,6 @@ function showAuthForm() {
 }
 
 function showRegForm() {
-  popupHeader.innerHTML = "გაიარეთ რეგისტრაცია";
   regForm.style.display = "flex";
   authForm.style.display = "none";
   regBtn.style.color = "black";
