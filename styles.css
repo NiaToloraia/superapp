@@ -470,12 +470,12 @@ ul li a {
 
 .firstscroll-img {
   width: 50%;
-  background-image: url("https://s3-alpha-sig.figma.com/img/19b0/599b/e386368cec08754d821e90ba3518769f?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VNxEFseyoAIqnXIdH0cQf8if31QhhWEqNZmjTHe3b7tj9kivcXcWbVmx7wdlJprfLyBc9HqFiiYZtMio~8kbvT1LrXOjAozquexjn~eTrSJbiXc5B~fsW7XXM1V~BoCQ8fMZh449rFO80sEaZQkULmTqqVEQ887zYTQUzoZBjwnBN6Om~eU5-rHhgq~V-PLJc6Mk1fCxyinZuyq-j4R9CbrWZVcX5EA6b6IKdqbM-LBT4LqBzPGxDTlNvoTaLQCnfhA6J5QN1iLOyHxXp0WN7mJxszne8xcKqI3hxn73Kuac6CGRh7eXeNhqMXEHreAmd4dgtC50n3GhQsvJ7f0W7Q__");
-  background-position: 41.5% 61.5%;
+  background-image: url("assets/chair.png");
+  /* background-position: 41.5% 61.5%; */
   /* Move the image slightly up and to the left */
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 136%;
+  /* background-size: 136%; */
   border-radius: 10px;
 }
 
@@ -526,7 +526,7 @@ ul li a {
 }
 
 .middlescroll {
-  background-image: url("https://s3-alpha-sig.figma.com/img/1449/fc27/157377cdc5c19d0a8b16619829204f3d?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=foLI7RZr82usciJfSyUuXV7eLKkhlB8qdTaoMhnWt3GosFFMPUyS9tHRRxQKY3vyTVpsPfWHejM~PEsG-RG28i8XlpPDas1NZCQbyskD~PEYJ-maeBKzFqhX6f0uZQcPO5MoR-83GyeCgK2ZS6uoQiIEDVoFlBuzD5U2OFl8wvcMJLi8gCFOIjxOecNjaERyLS8shfn3sw~LARPBWx8b5RDGaxiZQPyvISBrXDp166yuQ5uD9vaKyWZX3UUq8aBKTApBELTLCpPBPoLwS-51WmkIdEre2Jrzc8WHSbimMvok7WKNEvYJoyui3NxACnp~dJczLtDDOfP5-xICSzwtCg__");
+  background-image: url("assets/glasses.png");
   background-position: center 57.5%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -563,7 +563,7 @@ ul li a {
 }
 
 .lastscroll {
-  background-image: url("https://s3-alpha-sig.figma.com/img/e814/1208/4ee9398db5b22641d6ed137a235ef6c4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IhsnfvCPqeCVhPtbHwcQbmUeXka50ucU0ID4CgV5nmltk3aE70bYdY0~-aUx2BxYVZAxW5kdNRsw1LyZsYNf09lcls85iXPIbxJOqwgX6G66fXNXGd6-Q7I85fJCEG3WTn0ZK3zk3OgdlBtwSedYXp4tQqWSguWBzg~Bt4ekJx1K~HEFBEUWg98BiW5T-GR4aOECZTXCqCat~HKx1qvc-x-lD9OdemIUQuVwq4KEWmM2AwSsXGI8tP0q1nVEq~QqJ1lbF6Pb0AMqGWGk1f~FSb4lATaq19vBf6VFE3tnZmx-AiH0oRY54ia7fIUZF3hCDDc7~9G6E8zkyZ5Ks7-RKw__");
+  background-image: url("assets/plants.png");
   background-position: center 17.5%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -974,6 +974,7 @@ input.error {
   .firstscroll {
     height: 280px;
   }
+
 
   .firstscroll-img img {
     height: 280px;
@@ -1604,6 +1605,8 @@ input.error {
   }
   .Brands {
     margin-bottom: 10px;
+    gap:0.1rem;
+    grid-template-columns: 50% 50%;
   }
 
   .Brand-info {

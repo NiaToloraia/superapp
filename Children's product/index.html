@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../app.js" defer></script>
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Product Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <a href="../index.html" class="header-logo">ShopEasy</a>
+        <div class="search-container">
+          <input type="text" placeholder="ძიება" />
+          <img
+            src="../assets/icons/searchIcon.svg"
+            alt="Search Icon"
+            class="search-icon"
+          />
+        </div>
+        <div class="bag-container">
+          <img src="../assets/icons/icon-shopping-cart.svg" alt="Shopping Bag" />
+          <div class="notification-badge">5</div>
+        </div>
+        <div class="favorites-container">
+          <a href="#">
+            <img src="../assets/icons/favourites.svg" alt="Favorites" />
+          </a>
+        </div>
+        <button class="button auth-button" id="open-popup-btn">შესვლა</button>
+      </div>
+      <div class="categories-section">
+        <div class="burger-menu-container">
+          <button class="burger-menu" id="burgerMenuBtn">
+            <img src="../assets/icons/burgerIcon.svg" alt="burger menu" />
+          </button>
+          <span class="all-categories-text">ყველა კატეგორია</span>
+        </div>
+        <button class="slider-nav left" id="left-arrow">
+          <img src="../assets/icons/leftVector.svg" alt="left arrow" />
+        </button>
+        <div class="categories-slider" id="categories-slider">
+          <div class="categories-container">
+            <ul class="categories-list">
+              <li class="category-item">
+                <a href="../Children's nutrition/index.html">ფასდაკლება</a>
+              </li>
+              <li class="category-item">
+                <a href="../productsPage/products.html">ტექნიკა</a>
+              </li>
+              <li class="category-item">
+                <a href="../productsPage/products.html">ბავშვის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../productsPage/products.html">სახლი & მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../productsPage/products.html">თავის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../productsPage/products.html">სათამაშოები</a>
+              </li>
+              <li class="category-item">
+                <a href="../productsPage/products.html">ფიტნესი</a>
+              </li>
+            </ul>
+          </div>
+          <button class="slider-nav right" id="right-arrow">
+            <img src="../assets/icons/rightVector.svg" alt="right arrow" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <hr class="headerLine" />
+    <div class="main-asideContainer">
+      <aside>
+          <div class="child-nutrition">
+          <h1>ბავშვის კვება </h1>
+          <h2><a href="#" class="adapt-milk">ადაპტირებული რძე</a></h2>
+          <h2><a href="#">ფაფა</a></h2>
+          <h2><a href="#">ორცხობილა</a></h2>
+          <h2><a href="#">იოგურტი და პუდინგი</a></h2>
+          <h2><a href="#">ჩაი</a></h2>
+          <h3><a href="#">ყველას ნახვა</a></h3>
+          </div>
+          <div class="cost-minmax">
+              <h3>ფასი</h3>
+              <div class="minmux-buttons">
+                  <button>მინ.</button>
+                  <button>მაქს.</button>
+                  <button>ძებნა</button>
+              </div>
+          </div>
+        <div class="filters">
+          <h3>ბრენდი</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="brand1" data-brand="HIPP - ჰიპი" />HIPP
+              - ჰიპი
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="brand2"
+                data-brand="BabyBio - ბეიბიბიო"
+              />BabyBio - ბეიბიბიო
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="brand3"
+                data-brand="Plasmon - პლასმონი"
+              />Plasmon - პლასმონი
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="brand4"
+                data-brand="Humana - ჰუმანა"
+              />Humana - ჰუმანა
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="brand5"
+                data-brand="Heinz - ჰეინცი"
+              />Heinz - ჰეინცი
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="brand6"
+                data-brand="Nestle - ნესტლე"
+              />Nestle - ნესტლე
+            </li>
+          </ul>
+          <h3>ასაკი</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="age1" data-age="0-3 თვე" />0-3 თვე
+            </li>
+            <li>
+              <input type="checkbox" id="age2" data-age="3-6 თვე" />3-6 თვე
+            </li>
+            <li>
+              <input type="checkbox" id="age3" data-age="6-9 თვე" />6-9 თვე
+            </li>
+            <li>
+              <input type="checkbox" id="age4" data-age="9-12 თვე" />9-12 თვე
+            </li>
+            <li>
+              <input type="checkbox" id="age5" data-age="1-3 წელი" />1-3 წელი
+            </li>
+            <li>
+              <input type="checkbox" id="age6" data-age="3-5 წელი" />3-5 წელი
+            </li>
+          </ul>
+
+
+        <h3>მოცულობა</h3>
+        <ul>
+            <li><input type="checkbox" id="volume1" data-volume="15-30">15 - 30 მლ</li>
+            <li><input type="checkbox" id="volume2" data-volume="75-100">75 - 100 მლ</li>
+            <li><input type="checkbox" id="volume2" data-volume="75-100">100 - 300 მლ</li>
+            <li><input type="checkbox" id="volume2" data-volume="75-100">300 - 500 მლ</li>
+            <li><input type="checkbox" id="volume2" data-volume="75-100">500 - 1000 მლ</li>
+            <!-- Add more volume ranges as needed -->
+        </ul>
+
+        <h3>რეიტინგი</h3>
+        <ul>
+            <li><input type="checkbox" name="rating" data-rating="5">
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>5.0</li>
+            <li><input  type="checkbox"  name="rating" data-rating="4">
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>4.0</li>
+            <li><input type="checkbox"  name="rating" data-rating="3">
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>3.0</li>
+            <li><input type="checkbox" name="rating" data-rating="2">
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>2.0</li>
+            <li><input type="checkbox"  name="rating" data-rating="1">
+                <img  src="../assets/nutrition/goldstar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>
+                <img  src="../assets/nutrition/graystar.svg"/>1.0</li>
+        </ul>
+        </div>
+      </aside>
+
+      <main>
+        <div class="main-categories">
+          <h3><a href="#">ყველა კატეგორია</a></h3>
+          <img src="../assets/categoriesnext.svg"/>
+          <h3><a href="#">ბავშვის მოვლა</a></h3>
+          <img src="../assets/categoriesnext.svg"/>
+          <h3><a href="#">ბავშვის კვება</a></h3>
+      </div>
+      <div class="five-choices">
+          <div class="choice">
+              <h1>ადაპტირებული რძე</h1>
+              <img src="../assets/nutrition/milk.png"/>
+          </div>
+          <div class="choice">
+              <h1>იოგურტი და პუდინგი</h1>
+              <img src="../assets/nutrition/pudding.png"/>
+          </div>
+          <div class="choice">
+              <h1>ფაფა</h1>
+              <img src="../assets/nutrition/image 4.png"/>
+          </div>
+          <div class="choice">
+              <h1>ჩაი</h1>
+              <img src="../assets/nutrition/tea.png"/>
+          </div>
+          <div class="choice">
+              <h1>ორცხობილა</h1>
+              <img src="../assets/nutrition/cookie.png"/>
+          </div>
+      </div>
+
+        <div class="sort-input">
+          <div class="dropdown">
+              <button class="dropdown-btn">
+                <p>სორტირება</p>
+                <img src="../assets/nutrition/check.svg"/>  
+              </button>
+            <ul class="dropdown-list">
+              <li class="dropdown-item" data-value="brand">ბრენდი</li>
+              <li class="dropdown-item" data-value="age">ასაკი</li>
+              <li class="dropdown-item" data-value="volume">მოცულობა</li>
+              <li class="dropdown-item" data-value="rating">რეიტინგი</li>
+            </ul>
+          </div>
+          <div class="selected-tags" id="selected-tags"></div>
+          <button class="clear-btn" id="clear-filters">
+            <img src="../assets/nutrition/icon-trash.svg"  />
+          </button>
+        </div>
+
+        <div class="product-list" id="cards-container"></div>
+        <div id="pagination">
+          <a class="prev">&lt;</a>
+          <div class="page-numbers"></div>
+          <a class="next">&gt;</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
