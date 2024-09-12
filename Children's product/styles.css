@@ -219,7 +219,7 @@ main {
         width: 100%;
         padding-top: 0;
     }
-    
+
 }
 
 
@@ -808,6 +808,16 @@ ul li {
     display: none;
 }
 
+#mobile-sort-filter {
+    display: none;
+}
+
+
+.filter-mobile-title {
+    display: flex;
+}
+
+
 
 @media (max-width: 1200px) {
     main {
@@ -821,6 +831,197 @@ ul li {
 
 
 @media (max-width: 780px) {
+
+    #mobile-sort-filter {
+        display: block;
+        width: 100%;
+        height: 44px;
+        margin-top: 16px;
+        display: flex;
+        gap: 12px;
+        position: relative;
+    }
+
+    .mobile-sort {
+        border-radius: 10px;
+        border: 1px solid #EFEFEF;
+        height: 44px;
+        width: 50%;
+        display: flex;
+        gap: 13px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .mobile-sort img {
+        width: 14px;
+        height: 8px;
+        top: 8px;
+        left: 5px;
+        gap: 0px;
+        opacity: 0px;
+        color: #000000;
+
+    }
+
+    .mobile-sort p {
+        font-family: FiraGO;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        width: 69px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        color: #000000;
+
+    }
+
+    .mobile-filter-container {
+        border-radius: 10px;
+        background: none; 
+        text-decoration: none;
+        outline: none;   
+        border: 1px solid #EFEFEF;
+        height: 44px;
+        width: 50%;
+        display: flex;
+        gap: 13px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+
+    }
+
+    .mobile-filter-container p {
+        font-family: FiraGO;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: #000000;
+    }
+
+    .mobile-filter-container img {
+        width: 22px;
+        height: 20px;
+        top: 2px;
+        left: 1px;
+        gap: 0px;
+        opacity: 0px;
+        color: #2D3648;
+    }
+
+    /* working on it */
+    
+    .filter-dropdown {
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        border-radius: 10px;
+        height: 317px;
+        top:70px;
+        width: 100%;
+    }
+    
+    .filter-dropdown ul {
+        margin: 0px 16px 16px 16px;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .filter-dropdown ul li button {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 10px;
+        text-align: left;
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #CBD2E0;
+        margin-top: 8px;
+    }
+
+    .filter-dropdown ul li button p {
+        font-family: FiraGO;
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.01em;
+text-align: left;
+width: 29px;
+height: 24px;
+gap: 0px;
+opacity: 0px;
+color: #000000;
+    }
+
+    .mobile-filter-title {
+        display: flex;
+        height: 24px;
+        padding: 26px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #CBD2E0;
+    }
+
+    .mobile-filter-title h2 {
+        font-family: FiraGO;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.4px;
+text-align: left;
+width: 74px;
+height: 14px;
+gap: 0px;
+opacity: 0px;
+color: #000000;
+    }
+
+
+.mobile-filter-close,
+.close-button {
+    background: none;
+    border: none;
+    border: 1px solid #008BFF;
+    border-radius:100px ;
+padding: 3.33px;
+gap: 0px;
+opacity: 0px;
+    cursor: pointer;
+    color: #008BFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+}
+
+    /* end of it */
+
+
+    
+
+    .dropdown {
+        display: none;
+    }
+
+    .clear-btn {
+        position: absolute;
+
+    }
 
     #cards-container {
         display: grid;
@@ -842,6 +1043,8 @@ ul li {
         display: none;
     }
 
+ 
+
 
     .card {
         width: 343px;
@@ -850,7 +1053,7 @@ ul li {
         border-radius: 8px;
         padding: 0;
         display: flex;
-        overflow: auto;
+        overflow: hidden;
 
 
     }
@@ -1065,7 +1268,123 @@ ul li {
         letter-spacing: -0.01em;
     }
 
+    .sort-input {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+
+/* Define the hidden class */
+.hidden {
+    display: none;
+  }
+  
+  .sameForAll {
+    position: absolute;
+    top:570px;
+    height: 294px;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    top:70px;
+    width: 100%;
+  }
+  .sameForAll div {
+    width: 343px;
+height:55px;
+padding: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #CBD2E0;
+  }
+
+  .sameForAll div h2 {
+    font-family: FiraGO;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.4px;
+text-align: left;
+width: 47px;
+height: 14px;
+gap: 0px;
+opacity: 0px;
+
+  }
+
+  .sameForAll div .back-button {
+    all: unset;
+    cursor: pointer;
+  }
+
+  .sameForAll ul {
+    display: flex;
+    flex-direction: column;
+    width: 353px;
+height:184px;
+margin: 12px 16px;
+gap: 16px;
+
+  }
+  .sameForAll ul li {
+    width: 260px;
+height: 24px;
+display: flex;
+justify-content: baseline;
+gap: 12px;
+font-family: FiraGO;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.01em;
+text-align: left;
+
+
+  }
+
+
+
+/* aside-minmuxcost */
+#filter-container-price {
+    height: 130px;
+    width: 100%;
 }
+
+#filter-container-price .minmux-buttons {
+    height: 30px;
+    border-bottom: none;
+}
+
+#filter-container-price .minmux-buttons button:hover,
+#filter-container-price .minmux-buttons button:active {
+    background-color: #008BFF;
+    border: none;
+    color: #FFFFFF;
+
+}
+
+#filter-container-price .minmux-buttons button{
+    border: 1px solid #9B9393;
+    border-radius: 10px;
+    height: 44px;
+    width: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9B9393;
+    
+}
+
+.minmux-buttons {
+    margin-top: 30px;
+}
+
+
+
+}
+
+
+
 
 
 /* //// */
@@ -1202,4 +1521,17 @@ ul li {
 .tag button img {
     width: 12px;
     height: 12px;
+}
+
+@media (max-width: 780px) {
+    .selected-tags {
+        width: 100%;
+        gap:0.1px;
+    }
+
+    .tag {
+        margin-left:30px;
+
+    }
+
 }
