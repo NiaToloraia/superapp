@@ -8,11 +8,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fetch cards from JSON file
     async function fetchCards() {
-        const response = await fetch('allnutrition.json'); // Path to your JSON file
-        const cards = await response.json();
-        allCards = cards;
-        displayCards(cards, currentPage);
-        setupPagination(cards);
+        try {
+            const response = await fetch('./allnutrition.json'); // Adjusted path based on your file structure
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const cards = await response.json();
+            allCards = cards;
+            displayCards(cards, currentPage);
+            setupPagination(cards);
+        } catch (error) {
+            console.error('There has been a problem with your fetch operation:', error);
+        }
     }
 
     // Display cards for the current page
@@ -53,6 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
+
+    
     // 
 
     function setupPagination(cards) {
@@ -171,27 +181,6 @@ function addTag(type, value) {
         removeTag(type, value); // Call removeTag when the button is clicked
     });
 }
-
-// Function to remove the tag and associated filter
-function removeTag(type, value) {
-    // Find and remove the tag from the DOM
-    const tag = document.querySelector(`.tag[data-type="${type}"][data-value="${value}"]`);
-    if (tag) {
-        tag.remove(); // Remove the tag element itself
-    }
-
-    // Uncheck the checkbox associated with this filter (if it exists)
-    const checkbox = document.querySelector(`input[data-${type}="${value}"]`);
-    if (checkbox) {
-        checkbox.checked = false; // Uncheck the corresponding checkbox
-    }
-
-    // Update the filtered results after removing the filter
-    filterAndSortCards(); // Call the function to refresh the displayed cards
-}
-
-
-
 // Clear all tags and filters
 clearFiltersBtn.addEventListener('click', () => {
     selectedTagsContainer.innerHTML = '';
@@ -674,21 +663,5 @@ function removeTag(type, value) {
     }
 
     // Update the filtered results after removing the filter
-    filterAndSortCards(); // Refresh the card display
 }
-
-// Attach event listener to the parent container to handle all remove buttons using event delegation
-selectedTagsContainer.addEventListener('click', function(event) {
-    // Check if the clicked element is a remove button
-    if (event.target.classList.contains('remove-tag-btn')) {
-        // Get the closest outer container (the tag div)
-        const outerTag = event.target.closest('.tag-container');
-        const type = outerTag.getAttribute('data-type');
-        const value = outerTag.getAttribute('data-value');
-
-        console.log(`Remove button clicked for: ${type} - ${value}`); // Log for debugging
-
-        // Call the removeTag function
-        removeTag(type, value);
-    }
-});
+;

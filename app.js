@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = html;
   }
 
-  fetch("cards.json")
+  fetch('cards.json')
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error fetching data:", error);
     });
 
-  fetch("./assets/data.json")
+  fetch("assets/data.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial check when the script runs
   updateButtonContent();
 
-  fetch("./assets/sectionData.json")
+  fetch("assets/sectionData.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -446,7 +446,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function fetchCards() {
   try {
-    const response = await fetch("assets/categories.json");
+    const response = await fetch('assets/categories.json');
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
