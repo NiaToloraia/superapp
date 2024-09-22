@@ -771,7 +771,9 @@ ul li a {
   flex-direction: column;
   gap: 16px;
 }
-
+#registrationSuccessPopup {
+  display: none;
+}
 #reg-errorMessage {
   color: red;
   display: none; /* Initially hidden */

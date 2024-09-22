@@ -480,3 +480,29 @@ function handleLogout() {
 document
   .getElementById("logout-button")
   .addEventListener("click", handleLogout);
+
+const passwordInput = document.getElementById("password");
+const togglePassword = document.getElementById("eye");
+
+// On page load, reset to default (hidden)
+window.onload = function () {
+  passwordInput.setAttribute("type", "password");
+  togglePassword.classList.remove("fa-eye-slash"); // Ensure no slash on load
+  togglePassword.classList.add("fa-eye");
+};
+
+// Toggle password visibility and icon change
+togglePassword.addEventListener("click", function () {
+  const type =
+    passwordInput.getAttribute("type") === "password" ? "text" : "password";
+  passwordInput.setAttribute("type", type);
+
+  // Toggle between eye and eye-slash icons
+  if (type === "text") {
+    togglePassword.classList.remove("fa-eye");
+    togglePassword.classList.add("fa-eye-slash");
+  } else {
+    togglePassword.classList.remove("fa-eye-slash");
+    togglePassword.classList.add("fa-eye");
+  }
+});
