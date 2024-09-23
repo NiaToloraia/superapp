@@ -539,3 +539,8 @@ authButton.addEventListener("click", () => {
   document.getElementById("reg-form").classList.add("hidden"); // Hide the reg form
   document.getElementById("auth-form").classList.remove("hidden"); // Show the auth form
 });
+const basketLink = document.getElementById("basket-link");
+
+basketLink.addEventListener("click", () => {
+  window.location.href = "../basket/index.html";
+});

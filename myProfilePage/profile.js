@@ -119,15 +119,42 @@ myCardsBtn.addEventListener("click", () => {
   setActiveButton(myCardsBtn);
   clearMainContent();
 
-  const addCardButton = `<button class="add-card-btn">Add Card</button>`;
-  const cardImages = `
-        <div class="cards">
-            <img src="../assets/img/card1.png" alt="Card 1">
-            <img src="../assets/img/card2.png" alt="Card 2">
-            <img src="../assets/img/card3.png" alt="Card 3">
-        </div>
-    `;
-  mainContent.innerHTML = addCardButton + cardImages;
+  // Create the wrapper for cards
+  const cardsWrapper = `
+  <div class="cardsWrapper">
+      <button class="add-card-btn">+ ბარათის დამატება</button>
+      <div class="cardsContainer">
+          <div class="cards">
+              <div class="cards-wrap" id="card-1">
+                  <img src="./lines black.svg" alt="Card 1">
+                  <div class="tag-icon">
+                      <img src="./_Radio Base.svg" alt="Card 1">
+                      <img src="./icon-more-horizontal.svg" alt="Card 1" class="more-icon">
+                      <button class="delete-btn" style="display: none;">Delete</button>
+                  </div>
+              </div>
+              <div class="cards-wrap" id="card-2">
+                  <img src="./lines greenish.svg" alt="Card 2">
+                  <div class="tag-icon">
+                      <img src="./_Radio Base.svg" alt="Card 2">
+                      <img src="./icon-more-horizontal.svg" alt="Card 2" class="more-icon">
+                      <button class="delete-btn" style="display: none;">Delete</button>
+                  </div>
+              </div>
+              <div class="cards-wrap" id="card-3">
+                  <img src="./shapes.svg" alt="Card 3">
+                  <div class="tag-icon">
+                      <img src="./_Radio Base.svg" alt="Card 3">
+                      <img src="./icon-more-horizontal.svg" alt="Card 3" class="more-icon">
+                      <button class="delete-btn" style="display: none;">Delete</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+`;
+
+  mainContent.innerHTML = cardsWrapper;
 });
 
 // Event Listener for 'შეტყობინებები'
@@ -179,3 +206,35 @@ myAddressesBtn.addEventListener("click", () => {
     `;
   mainContent.innerHTML = addAddressButton + addressForm;
 });
+
+// Event listener for 'more horizontal' icons
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("more-icon")) {
+    // Show the delete button associated with the clicked icon
+    const deleteButton = event.target.nextElementSibling; // Gets the button after the icon
+    deleteButton.style.display = "block"; // Show the delete button
+  }
+
+  if (event.target.classList.contains("delete-btn")) {
+    // Find the card to delete
+    const cardWrap = event.target.closest(".cards-wrap"); // Get the closest card wrapper
+    if (cardWrap) {
+      cardWrap.remove(); // Remove the card from the DOM
+
+      // Check if there are any cards left
+      const cardsContainer = document.querySelector(".cardsContainer");
+
+      if (cardsContainer && cardsContainer.children.length === 0) {
+        // If no cards left, show the empty message
+        cardsContainer.innerHTML = emptyMessage;
+      }
+    }
+  }
+});
+
+const emptyMessage = `
+    <div class="empty-message">
+        <img src="./Wallet 02.svg" alt="empty bag" />
+        <h3>ბარათი ჯერ არ გაქვს დამატებული</h3>
+    </div>
+`;

@@ -123,3 +123,44 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+.add-card-btn {
+  background-color: #008bff;
+  color: white;
+  border-radius: 10px;
+  width: 252px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.cards img {
+  width: 306px;
+  height: 214px;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cardsWrapper .cards {
+  display: flex;
+  gap: 20px;
+}
+.tag-icon img {
+  width: 24px;
+  height: 24px;
+}
+.tag-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+.card-Wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
