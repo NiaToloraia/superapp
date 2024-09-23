@@ -1496,7 +1496,7 @@ input.error {
 
 /* popular-brands */
 .popularBrands {
-  height: 659px;
+  /* height: 659px; */
   width: 100%;
   margin-top: 30px;
   display: flex;
@@ -1531,7 +1531,6 @@ input.error {
   align-items: center;
   justify-content: space-around;
 }
-
 .Hape-img img {
   object-fit: contain;
   height: 479px;

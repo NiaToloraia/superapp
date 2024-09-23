@@ -21,11 +21,26 @@ a {
 
 body {
   display: flex;
-  margin: 0 6.25rem;
+  /* margin: 0 6.25rem; */
+  flex-direction: column;
 }
-
+.allcategories,
+.mainPageDiv {
+  padding: 0 6.5rem;
+  display: flex;
+  justify-content: center;
+}
+.mainPageDiv {
+  display: flex;
+  flex-direction: row;
+}
 /* ყველაფერი შენი სახლისთვის */
-
+.card2,
+.card3,
+.card4 {
+  display: flex !important;
+  flex-direction: column;
+}
 .lastCard {
   display: flex;
   justify-content: space-between;
@@ -52,17 +67,16 @@ body {
 }
 
 .card2 {
-  /* width: 200px; */
-  /* height: 414px; */
-  /* margin-bottom: 20px; */
   box-sizing: border-box;
-  border-radius: 4px;
+
   width: 295px;
   height: 395px;
   border-radius: 8px;
   border: 1.5px solid #efefef;
-  display: block;
+
   position: relative;
+
+  flex-direction: column;
 }
 
 .cardIMg {
@@ -199,7 +213,7 @@ aside {
   gap: 15px;
   height: 300px;
   margin: 0 auto;
-  margin-top: 270px;
+
   color: #000000;
 }
 
@@ -242,7 +256,9 @@ aside h2 a {
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 0;
+  padding: 0px !important;
 }
 
 /* bike */
@@ -364,7 +380,6 @@ main {
   }
 
   .bike-img {
-
     width: 210px;
     height: 178px;
     top: 12px;
@@ -379,13 +394,10 @@ main {
   }
 }
 
-
-
 /* popular brands */
 
 /* popular-brands */
 .popularBrands {
-  height: 445px;
   max-width: 100%;
   margin-top: 40px;
   display: flex;
@@ -487,6 +499,9 @@ main {
   line-height: 31.2px;
   color: #363939;
 }
+.popularBrands {
+  height: 480px !important;
+}
 
 @media (max-width: 1200px) {
 }
@@ -494,7 +509,7 @@ main {
 @media (max-width: 1200px) {
   .popularBrands {
     max-width: 100%;
-    height: 229px;
+    height: 150px !important;
     margin-bottom: 120px;
   }
 
@@ -610,7 +625,6 @@ main {
 
 @media (max-width: 425px) {
   main {
-    margin: 0 1rem;
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -787,5 +801,144 @@ main {
     /* height: 279px; */
     height: auto;
     margin-right: 12px;
+  }
+}
+/* new cssssss */
+
+.slider-nav {
+  background-color: unset;
+}
+.allcategories p,
+.allcategories {
+  font-family: FiraGO;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.allcategories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-bottom: 42px;
+  padding-top: 40px;
+}
+.card-container {
+  display: grid;
+  gap: 20px;
+}
+.ProductsCard {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1440px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 1439px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.ProductsCard {
+  display: flex;
+  width: 295px;
+  border-radius: 10px;
+  height: 149px;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 62px 26px;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+}
+
+@media (max-width: 780px) {
+  .ProductsCard {
+    height: 92px;
+    padding: 3% 2.5%;
+  }
+  .ProductsCard img {
+    width: 30%;
+    height: 100%;
+  }
+  .ProductsCard p {
+    font-family: FiraGO;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+  }
+}
+
+.ProductsCard {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1440px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 1439px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.ProductsCard {
+  display: flex;
+  width: 295px;
+  border-radius: 10px;
+  height: 149px;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 62px 26px;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .ProductsCard {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .ProductsCard {
+    height: 92px;
+    padding: 3% 2.5%;
+  }
+  .allcategories,
+  .mainPageDiv {
+    padding: 40px 1.5rem 0;
+  }
+  .allcategories {
+    margin: 0 1rem;
+  }
+  .ProductsCard img {
+    width: 30%;
+    height: 100%;
+  }
+  .ProductsCard p {
+    font-family: FiraGO;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
   }
 }
