@@ -21,7 +21,7 @@
             class="search-icon"
           />
         </div>
-        <div class="bag-container">
+        <div class="bag-container" id="basket-link">
           <img src="./assets/icons/icon-shopping-cart.svg" alt="Shopping Bag" />
           <div class="notification-badge">5</div>
         </div>
@@ -556,7 +556,7 @@
             <img class="errorImg" src="./assets/error.svg" alt="" />
             <p class="errorMessage">პაროლი არასწორია</p>
           </div>
-          <img src="./assets/icon-eye (1).svg" class="eye" alt="eye" />
+          <img src="./assets/icon-eye (1).svg" class="eye" id="eye" alt="eye" />
           <a class="forgot-password" id="forgot-password">დაგავიწყდა პაროლი?</a>
           <button class="login" id="submit" type="submit">შესვლა</button>
           <div class="or">
@@ -641,6 +641,15 @@
         <button id="verify-submit">Verify and Reset Password</button>
       </div>
     </div>
+
+    
+    
+    <div id="registrationSuccessPopup" class="popup">
+      <div class="popup-content">
+          <p>რეგისტრაცია წარმატებულია</p>
+          <button id="loginButton">Log In</button>
+      </div>
+  </div>
   
     <!-- Popup Overlay for Entering New Password -->
     <div id="new-password-popup" class="popup-overlay">
