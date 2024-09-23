@@ -27,7 +27,7 @@ document.getElementById("rightButton").addEventListener("click", () => {
   if (!newCardAdded) {
     addNewCard({
       imageURL: "assets/img/Image1.png",
-      name: "Oslo Wooden Armchair New",
+      name: "Oslo Wooden Arm New",
       desc: "ეზოს სავარძელი",
       price: "300.00 ₾",
       startPrice: "",

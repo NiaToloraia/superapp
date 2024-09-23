@@ -1709,7 +1709,8 @@ input.error {
   margin-bottom: 20px;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 263px;
+  /* width: 263px; */
+  width: 23.05%;
   height: 395px;
   border-radius: 8px;
   border: 1.5px solid #efefef;
@@ -1717,7 +1718,9 @@ input.error {
   position: relative;
   margin-right: 20px;
 }
-
+#cards2-container .card2:last-child {
+  margin-right: 0;
+}
 .cardIMg {
   width: 258px;
 }
@@ -1740,10 +1743,12 @@ input.error {
 
 .titleDesk {
   color: #717d96;
-  padding: 0 0 22px 12px;
+  padding: 0 0 12px 12px;
 }
 
 .priceText {
+  color: #2d3648;
+  font-size: 20px;
   font-weight: bold;
   padding: 0 0 12px 12px;
 }
@@ -1760,7 +1765,10 @@ input.error {
   font-weight: 700;
 }
 .allHomeName {
+  color: #2d3648;
+  font-size: 20px;
   padding: 35px 0 15px 12px;
+  line-height: 28px;
 }
 .allHomeStartPr,
 .start-price {
@@ -1952,7 +1960,8 @@ footer li {
     display: none;
   }
   .priceText {
-    font-size: 12px;
+    font-size: 20px;
+    line-height: 28px;
     color: #2d3648;
   }
   .allHomeStartPr,
