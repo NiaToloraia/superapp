@@ -4,10 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <script src="script.js" defer></script>
     <title>Product Page - Product</title>
   </head>
   <body>
+    <header>
+      <div class="header-top">
+        <a href="../index.html" class="header-logo">ShopEasy</a>
+        <div class="search-container">
+          <input type="text" placeholder="ძიება" />
+          <img
+            src=".././assets/icons/searchIcon.svg"
+            alt="Search Icon"
+            class="search-icon"
+          />
+        </div>
+        <div class="bag-container" id="basket-link">
+          <img
+            src="../assets/icons/icon-shopping-cart.svg"
+            alt="Shopping Bag"
+          />
+          <div class="notification-badge">5</div>
+        </div>
+        <div class="favorites-container">
+          <a href="#">
+            <img
+              src="../assets/icons/favourites.svg"
+              alt="Favorites"
+              id="favourite-link"
+            />
+          </a>
+        </div>
+        <button class="button auth-button" id="open-popup-btn">
+          ჩემი პროფილი
+        </button>
+      </div>
+      <div class="categories-section">
+        <div class="burger-menu-container">
+          <button class="burger-menu" id="burgerMenuBtn">
+            <img src=".././assets/icons/burgerIcon.svg" alt="burger menu" />
+          </button>
+          <span class="all-categories-text">ყველა კატეგორია</span>
+        </div>
+        <button class="slider-nav left" id="left-arrow">
+          <img src=".././assets/icons/leftVector.svg" alt="left arrow" />
+        </button>
+        <div class="categories-slider" id="categories-slider">
+          <div class="categories-container">
+            <ul class="categories-list">
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ფასდაკლება</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ტექნიკა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ბავშვის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">სახლი & მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">თავის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">სათამაშოები</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ფიტნესი</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ტექნიკა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ბავშვის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">სახლი & მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">თავის მოვლა</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">სათამაშოები</a>
+              </li>
+              <li class="category-item">
+                <a href="../Children's nutrition2/index.html">ფიტნესი</a>
+              </li>
+            </ul>
+          </div>
+          <button class="slider-nav right" id="right-arrow">
+            <img src=".././assets/icons/rightVector.svg" alt="right arrow" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <hr class="headerLine" />
     <main>
       <div class="categBox">
         <span
