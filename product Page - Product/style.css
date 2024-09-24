@@ -311,9 +311,24 @@ input[type="button"] {
 .reviewsBox1Btn {
   display: none;
 }
-
+.card {
+  display: flex !important;
+  padding: 0 !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+}
+.card-content {
+  display: flex !important;
+  gap: 2px !important;
+}
 /* cards */
+.allHomeName {
+  padding: 12px 0 12px 12px !important;
+}
 
+.card-content button {
+  margin-top: 0px !important;
+}
 .fullyBox {
   display: flex;
   /* justify-content: space-around; */
@@ -334,6 +349,7 @@ input[type="button"] {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
+  gap: 32px;
   flex-wrap: nowrap; /* Prevent wrapping to the next line */
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: hidden; /* Prevent vertical scrolling */
@@ -490,7 +506,7 @@ footer li {
   }
 
   footer .landingfooter {
-    width: 1080px;
+    padding: 0px !important;
   }
 }
 
