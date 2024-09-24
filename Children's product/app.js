@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="card-content">
                     <h2>${card.title}</h2>
-                    <p class="deskDes">${card.description}</p>
+                    <a href="../index.html"><p class="deskDes">${card.description}</p></a>
                     <p id="mobile-desc">${card.description}</p>
                     <p class="deskPrice">${card.price} ₾</p>
                     <div id="mobile-price">
